@@ -1,0 +1,44 @@
+---
+description: Regras de acessibilidade para componentes e páginas
+globs:
+  - "app/**/*.{vue,ts,js}"
+alwaysApply: true
+---
+
+# Accessibility
+
+## Objetivo
+
+Garantir que páginas e componentes sejam acessíveis, navegáveis por teclado e semanticamente corretos.
+
+## Regras obrigatórias
+
+- Botões devem usar `button`
+- Links devem usar `a` ou `NuxtLink`
+- Não usar `div` ou `span` como elementos clicáveis
+- Inputs devem possuir label
+- Placeholder não substitui label
+- Todo elemento interativo deve ser acessível por teclado
+- Todo foco deve ser visível
+- Não remover outline sem substituição equivalente e visível
+- Imagens informativas devem ter `alt` útil
+- Imagens decorativas devem ter `alt=""` quando apropriado
+- Ícones decorativos devem usar `aria-hidden="true"` quando aplicável
+- Não depender apenas de cor para comunicar estado ou significado
+
+## Estrutura
+
+- Usar landmarks semânticos quando apropriado:
+  - `header`
+  - `main`
+  - `nav`
+  - `section`
+  - `footer`
+- Heading order deve ser lógica e contínua
+
+## Evitar
+
+- Hover como única forma de acessar conteúdo importante
+- Texto com contraste insuficiente
+- Tamanhos de fonte muito pequenos
+- Formulários sem contexto claro

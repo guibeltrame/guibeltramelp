@@ -1,0 +1,390 @@
+<script setup lang="ts">
+const props = defineProps<{
+  videoId: string;
+}>();
+
+const emit = defineEmits<{
+  released: [];
+}>();
+
+/**
+ * Tempo mínimo de vídeo (em segundos) para liberar a landing page.
+ * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
+ */
+const UNLOCK_TIME_SECONDS = 1;
+
+const PLAYER_EL_ID = "yt-intro-player";
+const isPlayerReady = ref(false);
+const isReleased = ref(false);
+
+let player: { destroy(): void; getCurrentTime(): number } | null = null;
+let timeCheckInterval: ReturnType<typeof setInterval> | null = null;
+
+function loadYouTubeAPI(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if ((window as any).YT?.Player) {
+      resolve();
+      return;
+    }
+
+    const timeout = setTimeout(
+      () => reject(new Error("YouTube API timeout")),
+      15_000,
+    );
+
+    const prev = (window as any).onYouTubeIframeAPIReady;
+    (window as any).onYouTubeIframeAPIReady = () => {
+      clearTimeout(timeout);
+      prev?.();
+      resolve();
+    };
+
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    tag.onerror = () => {
+      clearTimeout(timeout);
+      reject(new Error("YouTube API load failed"));
+    };
+    document.head.appendChild(tag);
+  });
+}
+
+function createPlayer() {
+  const YT = (window as any).YT;
+
+  player = new YT.Player(PLAYER_EL_ID, {
+    videoId: props.videoId,
+    playerVars: {
+      autoplay: 1,
+      rel: 0,
+      modestbranding: 1,
+      playsinline: 1,
+    },
+    events: {
+      onReady: () => {
+        isPlayerReady.value = true;
+        startTimeCheck();
+      },
+      onStateChange: (e: { data: number }) => {
+        if (e.data === YT.PlayerState.ENDED) {
+          release();
+        }
+      },
+      onError: () => {
+        release();
+      },
+    },
+  });
+}
+
+function startTimeCheck() {
+  timeCheckInterval = setInterval(() => {
+    if (!player) return;
+    if (player.getCurrentTime() >= UNLOCK_TIME_SECONDS) {
+      release();
+    }
+  }, 500);
+}
+
+function stopTimeCheck() {
+  if (timeCheckInterval) {
+    clearInterval(timeCheckInterval);
+    timeCheckInterval = null;
+  }
+}
+
+function release() {
+  if (isReleased.value) return;
+  isReleased.value = true;
+  stopTimeCheck();
+  document.documentElement.style.overflow = "";
+  emit("released");
+}
+
+function scrollToContent() {
+  const hero = document.getElementById("hero-section");
+  hero?.scrollIntoView({ behavior: "smooth" });
+}
+
+onMounted(async () => {
+  document.documentElement.style.overflow = "hidden";
+
+  try {
+    await loadYouTubeAPI();
+    createPlayer();
+  } catch {
+    release();
+  }
+});
+
+onBeforeUnmount(() => {
+  stopTimeCheck();
+  player?.destroy();
+  document.documentElement.style.overflow = "";
+});
+</script>
+
+<template>
+  <section
+    class="relative flex min-h-dvh items-center justify-center bg-dark py-10"
+    aria-label="Vídeo de apresentação do curso"
+  >
+    <!-- Ambient glow -->
+    <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(245,158,11,0.06),transparent)]"
+      />
+    </div>
+
+    <div class="relative z-10 w-full max-w-4xl px-4 sm:px-6">
+      <!-- Header -->
+      <div class="mb-5 text-center sm:mb-6">
+        <p
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
+        >
+          Você já sabe tocar,
+        </p>
+        <h2
+          class="mt-2 text-lg font-bold text-text-on-dark sm:text-2xl md:text-3xl"
+        >
+          MAS NA HORA DE CRIAR OU IMPROVISAR SEMPRE
+          <p>REPETE A MESMA COISA</p>
+        </h2>
+        <h3
+          class="mt-2 text-base font-bold text-text-on-dark sm:text-base md:text-lg"
+        >
+          Veja como ter ideias infinitas para criar frases e melodias sem
+          depender de inspiração, independente do seu nível técnico e sem
+          escalas complexas.
+
+          <p class="mt-8">Dê o play no vídeo abaixo:</p>
+        </h3>
+      </div>
+
+      <!-- Video -->
+      <div
+        class="video-wrapper relative aspect-video w-full overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
+      >
+        <Transition name="spinner-fade">
+          <div
+            v-if="!isPlayerReady"
+            class="absolute inset-0 z-10 flex items-center justify-center bg-dark-surface"
+          >
+            <div
+              class="size-10 animate-spin rounded-full border-[3px] border-dark-muted border-t-amber sm:size-12"
+            />
+          </div>
+        </Transition>
+
+        <div :id="PLAYER_EL_ID" />
+      </div>
+
+      <!-- CTA + Scroll indicator (aparecem após liberação) -->
+      <Transition name="cta-reveal">
+        <div
+          v-if="isReleased"
+          class="mt-6 flex flex-col items-center gap-5 sm:mt-8"
+        >
+          <a
+            href="#hero-section"
+            class="cta-glow cta-pulse group relative inline-flex items-center gap-2.5 rounded-xl bg-amber px-8 py-4 text-base font-bold text-dark shadow-lg shadow-amber/25 transition-all duration-300 hover:bg-amber-light hover:shadow-xl hover:shadow-amber/35 focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark active:scale-[0.97] active:bg-amber-dark sm:px-10 sm:py-4.5 sm:text-lg"
+            @click.prevent="scrollToContent"
+          >
+            <span>ACESSO IMEDIATO E VITALÍCIO</span>
+            <svg
+              class="size-5 transition-transform duration-300 group-hover:translate-x-0.5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 10a.75.75 0 0 1 .75-.75h10.638l-3.96-3.96a.75.75 0 1 1 1.06-1.06l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06l3.96-3.96H3.75A.75.75 0 0 1 3 10Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <!-- Scroll indicator -->
+          <div class="flex flex-col items-center gap-2 pt-1">
+            <p class="text-xs tracking-wide text-text-on-dark-muted sm:text-sm">
+              Descubra o que preparamos para você
+            </p>
+            <div
+              class="scroll-indicator flex flex-col items-center"
+              aria-hidden="true"
+            >
+              <svg
+                class="size-5 text-amber/70"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-3.96a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 1 1 1.06-1.06l3.96 3.96V3.75A.75.75 0 0 1 10 3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                class="-mt-2.5 size-5 text-amber/40"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-3.96a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 1 1 1.06-1.06l3.96 3.96V3.75A.75.75 0 0 1 10 3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </div>
+  </section>
+</template>
+
+<style scoped>
+.spinner-fade-leave-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.spinner-fade-leave-to {
+  opacity: 0;
+}
+
+.video-wrapper :deep(iframe) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* CTA reveal transition */
+.cta-reveal-enter-active {
+  transition:
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cta-reveal-enter-from {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+/* Ambient glow behind CTA button */
+.cta-glow::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(251, 191, 36, 0.4),
+    rgba(245, 158, 11, 0.15),
+    rgba(217, 119, 6, 0.4)
+  );
+  opacity: 0;
+  filter: blur(12px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.cta-glow:hover::before {
+  opacity: 1;
+}
+
+/* CTA — pulso contínuo para chamar atenção (pausa no hover/focus) */
+.cta-glow.cta-pulse {
+  animation: cta-btn-pulse 2.1s ease-in-out infinite;
+}
+
+.cta-glow.cta-pulse::before {
+  opacity: 0.28;
+  animation: cta-halo-pulse 2.1s ease-in-out infinite;
+}
+
+.cta-glow.cta-pulse:hover,
+.cta-glow.cta-pulse:focus-visible {
+  animation: none;
+}
+
+.cta-glow.cta-pulse:hover::before,
+.cta-glow.cta-pulse:focus-visible::before {
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes cta-btn-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 10px 15px -3px rgba(245, 158, 11, 0.22),
+      0 4px 6px -4px rgba(245, 158, 11, 0.12),
+      0 0 0 0 rgba(245, 158, 11, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 16px 28px -4px rgba(245, 158, 11, 0.42),
+      0 8px 14px -6px rgba(245, 158, 11, 0.22),
+      0 0 0 10px rgba(245, 158, 11, 0.1);
+    transform: scale(1.03);
+  }
+}
+
+@keyframes cta-halo-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+    filter: blur(11px);
+  }
+  50% {
+    opacity: 0.62;
+    filter: blur(15px);
+  }
+}
+
+/* Scroll indicator — cascading bounce */
+.scroll-indicator {
+  animation: scroll-bounce 2.4s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-reveal-enter-active {
+    transition: none;
+  }
+
+  .scroll-indicator {
+    animation: none;
+  }
+
+  .cta-glow.cta-pulse {
+    animation: none;
+    transform: none;
+  }
+
+  .cta-glow.cta-pulse::before {
+    animation: none;
+    opacity: 0;
+  }
+
+  .cta-glow.cta-pulse:hover::before,
+  .cta-glow.cta-pulse:focus-visible::before {
+    opacity: 1;
+  }
+}
+</style>

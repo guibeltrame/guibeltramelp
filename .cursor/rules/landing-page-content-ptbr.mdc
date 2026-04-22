@@ -1,0 +1,47 @@
+---
+description: Regras de conteúdo para landing pages em português do Brasil
+globs:
+  - "app/pages/**/*.vue"
+  - "app/components/**/*.vue"
+alwaysApply: true
+---
+
+# Landing Page Content PT-BR
+
+## Objetivo
+
+Garantir que todo conteúdo textual do projeto siga padrão claro, objetivo, escaneável e orientado à conversão, sempre em português do Brasil.
+
+## Regras obrigatórias
+
+- Todo texto visível ao usuário deve estar em português do Brasil
+- O tom deve ser claro, profissional e direto
+- O conteúdo deve ser escaneável
+- A proposta de valor deve aparecer com clareza no início da página
+- CTA principal deve ser claro e fácil de identificar
+- Benefícios devem ser fáceis de entender
+- Evitar jargão excessivo
+- Evitar blocos longos de texto sem necessidade
+
+## Estrutura sugerida para landing page
+
+- Headline clara
+- Subheadline objetiva
+- Benefícios principais
+- Prova social, diferenciais ou confiança quando houver
+- CTA principal
+- FAQ quando fizer sentido
+
+## SEO e conteúdo
+
+- O texto deve ser natural e semanticamente forte
+- Não repetir palavra-chave de forma artificial
+- Priorizar clareza para humanos, com boa interpretação por buscadores
+
+## Evitar
+
+- Textos vagos
+- Títulos genéricos
+- Calls to action fracos
+- Conteúdo prolixo
+- Mistura de idiomas

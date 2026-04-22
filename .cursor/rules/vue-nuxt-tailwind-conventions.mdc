@@ -1,0 +1,45 @@
+---
+description: Convenções de Vue 3, Nuxt 3 e Tailwind para este projeto
+globs:
+  - "app/**/*.{vue,ts,js}"
+  - "nuxt.config.ts"
+alwaysApply: true
+---
+
+# Vue Nuxt Tailwind Conventions
+
+## Vue e Nuxt
+
+- Preferir `script setup`
+- Manter componentes pequenos e claros
+- Extrair componente apenas quando houver benefício real de reutilização ou organização
+- Evitar excesso de props, emits e camadas desnecessárias
+- Evitar lógica complexa diretamente no template
+- Priorizar clareza antes de abstração
+
+## Tailwind
+
+- Tailwind é a estratégia principal de estilização
+- Evitar CSS customizado quando Tailwind resolver bem
+- Evitar classes desnecessariamente longas ou caóticas
+- Garantir consistência de spacing, tipografia e responsividade
+- Trabalhar mobile first
+
+## Estrutura de UI
+
+- Interfaces devem ser limpas, leves e escaneáveis
+- Priorizar legibilidade
+- Preservar contraste e foco visual
+- Evitar excesso de ornamentos visuais
+
+## Semântica
+
+- Não sacrificar HTML semântico por conveniência visual
+- Estruturar seções com intenção clara
+- Manter organização previsível dos arquivos
+
+## Evitar
+
+- Componentização prematura
+- CSS paralelo sem necessidade
+- Soluções visualmente bonitas mas ruins para acessibilidade ou performance

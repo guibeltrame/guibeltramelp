@@ -1,0 +1,48 @@
+---
+description: Regras de performance e Lighthouse para landing pages
+globs:
+  - "app/**/*.{vue,ts,js}"
+  - "public/**/*"
+  - "nuxt.config.ts"
+  - "package.json"
+alwaysApply: true
+---
+
+# Lighthouse Performance
+
+## Objetivo
+
+Maximizar a nota no Lighthouse e preservar boa experiência em dispositivos móveis.
+
+## Prioridades
+
+- Melhorar LCP
+- Evitar CLS
+- Reduzir custo de JS
+- Minimizar trabalho de renderização
+- Priorizar conteúdo acima da dobra
+
+## Regras obrigatórias
+
+- Evitar bibliotecas pesadas sem justificativa real
+- Evitar componentes complexos para conteúdo estático
+- Evitar lógica reativa desnecessária
+- Definir dimensões para imagens e mídias sempre que possível
+- Lazy load para conteúdo fora da dobra quando apropriado
+- Não usar scripts de terceiros sem necessidade real
+- Priorizar HTML simples e estável
+- Reduzir efeitos visuais custosos
+
+## Imagens e assets
+
+- Usar arquivos otimizados
+- Não carregar imagens maiores do que o necessário
+- Priorizar imagens críticas da primeira dobra
+- Reduzir desperdício de fontes, ícones e assets
+
+## Evitar
+
+- Animações pesadas
+- Dependências que aumentem bundle sem ganho claro
+- Layout instável durante carregamento
+- Renderização client-only para conteúdo principal

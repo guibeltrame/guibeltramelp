@@ -1,0 +1,61 @@
+---
+alwaysApply: true
+---
+
+---
+
+description: Regras base do projeto para landing page em Nuxt 3, Vue 3 e Tailwind com foco em SEO, acessibilidade e Lighthouse
+globs:
+
+- "app/\*_/_.{vue,ts,js}"
+- "nuxt.config.ts"
+- "package.json"
+  alwaysApply: true
+
+---
+
+# Project Foundation
+
+Este projeto é uma landing page desenvolvida com:
+
+- Nuxt 3
+- Vue 3
+- Tailwind CSS
+
+## Objetivos prioritários
+
+Toda implementação, alteração ou refatoração deve priorizar, nesta ordem:
+
+1. SEO
+2. Acessibilidade
+3. Performance
+4. Alta nota no Lighthouse
+5. Clareza e simplicidade do código
+
+## Regras obrigatórias
+
+- O site deve ser inteiramente em português do Brasil
+- O código deve ser limpo, objetivo e fácil de manter
+- Toda solução deve evitar complexidade desnecessária
+- Não adicionar dependências sem necessidade real
+- Não criar abstrações excessivas
+- Não usar bibliotecas pesadas para resolver problemas simples
+- O conteúdo principal da página deve estar disponível no HTML renderizado
+- Toda decisão de UI deve considerar impacto em SEO, acessibilidade e performance
+
+## Estrutura esperada
+
+- `app/pages` para páginas
+- `app/components` para componentes reutilizáveis
+- `app/shared` para elementos compartilhados entre partes do projeto, quando fizer sentido
+- Tailwind como principal estratégia de estilização
+
+## Comportamento esperado do agente
+
+Ao sugerir ou implementar algo:
+
+- Preferir a solução mais simples que cumpra bem o objetivo
+- Explicar pouco e entregar melhor
+- Evitar código ornamental
+- Preservar semântica HTML
+- Manter consistência visual e estrutural

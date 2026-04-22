@@ -1,0 +1,58 @@
+---
+description: Regras de SEO técnico e on-page para landing page em Nuxt
+globs:
+  - "app/pages/**/*.vue"
+  - "app.vue"
+  - "nuxt.config.ts"
+alwaysApply: true
+---
+
+# SEO and Metadata
+
+## Objetivo
+
+Garantir máxima qualidade de SEO técnico e on-page.
+
+## Regras obrigatórias
+
+- Toda página deve ter:
+  - `title`
+  - `meta description`
+  - canonical quando aplicável
+  - Open Graph básico
+- Utilizar `useHead`, `useSeoMeta` ou abordagem equivalente do Nuxt
+- O conteúdo importante deve aparecer no HTML renderizado
+- O site deve estar em português do Brasil
+- Não duplicar títulos e descrições entre páginas distintas
+- Não usar textos genéricos em metadata
+
+## Estrutura semântica
+
+- Deve existir apenas um `h1` por página
+- A hierarquia de headings deve ser lógica
+- Não usar heading por aparência visual apenas
+- O hero deve apresentar proposta de valor clara e escaneável
+
+## Open Graph mínimo
+
+Sempre que fizer sentido, configurar:
+
+- `og:title`
+- `og:description`
+- `og:type`
+- `og:image`
+- `og:locale` = `pt_BR`
+
+## Boas práticas
+
+- Priorizar copy clara, objetiva e natural
+- Evitar keyword stuffing
+- Criar textos que façam sentido para usuário e buscador
+- Considerar JSON-LD quando houver benefício real e correspondência com o conteúdo
+
+## Evitar
+
+- Conteúdo essencial renderizado apenas no cliente
+- Metadata ausente
+- Hierarquia de headings quebrada
+- Descrições vagas como "Página inicial" ou "Bem-vindo"

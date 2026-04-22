@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   Inter — Self-hosted (latin subset, woff2)
+   ═══════════════════════════════════════════════════════════════ */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-latin-400.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-latin-500.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-latin-700.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-latin-800.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Design Tokens — Tailwind v4 @theme
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --color-dark: #0a0a0b;
+  --color-dark-surface: #141416;
+  --color-dark-muted: #1e1e22;
+
+  --color-light: #fafaf9;
+  --color-light-surface: #ffffff;
+  --color-light-muted: #e7e5e4;
+
+  --color-amber: #f59e0b;
+  --color-amber-light: #fbbf24;
+  --color-amber-dark: #d97706;
+
+  --color-text-on-dark: #f5f5f4;
+  --color-text-on-dark-muted: #a8a29e;
+  --color-text-on-light: #1c1917;
+  --color-text-on-light-muted: #57534e;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Base & Utilities
+   ═══════════════════════════════════════════════════════════════ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Scroll-reveal animation */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Stagger children */
+.stagger-children > .scroll-reveal:nth-child(1) {
+  transition-delay: 0ms;
+}
+.stagger-children > .scroll-reveal:nth-child(2) {
+  transition-delay: 100ms;
+}
+.stagger-children > .scroll-reveal:nth-child(3) {
+  transition-delay: 200ms;
+}
+.stagger-children > .scroll-reveal:nth-child(4) {
+  transition-delay: 300ms;
+}
+.stagger-children > .scroll-reveal:nth-child(5) {
+  transition-delay: 400ms;
+}
+.stagger-children > .scroll-reveal:nth-child(6) {
+  transition-delay: 500ms;
+}
+.stagger-children > .scroll-reveal:nth-child(7) {
+  transition-delay: 600ms;
+}
+.stagger-children > .scroll-reveal:nth-child(8) {
+  transition-delay: 700ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stagger-children > .scroll-reveal {
+    transition-delay: 0ms !important;
+  }
+}
+
+/* Focus visible global */
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
