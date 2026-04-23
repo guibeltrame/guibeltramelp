@@ -140,14 +140,14 @@ onBeforeUnmount(() => {
       <!-- Header -->
       <div class="mb-5 text-center sm:mb-6">
         <p
-          class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-white sm:text-sm"
         >
           Você já sabe tocar,
         </p>
         <h2
           class="mt-2 text-lg font-bold text-text-on-dark sm:text-2xl md:text-3xl"
         >
-          MAS NA HORA DE CRIAR OU IMPROVISAR SEMPRE
+          MAS NA HORA DE <span class="text-amber">CRIAR OU IMPROVISAR</span> SEMPRE
           <p>REPETE A MESMA COISA</p>
         </h2>
         <h3

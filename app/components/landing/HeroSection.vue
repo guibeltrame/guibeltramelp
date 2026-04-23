@@ -2,12 +2,12 @@
 const { containerRef } = useScrollReveal();
 
 const benefitItems = [
-  "Entender o que está tocando",
-  "Criar e improvisar seus próprios solos e não só copiar",
+  "Criar suas próprias frases",
+  "Improvisar sem ficar naquele sobe e desce de escala",
   "Aprender TEORIA MUSICAL desde o ZERO ao AVANÇADO",
-  "Liberdade para enxergar acordes e escalas em qualquer região do braço",
-  "Parar de tocar escalas como se fossem um exercício robótico",
-  "Criar já nas primeiras semanas",
+  "Enxergar acordes e escalas em qualquer região do braço",
+  "Entender a linguagem de outros guitarristas",
+  "Criar seu melhor solo já nas primeiras semanas",
 ] as const;
 </script>
 
@@ -64,8 +64,8 @@ const benefitItems = [
           id="hero-heading"
           class="scroll-reveal text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          Você já cansou de pegar a guitarra para estudar e
-          <span class="text-amber">improvisa sempre igual?</span>
+          Chegou a hora de você desenvolver sua
+          <span class="text-amber">identidade musical</span>
         </h1>
 
         <!-- Subheadline -->

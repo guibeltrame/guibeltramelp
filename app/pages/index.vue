@@ -38,7 +38,7 @@ useHead({
       :aria-hidden="isContentLocked || undefined"
     >
       <LandingStudentMethodOpinionsSection />
-      <LandingSocialProofBar />
+
       <LandingPainIdentification />
       <LandingProblemReframe />
       <LandingAuthoritySection />

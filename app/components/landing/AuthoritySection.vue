@@ -86,22 +86,23 @@ const credentials = [
             class="scroll-reveal mt-6 space-y-4 text-base leading-relaxed text-text-on-light-muted sm:text-lg"
           >
             <p>
-              Sou professor e criador da TRÍADE CRIATIVA. Durante anos,
+              Sou professor e criador da SISTEMA DE VISUALIZAÇÃO CRIATIVA. Durante anos,
               enfrentei exatamente os mesmos problemas que você. E tinha uma
-              sensação que sempre voltava: insegurança
+              sensação que sempre voltava: insegurança e que não tinha talento.
             </p>
             <p>
-              Eu ficava perdido no braço e meus improvisos soavam como
+              Eu ficava perdido no braço e meus improvisos sempre soavam como
               exercício, não como música.
             </p>
             <p>
-              A virada veio quando percebi que só estudava a ponta do iceberg
-              (shapes e teoria básica) e não a parte oculta, onde a música
-              realmente acontece. Comecei a analisar a ESTRUTURA por trás dos
-              solos que eu admirava. E entendi:
-              <strong class="text-text-on-light"
-                >estrutura para criar, não para decorar.</strong
-              >
+             Percebi que o problema não era técnica e muito menos conhecer alguma escala a mais,
+              e sim entender como exercitar a criatividade pra expandir meu vocabulário
+               e entender que todo solo precisa de estrutura. Não importa se você toca 5 ou
+                50 notas, e sim como você organiza todas elas pra que seu solo realmente
+                 soe como uma história.
+              <p><strong class="text-text-on-light">Com uma boa visualização e entendendo essas estruturas
+               você não depende de inspiração ou dom pra criar bons solos.</strong
+              ></p>
             </p>
           </div>
 

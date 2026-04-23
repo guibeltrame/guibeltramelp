@@ -69,14 +69,14 @@ const { containerRef } = useScrollReveal();
 
         <!-- Visual separator / quote -->
         <blockquote class="scroll-reveal mt-10 border-l-4 border-amber pl-6">
-          <p class="text-lg font-medium italic text-text-on-dark sm:text-xl">
-            "Mas e se eu te disse que tem uma forma de desenvolver sua própria
+          <p class="text-lg font-medium text-text-on-dark sm:text-xl">
+            Mas e se eu te disse que tem uma forma de desenvolver sua própria
             linguagem e não depender só da inspiração pra criar seus próprios
-            solos com um SISTEMA DE VISUALIZAÇÃO CRIATIVO?"
+            solos com um SISTEMA DE VISUALIZAÇÃO CRIATIVO?
           </p>
 
-          <p class="text-lg font-medium italic text-text-on-dark sm:text-xl">
-            Mas antes deixa eu me apresentar"
+          <p class="text-lg font-medium text-text-on-dark sm:text-xl">
+            Mas antes deixa eu me apresentar...
           </p>
         </blockquote>
       </div>

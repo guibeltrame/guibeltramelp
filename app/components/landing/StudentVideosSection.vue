@@ -70,14 +70,6 @@ const students = [
         class="scroll-reveal mt-10 flex justify-center sm:mt-12"
         aria-hidden="true"
       >
-        <div
-          class="inline-flex items-center gap-2 rounded-full border border-dark-muted bg-dark-surface/80 px-4 py-2 backdrop-blur-sm"
-        >
-          <Icon name="lucide:clapperboard" class="size-4 text-amber" />
-          <span class="text-xs font-medium text-text-on-dark-muted sm:text-sm">
-            Confira as transformações com o Ciência das 6 Cordas
-          </span>
-        </div>
       </div>
 
       <div

@@ -5,19 +5,19 @@ const benefits = [
   {
     icon: "lucide:gauge",
     title: "Plano Guiado e Prático",
-    description: "Aulas de 5 à 12 minutos para aplicação prática e rápida.",
+    description: "Vídeo aulas de 5 à 12 minutos para aplicação prática e rápida.",
   },
   {
     icon: "lucide:headphones",
     title: "Níveis de Suporte",
     description:
-      "Dúvidas diretamente na plataforma, Comunidade e um encontro ao vivo mensal.",
+      "Dúvidas diretamente na plataforma, Comunidade no WhatsApp e um calendário de encontros ao vivo.",
   },
   {
     icon: "lucide:infinity",
     title: "Acesso Imediato e Vitalício",
     description:
-      "Comprou uma vez, é seu para sempre e para melhorar sua experiência de aplicação, você tem acesso a todas futuras atualizações.",
+      "Comprou uma vez, é seu para sempre e você recebe acesso a todo material após a compra.",
   },
   {
     icon: "lucide:smartphone",

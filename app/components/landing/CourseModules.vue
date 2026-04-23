@@ -20,7 +20,7 @@ const modules = [
     number: "03",
     title: "Criando solos do ZERO",
     description:
-      "Você vai desenvolver a habilidade e entender a estrutura por trás da construção de solos, entendendo a ideia por trás desde os temas mais simples até mais complexos de uma maneira descomplicada.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada.",
     lessons: 10,
   },
   {
@@ -32,9 +32,9 @@ const modules = [
   },
   {
     number: "05",
-    title: "[EXTRA] Teoria Musical e Harmonia",
+    title: "[EXTRA] Teoria Musical + Harmonia",
     description:
-      "Teoria musical do zero ao avançado do papel para a prática com exemplos para entender absolutamente tudo o que está fazendo.",
+      "Teoria musical do zero ao avançado com uma apostila e módulo completo com exemplos práticos para quem nunca estudou nada sobre teoria musical.",
     lessons: 16,
   },
 ];
@@ -61,14 +61,14 @@ const modules = [
           id="modules-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Sua jornada do zero à
+          Aprender a criar e conquistar sua
           <span class="text-amber">liberdade criativa</span>
         </h2>
         <p
           class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          Uma escada de evolução para você criar solos tão bons e autênticos
-          como o dos seus ídolos.
+          Todos os conceitos e ferramentas essenciais ao longo desse processo
+para desenvolver sua musicalidade que tornaram sua forma de tocar única.
         </p>
       </div>
 

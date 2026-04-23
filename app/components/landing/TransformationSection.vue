@@ -10,11 +10,11 @@ const before = [
 ];
 
 const after = [
-  "Cria solos com personalidade e fluidez",
-  "Improvisa com confiança em qualquer contexto",
-  "Cada estudo se transforma em música real",
-  "Tem um som que é genuinamente seu",
-  "Segue um caminho claro com resultados reais",
+  "Cria solos com uma linguagem única",
+  "Improvisa com confiança",
+  "Não se perde mais no braço da guitarra",
+  "Não é mais o cara que só sabe copiar",
+  "Desenvolve sua própria criatividade",
 ];
 </script>
 
@@ -30,7 +30,7 @@ const after = [
         <p
           class="text-sm font-semibold uppercase tracking-widest text-amber-dark"
         >
-          A transformação
+          Ainda tem dúvidas se é para você?
         </p>
         <h2
           id="transformation-heading"

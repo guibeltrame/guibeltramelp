@@ -3,7 +3,7 @@ const { containerRef } = useScrollReveal();
 
 const bonuses = [
   {
-    image: "/images/prof.jpeg",
+    image: "/images/bonus1.jpg",
     title: "BÔNUS 1 | 10 Melodias Para Começar Seus Solos",
     description:
       "Um pack com 10 exemplos de caminhos melódicos diferentes para você praticar no improviso.",
@@ -12,7 +12,7 @@ const bonuses = [
       "Capa do material bônus: 10 melodias para começar seus solos na guitarra",
   },
   {
-    image: "/images/prof.jpeg",
+    image: "/images/bonus2.jpg",
     title: "BÔNUS 2 | Laboratório de Frases ROCK/BLUES",
     description:
       "Um guia com 10 frases de lendas da guitarra como David Gilmour, Slash, etc., explicadas e aplicadas no improviso para incrementar seu vocabulário.",
@@ -21,7 +21,7 @@ const bonuses = [
       "Capa do material bônus: laboratório de frases rock e blues para guitarra",
   },
   {
-    image: "/images/prof.jpeg",
+    image: "/images/bonus3.jpg",
     title: "BÔNUS 3 | Rotina Criativa",
     description:
       "Exemplo rápidos e práticos de como inserir treinos de criatividade na sua rotina de estudo, mesmo com pouco tempo.",

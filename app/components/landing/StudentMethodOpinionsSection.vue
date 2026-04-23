@@ -5,17 +5,17 @@ const { containerRef } = useScrollReveal();
 const studentOpinionImages = [
   {
     id: "opinion-1",
-    src: "/images/prof.jpeg",
+    src: "/images/depi1.jpeg",
     alt: "Depoimento visual de aluno 1 sobre o método (imagem placeholder)",
   },
   {
     id: "opinion-2",
-    src: "/images/prof.jpeg",
+    src: "/images/depi2.png",
     alt: "Depoimento visual de aluno 2 sobre o método (imagem placeholder)",
   },
   {
     id: "opinion-3",
-    src: "/images/prof.jpeg",
+    src: "/images/depi3.jpeg",
     alt: "Depoimento visual de aluno 3 sobre o método (imagem placeholder)",
   },
 ] as const;

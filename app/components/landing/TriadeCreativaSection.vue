@@ -29,21 +29,21 @@ const pillars = [
     key: "visualizacao",
     title: "Visualização",
     description:
-      "Construir um mapa de visualização do braço para ter liberdade, fluência e ideias infinitas.",
+      "Construir um mapa de visualização do braço para ter liberdade e fluência sem limitações. Padronizar visualização de escalas, acordes, arpejos.",
     icon: "lucide:eye",
   },
   {
     key: "criacao",
     title: "Criação",
     description:
-      "Construir linguagem e personalidade na guitarra de maneira consciente e criativa, sem depender de frases prontas.",
+      "Construir linguagem e entender estruturas de solos de maneira consciente e criativa, sem só depender de frases prontas. Sair somente do clichês e padrões óbvios.",
     icon: "lucide:sparkles",
   },
   {
     key: "analise",
     title: "Análise",
     description:
-      "Um olhar autocrítico e entender o que pode ser melhorado e repetir esse processo.",
+      "Desenvolver um olhar autocrítico para conseguir explorar uma mesma ideia de diversas maneiras, melhorar e repetir esse processo.",
     icon: "lucide:scan-search",
   },
 ] as const;
@@ -115,7 +115,7 @@ const { containerRef } = useScrollReveal();
         <p
           class="text-base font-bold uppercase tracking-wide text-text-on-dark sm:text-lg md:text-xl"
         >
-          Para criar solos do zero como esses abaixo:
+          Para criar solos do zero como esses:
         </p>
       </div>
 

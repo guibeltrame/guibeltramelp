@@ -20,7 +20,7 @@ const pains = [
   },
   {
     image: "/images/dor03.jpg",
-    title: "Muito conteúdo, pouca clareza",
+    title: "Muito conteúdo, pouco resultado",
     description:
       "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar pra criar e improvisar.",
     imageAlt:

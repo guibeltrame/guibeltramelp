@@ -6,7 +6,7 @@ const pillars = [
     number: "01",
     title: "Organização e mapa de melodias",
     description:
-      "Criar melodias e frases não pode depender só de um dia inspirado. Logo quem mapeia e organiza a visualização de escalas, consegue criar novos caminhos infinitos todos os dias.",
+      "Criar melodias e frases não pode depender só de um dia inspirado. Logo quem mapeia e organiza a visualização de escalas, consegue criar novos caminhos e construir mais opções para seu vocabulário.",
     icon: "lucide:layout-grid",
   },
   {
@@ -27,7 +27,7 @@ const pillars = [
     number: "04",
     title: "FEELING E CONSCIÊNCIA JUNTOS",
     description:
-      "Criar bons solos está mais ligado a como você CONSTRÓI SEU VOCABULÁRIO e ORGANIZA seus estudos pra transformar referências em música.",
+      "Criar bons solos está ligado a como você estrutura um solo, aumenta seu vocabulário, entende elementos como dinâmica e interpretação para dar vida a cada ideia nova e torna-la única.",
     icon: "lucide:target",
   },
 ];
