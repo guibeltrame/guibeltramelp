@@ -247,9 +247,7 @@ onBeforeUnmount(() => {
               aria-hidden="true"
             >
               <!-- Barras centradas no viewBox 24×24 (o path padrão do heroicons fica à esquerda) -->
-              <path
-                d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z"
-              />
+              <path d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z" />
             </svg>
             <svg
               v-else
