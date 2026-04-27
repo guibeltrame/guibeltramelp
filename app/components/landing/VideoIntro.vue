@@ -11,11 +11,28 @@ const emit = defineEmits<{
  * Tempo mínimo de vídeo (em segundos) para liberar a landing page.
  * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
  */
-const UNLOCK_TIME_SECONDS = 0;
+const UNLOCK_TIME_SECONDS = 40;
+
+/** Chave estável para progresso do gate do vídeo (por domínio). */
+const WATCH_PROGRESS_STORAGE_KEY = "guibeltramelp:video-intro:watch-progress";
+const WATCH_PROGRESS_STORAGE_VERSION = 1 as const;
+
+type WatchProgressPayload = {
+  v: typeof WATCH_PROGRESS_STORAGE_VERSION;
+  videoId: string;
+  maxWatchedSec: number;
+};
 
 const PLAYER_EL_ID = "yt-intro-player";
 const isPlayerReady = ref(false);
 const isReleased = ref(false);
+/** Pico na linha do tempo do vídeo nesta sessão (gate + persistência). */
+const peakWatchedSeconds = ref(0);
+let lastPersistedIntegerSecond = -1;
+/**
+ * Progresso salvo lido uma vez ao montar; usado para `seekTo` ao dar play e valor inicial do pico.
+ */
+let sessionStoredBaseline = 0;
 /** Usuário já tocou no CTA e o fluxo "começou" (overlay de bloqueio ativo). */
 const hasUserStarted = ref(false);
 /** Sincronizado com o YouTube: reproduzindo (inclui buffering) ou pausado. */
@@ -24,12 +41,61 @@ const isYtPlaying = ref(false);
 let player: {
   destroy(): void;
   getCurrentTime(): number;
+  seekTo(seconds: number, allowSeekAhead: boolean): void;
   playVideo(): void;
   pauseVideo(): void;
   unMute(): void;
   setVolume(volume: number): void;
 } | null = null;
 let timeCheckInterval: ReturnType<typeof setInterval> | null = null;
+
+function readStoredPeakSeconds(): number {
+  if (!import.meta.client) return 0;
+  try {
+    const raw = localStorage.getItem(WATCH_PROGRESS_STORAGE_KEY);
+    if (!raw) return 0;
+    const data = JSON.parse(raw) as Partial<WatchProgressPayload>;
+    if (
+      data.v !== WATCH_PROGRESS_STORAGE_VERSION ||
+      typeof data.maxWatchedSec !== "number" ||
+      !Number.isFinite(data.maxWatchedSec) ||
+      typeof data.videoId !== "string"
+    ) {
+      return 0;
+    }
+    if (data.videoId !== props.videoId) return 0;
+    return Math.max(0, data.maxWatchedSec);
+  } catch {
+    return 0;
+  }
+}
+
+function writeStoredProgress(peakSec: number): void {
+  if (!import.meta.client) return;
+  try {
+    const payload: WatchProgressPayload = {
+      v: WATCH_PROGRESS_STORAGE_VERSION,
+      videoId: props.videoId,
+      maxWatchedSec: Math.max(0, peakSec),
+    };
+    localStorage.setItem(WATCH_PROGRESS_STORAGE_KEY, JSON.stringify(payload));
+  } catch {
+    /* quota / private mode */
+  }
+}
+
+/** Evita escrita a cada tick: persiste quando o segundo inteiro do pico avança. */
+function persistProgressThrottled(peakSec: number): void {
+  const intSec = Math.floor(peakSec);
+  if (intSec <= lastPersistedIntegerSecond) return;
+  lastPersistedIntegerSecond = intSec;
+  writeStoredProgress(peakSec);
+}
+
+function flushPersistProgress(peakSec: number): void {
+  writeStoredProgress(peakSec);
+  lastPersistedIntegerSecond = Math.floor(peakSec);
+}
 
 function loadYouTubeAPI(): Promise<void> {
   return new Promise((resolve, reject) => {
@@ -101,7 +167,11 @@ function createPlayer() {
 function startTimeCheck() {
   timeCheckInterval = setInterval(() => {
     if (!player) return;
-    if (player.getCurrentTime() >= UNLOCK_TIME_SECONDS) {
+    const rawT = player.getCurrentTime();
+    const fromPlayer = Number.isFinite(rawT) ? Math.max(0, rawT) : 0;
+    peakWatchedSeconds.value = Math.max(peakWatchedSeconds.value, fromPlayer);
+    persistProgressThrottled(peakWatchedSeconds.value);
+    if (peakWatchedSeconds.value >= UNLOCK_TIME_SECONDS) {
       release();
     }
   }, 500);
@@ -116,6 +186,11 @@ function stopTimeCheck() {
 
 function release() {
   if (isReleased.value) return;
+  peakWatchedSeconds.value = Math.max(
+    peakWatchedSeconds.value,
+    UNLOCK_TIME_SECONDS,
+  );
+  flushPersistProgress(peakWatchedSeconds.value);
   isReleased.value = true;
   stopTimeCheck();
   document.documentElement.style.overflow = "";
@@ -124,6 +199,9 @@ function release() {
 
 function startPlayback() {
   if (!player || hasUserStarted.value) return;
+  if (sessionStoredBaseline > 0) {
+    player.seekTo(sessionStoredBaseline, true);
+  }
   player.unMute();
   player.setVolume(100);
   player.playVideo();
@@ -141,7 +219,15 @@ function togglePlayPause() {
 }
 
 onMounted(async () => {
-  document.documentElement.style.overflow = "hidden";
+  sessionStoredBaseline = readStoredPeakSeconds();
+  peakWatchedSeconds.value = sessionStoredBaseline;
+  lastPersistedIntegerSecond = Math.floor(sessionStoredBaseline);
+
+  if (sessionStoredBaseline >= UNLOCK_TIME_SECONDS) {
+    release();
+  } else {
+    document.documentElement.style.overflow = "hidden";
+  }
 
   try {
     await loadYouTubeAPI();
@@ -153,6 +239,9 @@ onMounted(async () => {
 
 onBeforeUnmount(() => {
   stopTimeCheck();
+  if (import.meta.client && !isReleased.value) {
+    flushPersistProgress(peakWatchedSeconds.value);
+  }
   player?.destroy();
   document.documentElement.style.overflow = "";
 });
@@ -247,9 +336,7 @@ onBeforeUnmount(() => {
               aria-hidden="true"
             >
               <!-- Barras centradas no viewBox 24×24 (o path padrão do heroicons fica à esquerda) -->
-              <path
-                d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z"
-              />
+              <path d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z" />
             </svg>
             <svg
               v-else
