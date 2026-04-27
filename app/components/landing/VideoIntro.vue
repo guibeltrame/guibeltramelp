@@ -126,7 +126,7 @@ onBeforeUnmount(() => {
 
 <template>
   <section
-    class="relative flex min-h-dvh items-center justify-center bg-dark py-10"
+    class="relative flex min-h-dvh items-center justify-center bg-dark px-4 py-6 sm:px-6 sm:py-8 lg:py-10"
     aria-label="Vídeo de apresentação do curso"
   >
     <!-- Ambient glow -->
@@ -136,34 +136,34 @@ onBeforeUnmount(() => {
       />
     </div>
 
-    <div class="relative z-10 w-full max-w-4xl px-4 sm:px-6">
+    <div class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center">
       <!-- Header -->
-      <div class="mb-5 text-center sm:mb-6">
+      <div class="mb-3 text-center sm:mb-5 lg:mb-6">
         <p
           class="text-xs font-semibold uppercase tracking-[0.2em] text-white sm:text-sm"
         >
           Você já sabe tocar,
         </p>
         <h2
-          class="mt-2 text-lg font-bold text-text-on-dark sm:text-2xl md:text-3xl"
+          class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
         >
           MAS NA HORA DE <span class="text-amber">CRIAR OU IMPROVISAR</span> SEMPRE
           <p>REPETE A MESMA COISA</p>
         </h2>
         <h3
-          class="mt-2 text-base font-bold text-text-on-dark sm:text-base md:text-lg"
+          class="mt-2 text-sm font-bold leading-snug text-text-on-dark sm:text-base md:text-lg"
         >
           Veja como ter ideias infinitas para criar frases e melodias sem
           depender de inspiração, independente do seu nível técnico e sem
           escalas complexas.
 
-          <p class="mt-8">Dê o play no vídeo abaixo:</p>
+          <p class="mt-3 sm:mt-6 lg:mt-8">Dê o play no vídeo abaixo:</p>
         </h3>
       </div>
 
       <!-- Video -->
       <div
-        class="video-wrapper relative aspect-video w-full overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
+        class="video-wrapper relative overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
       >
         <Transition name="spinner-fade">
           <div
@@ -251,6 +251,42 @@ onBeforeUnmount(() => {
 
 .spinner-fade-leave-to {
   opacity: 0;
+}
+
+/*
+ * Wrapper do player: preserva proporção 16:9 e garante que o vídeo
+ * caiba na altura útil do viewport, encolhendo proporcionalmente
+ * (largura E altura) quando a altura é o fator limitante.
+ *
+ * --reserved: espaço vertical aproximado consumido pelo header,
+ * paddings da section e respiro visual. Reduzido em telas curtas
+ * para que o vídeo permaneça com tamanho confortável.
+ */
+.video-wrapper {
+  --reserved: 17rem;
+  width: 100%;
+  max-width: min(100%, calc((100dvh - var(--reserved)) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .video-wrapper {
+    --reserved: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-wrapper {
+    --reserved: 22rem;
+  }
+}
+
+/* Fallback para navegadores sem suporte a 100dvh */
+@supports not (height: 100dvh) {
+  .video-wrapper {
+    max-width: min(100%, calc((100vh - var(--reserved)) * 16 / 9));
+  }
 }
 
 .video-wrapper :deep(iframe) {

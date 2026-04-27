@@ -95,14 +95,18 @@ const credentials = [
               exercício, não como música.
             </p>
             <p>
-             Percebi que o problema não era técnica e muito menos conhecer alguma escala a mais,
-              e sim entender como exercitar a criatividade pra expandir meu vocabulário
-               e entender que todo solo precisa de estrutura. Não importa se você toca 5 ou
-                50 notas, e sim como você organiza todas elas pra que seu solo realmente
-                 soe como uma história.
-              <p><strong class="text-text-on-light">Com uma boa visualização e entendendo essas estruturas
-               você não depende de inspiração ou dom pra criar bons solos.</strong
-              ></p>
+              Percebi que o problema não era técnica e muito menos conhecer
+              alguma escala a mais, e sim entender como exercitar a
+              criatividade pra expandir meu vocabulário e entender que todo
+              solo precisa de estrutura. Não importa se você toca 5 ou 50
+              notas, e sim como você organiza todas elas pra que seu solo
+              realmente soe como uma história.
+            </p>
+            <p>
+              <strong class="text-text-on-light">
+                Com uma boa visualização e entendendo essas estruturas você
+                não depende de inspiração ou dom pra criar bons solos.
+              </strong>
             </p>
           </div>
 

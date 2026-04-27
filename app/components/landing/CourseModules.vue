@@ -32,7 +32,7 @@ const modules = [
   },
   {
     number: "05",
-    title: "[EXTRA] Teoria Musical + Harmonia",
+    title: "Teoria Musical + Harmonia",
     description:
       "Teoria musical do zero ao avançado com uma apostila e módulo completo com exemplos práticos para quem nunca estudou nada sobre teoria musical.",
     lessons: 16,
@@ -68,7 +68,8 @@ const modules = [
           class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
           Todos os conceitos e ferramentas essenciais ao longo desse processo
-para desenvolver sua musicalidade que tornaram sua forma de tocar única.
+          para desenvolver sua musicalidade que tornaram sua forma de tocar
+          única.
         </p>
       </div>
 
@@ -90,7 +91,7 @@ para desenvolver sua musicalidade que tornaram sua forma de tocar única.
                 <span
                   class="inline-flex items-center rounded-full border border-amber/25 bg-dark-surface/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.22em] text-amber shadow-sm ring-1 ring-white/5 sm:px-3.5 sm:py-2 sm:text-xs"
                 >
-                  Etapa {{ index + 1 }}
+                  {{ index + 1 == 5 ? "EXTRA" : `Etapa ${index + 1}` }}
                 </span>
               </div>
 

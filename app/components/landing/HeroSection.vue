@@ -30,11 +30,11 @@ const benefitItems = [
     <div
       class="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
     >
-      <div class="stagger-children mx-auto max-w-3xl text-center">
+      <div class="stagger-children mx-auto max-w-5xl text-center">
         <!-- Marca: logotipo em composição premium -->
         <div class="scroll-reveal mb-8 flex justify-center">
           <div
-            class="relative rounded-2xl border border-amber/20 bg-dark-surface/70 px-7 py-6 shadow-[0_0_48px_-12px_rgba(245,158,11,0.28)] ring-1 ring-amber/10 backdrop-blur-sm sm:px-10 sm:py-7"
+            class="relative rounded-2xl border border-amber/20 bg-dark-surface/70 px-6 py-8 shadow-[0_0_48px_-12px_rgba(245,158,11,0.28)] ring-1 ring-amber/10 backdrop-blur-sm sm:px-10 sm:py-10 md:px-12 md:py-12"
           >
             <div
               class="pointer-events-none absolute inset-0 rounded-2xl bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(245,158,11,0.08),transparent)]"
@@ -62,7 +62,7 @@ const benefitItems = [
         <!-- Headline -->
         <h1
           id="hero-heading"
-          class="scroll-reveal text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6xl"
+          class="scroll-reveal mx-auto max-w-3xl text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6xl"
         >
           Chegou a hora de você desenvolver sua
           <span class="text-amber">identidade musical</span>
