@@ -11,7 +11,7 @@ const emit = defineEmits<{
  * Tempo mínimo de vídeo (em segundos) para liberar a landing page.
  * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
  */
-const UNLOCK_TIME_SECONDS = 40;
+const UNLOCK_TIME_SECONDS = 1180;
 
 /** Chave estável para progresso do gate do vídeo (por domínio). */
 const WATCH_PROGRESS_STORAGE_KEY = "guibeltramelp:video-intro:watch-progress";
