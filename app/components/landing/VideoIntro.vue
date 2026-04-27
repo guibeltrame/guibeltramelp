@@ -16,8 +16,15 @@ const UNLOCK_TIME_SECONDS = 0;
 const PLAYER_EL_ID = "yt-intro-player";
 const isPlayerReady = ref(false);
 const isReleased = ref(false);
+const isPlaying = ref(false);
 
-let player: { destroy(): void; getCurrentTime(): number } | null = null;
+let player: {
+  destroy(): void;
+  getCurrentTime(): number;
+  playVideo(): void;
+  unMute(): void;
+  setVolume(volume: number): void;
+} | null = null;
 let timeCheckInterval: ReturnType<typeof setInterval> | null = null;
 
 function loadYouTubeAPI(): Promise<void> {
@@ -55,15 +62,17 @@ function createPlayer() {
   player = new YT.Player(PLAYER_EL_ID, {
     videoId: props.videoId,
     playerVars: {
-      autoplay: 1,
+      controls: 0,
+      disablekb: 1,
+      fs: 0,
       rel: 0,
       modestbranding: 1,
       playsinline: 1,
+      iv_load_policy: 3,
     },
     events: {
       onReady: () => {
         isPlayerReady.value = true;
-        startTimeCheck();
       },
       onStateChange: (e: { data: number }) => {
         if (e.data === YT.PlayerState.ENDED) {
@@ -101,6 +110,15 @@ function release() {
   emit("released");
 }
 
+function startPlayback() {
+  if (!player || isPlaying.value) return;
+  player.unMute();
+  player.setVolume(100);
+  player.playVideo();
+  isPlaying.value = true;
+  startTimeCheck();
+}
+
 onMounted(async () => {
   document.documentElement.style.overflow = "hidden";
 
@@ -131,7 +149,9 @@ onBeforeUnmount(() => {
       />
     </div>
 
-    <div class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center">
+    <div
+      class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center"
+    >
       <!-- Header -->
       <div class="mb-3 text-center sm:mb-5 lg:mb-6">
         <p
@@ -142,7 +162,8 @@ onBeforeUnmount(() => {
         <h2
           class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
         >
-          MAS NA HORA DE <span class="text-amber">CRIAR OU IMPROVISAR</span> SEMPRE
+          MAS NA HORA DE
+          <span class="text-amber">CRIAR OU IMPROVISAR</span> SEMPRE
           <p>REPETE A MESMA COISA</p>
         </h2>
         <h3
@@ -172,6 +193,45 @@ onBeforeUnmount(() => {
         </Transition>
 
         <div :id="PLAYER_EL_ID" />
+
+        <!--
+          Overlay clique-bloqueador: impede que o usuário pause o vídeo
+          clicando no iframe ou interaja com o branding do YouTube.
+          Aparece somente após o vídeo iniciar; antes disso, o próprio
+          botão de play cobre toda a área do player.
+        -->
+        <div
+          v-if="isPlayerReady && isPlaying"
+          class="absolute inset-0 z-20"
+          aria-hidden="true"
+        />
+
+        <!-- Botão Play: cobre o player até o usuário iniciar o vídeo -->
+        <Transition name="play-cta-fade">
+          <button
+            v-if="isPlayerReady && !isPlaying"
+            type="button"
+            class="play-cta group absolute inset-0 z-30 flex items-center justify-center bg-black/45 backdrop-blur-[1px] transition-colors duration-200 hover:bg-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
+            aria-label="Iniciar o vídeo"
+            @click="startPlayback"
+          >
+            <span
+              class="pointer-events-none flex items-center gap-2.5 rounded-xl bg-amber px-5 py-3 text-sm font-bold uppercase tracking-wide text-dark shadow-xl shadow-black/40 transition-transform duration-200 group-hover:scale-[1.04] sm:gap-3 sm:px-6 sm:py-3.5 sm:text-base"
+            >
+              <svg
+                class="size-5 sm:size-6"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                />
+              </svg>
+              Toque para assistir o vídeo
+            </span>
+          </button>
+        </Transition>
       </div>
 
       <!-- CTA + Scroll indicator (aparecem após liberação) -->
@@ -247,6 +307,34 @@ onBeforeUnmount(() => {
 
 .spinner-fade-leave-to {
   opacity: 0;
+}
+
+/* Botão "Toque para assistir" — fade-out suave após o clique */
+.play-cta-fade-leave-active {
+  transition: opacity 0.35s ease-out;
+}
+
+.play-cta-fade-leave-to {
+  opacity: 0;
+}
+
+/* Pulso sutil no botão de play para chamar atenção */
+.play-cta > span {
+  animation: play-cta-pulse 2s ease-in-out infinite;
+}
+
+@keyframes play-cta-pulse {
+  0%,
+  100% {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 14px 32px -6px rgba(0, 0, 0, 0.55),
+      0 0 0 8px rgba(245, 158, 11, 0.18);
+    transform: scale(1.03);
+  }
 }
 
 /*
@@ -417,6 +505,11 @@ onBeforeUnmount(() => {
   .cta-glow.cta-pulse:hover::before,
   .cta-glow.cta-pulse:focus-visible::before {
     opacity: 1;
+  }
+
+  .play-cta > span {
+    animation: none;
+    transform: none;
   }
 }
 </style>
