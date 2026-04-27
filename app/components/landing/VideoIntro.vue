@@ -101,11 +101,6 @@ function release() {
   emit("released");
 }
 
-function scrollToContent() {
-  const hero = document.getElementById("hero-section");
-  hero?.scrollIntoView({ behavior: "smooth" });
-}
-
 onMounted(async () => {
   document.documentElement.style.overflow = "hidden";
 
@@ -186,9 +181,10 @@ onBeforeUnmount(() => {
           class="mt-6 flex flex-col items-center gap-5 sm:mt-8"
         >
           <a
-            href="#hero-section"
+            href="https://pay.hotmart.com/A96166604R?off=utywll39&checkoutMode=10&bid=1776467144426"
+            target="_blank"
+            rel="noopener noreferrer"
             class="cta-glow cta-pulse group relative inline-flex items-center gap-2.5 rounded-xl bg-amber px-8 py-4 text-base font-bold text-dark shadow-lg shadow-amber/25 transition-all duration-300 hover:bg-amber-light hover:shadow-xl hover:shadow-amber/35 focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark active:scale-[0.97] active:bg-amber-dark sm:px-10 sm:py-4.5 sm:text-lg"
-            @click.prevent="scrollToContent"
           >
             <span>ACESSO IMEDIATO E VITALÍCIO</span>
             <svg
