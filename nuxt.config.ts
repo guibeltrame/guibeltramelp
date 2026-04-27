@@ -24,6 +24,13 @@ export default defineNuxtConfig({
           crossorigin: "",
         },
       ],
+      noscript: [
+        {
+          innerHTML:
+            '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3566875966946377&ev=PageView&noscript=1" alt="" />',
+          tagPosition: "bodyClose",
+        },
+      ],
     },
   },
 
