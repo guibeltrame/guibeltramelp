@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "Quanto tempo leva para ver resultados?",
     answer:
-      "O resultado é variavel de acorde com o seu tempo de prática. O curso foi desenhado para gerar resultados rápidos e progressivos.",
+      "O resultado é variavel de acordo com o seu tempo de prática. O curso foi desenhado para gerar resultados rápidos e progressivos.",
   },
   {
     question: "O acesso é realmente vitalício?",

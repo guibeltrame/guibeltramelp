@@ -11,7 +11,7 @@ const emit = defineEmits<{
  * Tempo mínimo de vídeo (em segundos) para liberar a landing page.
  * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
  */
-const UNLOCK_TIME_SECONDS = 1;
+const UNLOCK_TIME_SECONDS = 0;
 
 const PLAYER_EL_ID = "yt-intro-player";
 const isPlayerReady = ref(false);
