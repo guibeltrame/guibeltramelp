@@ -108,29 +108,37 @@ const fourthPillar = pillars[3]!;
         </article>
 
         <article
-          class="scroll-reveal group rounded-2xl border border-dark-muted bg-dark-surface p-6 transition-all duration-300 hover:border-amber/20 md:col-span-12 md:p-8"
+          class="scroll-reveal group relative overflow-hidden rounded-2xl border border-amber/20 bg-gradient-to-b from-amber/5 to-dark-surface p-7 shadow-[0_22px_55px_-14px_rgba(0,0,0,0.5),inset_0_1px_0_0_rgba(255,255,255,0.04)] transition-[border-color,box-shadow,transform] duration-300 sm:p-8 motion-reduce:transition-none md:col-span-12 md:mx-auto md:max-w-4xl md:px-10 md:py-10 hover:border-amber/30 hover:shadow-[0_28px_65px_-12px_rgba(0,0,0,0.55),inset_0_1px_0_0_rgba(255,255,255,0.05)] sm:hover:-translate-y-0.5 motion-reduce:sm:hover:translate-y-0"
         >
-          <div class="flex items-center gap-4">
-            <div
-              class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-amber/10"
+          <div
+            class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_75%_50%_at_50%_0%,rgba(245,158,11,0.1),transparent_60%)]"
+            aria-hidden="true"
+          />
+          <div class="relative z-10">
+            <div class="flex items-center gap-4">
+              <div
+                class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-amber/10 ring-1 ring-amber/15"
+              >
+                <Icon
+                  :name="fourthPillar.icon"
+                  class="size-6 text-amber"
+                  aria-hidden="true"
+                />
+              </div>
+              <div>
+                <h3
+                  class="text-lg font-bold tracking-tight text-text-on-dark sm:text-balance md:text-xl"
+                >
+                  {{ fourthPillar.title }}
+                </h3>
+              </div>
+            </div>
+            <p
+              class="mt-4 text-sm leading-relaxed text-text-on-dark-muted sm:text-base"
             >
-              <Icon
-                :name="fourthPillar.icon"
-                class="size-6 text-amber"
-                aria-hidden="true"
-              />
-            </div>
-            <div>
-              <h3 class="text-lg font-bold text-text-on-dark">
-                {{ fourthPillar.title }}
-              </h3>
-            </div>
+              {{ fourthPillar.description }}
+            </p>
           </div>
-          <p
-            class="mt-4 text-sm leading-relaxed text-text-on-dark-muted sm:text-base"
-          >
-            {{ fourthPillar.description }}
-          </p>
         </article>
       </div>
     </div>

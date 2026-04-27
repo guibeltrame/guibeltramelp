@@ -92,7 +92,9 @@ const pains = [
           :key="pain.title"
           class="scroll-reveal group flex flex-col overflow-hidden rounded-2xl border border-dark-muted bg-dark-surface shadow-[0_20px_50px_-12px_rgba(0,0,0,0.45)] transition-[border-color,box-shadow,transform] duration-300 hover:border-amber/25 hover:shadow-[0_24px_60px_-12px_rgba(0,0,0,0.55)] motion-reduce:transition-none sm:hover:-translate-y-0.5 motion-reduce:sm:hover:translate-y-0"
         >
-          <div class="relative aspect-[4/3] overflow-hidden bg-dark-muted">
+          <div
+            class="relative aspect-[3/2] overflow-hidden bg-dark-muted lg:aspect-[8/5]"
+          >
             <img
               :src="pain.image"
               :alt="pain.imageAlt"

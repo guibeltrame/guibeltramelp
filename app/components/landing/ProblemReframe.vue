@@ -34,33 +34,71 @@ const { containerRef } = useScrollReveal();
 
         <!-- Body -->
         <div
-          class="scroll-reveal mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
+          class="stagger-children mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          <p>
+          <p class="scroll-reveal">
             Entendo que a maior parte já passou horas e horas estudando, assim
             como eu. É frustrante estudar mais conteúdos e sentir que não tem
             <strong class="text-text-on-dark">nenhum progresso.</strong>
           </p>
-          <p>
+          <p class="scroll-reveal">
             Surge a sensação de que você é só um
             <strong class="text-text-on-dark">guitarrista COMUM</strong> e não
             tem nenhum diferencial.
           </p>
 
-          <p>
+          <p class="scroll-reveal">
             Isso não é verdade, todo guitarrista tem
             <strong class="text-text-on-dark"
               >características únicas que podem ser desenvolvidas</strong
             >, mas você não pode depender só de inspiração.
           </p>
-          <p>A verdade é a seguinte:</p>
-          <p>
-            <strong class="text-text-on-dark"
-              >Escala ou técnica nenhuma que salve um solo mal
-              construído</strong
+          <p class="scroll-reveal">A verdade é a seguinte:</p>
+
+          <!-- Manifesto: frase central da reinterpretação -->
+          <article
+            class="scroll-reveal relative overflow-hidden rounded-2xl border border-amber/20 bg-dark-surface/90 p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] sm:p-8 md:p-10"
+            aria-labelledby="reframe-manifest-kicker"
+          >
+            <div
+              class="pointer-events-none absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-amber via-amber/70 to-amber/30"
+              aria-hidden="true"
+            />
+            <div
+              class="pointer-events-none absolute -right-12 top-1/2 size-48 -translate-y-1/2 rounded-full bg-amber/[0.07] blur-3xl"
+              aria-hidden="true"
+            />
+
+            <p
+              id="reframe-manifest-kicker"
+              class="relative pl-5 text-xs font-semibold uppercase tracking-[0.2em] text-amber/90 sm:text-sm"
             >
-          </p>
-          <p>
+              O pivô da história
+            </p>
+
+            <p
+              class="relative mt-5 max-w-prose font-bold leading-[1.15] tracking-tight text-text-on-dark"
+            >
+              <span
+                class="block text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
+              >
+                Escala ou técnica nenhuma salva
+              </span>
+              <span
+                class="mt-1 block text-2xl leading-[1.12] text-amber sm:mt-2 sm:text-3xl md:text-4xl md:leading-[1.1] lg:text-5xl lg:leading-[1.08]"
+              >
+                um solo
+                <span class="text-text-on-dark"> sem </span>
+                <span
+                  class="underline decoration-amber/45 decoration-2 underline-offset-[5px] sm:decoration-[3px] sm:underline-offset-[7px]"
+                >
+                  estrutura
+                </span>
+              </span>
+            </p>
+          </article>
+
+          <p class="scroll-reveal">
             Sem estrutura, seu improviso vira o famoso "sobe e desce" de escala.
             E seu improviso não pode depender apenas e um bom dia de
             <strong class="text-text-on-dark">inspiração.</strong>

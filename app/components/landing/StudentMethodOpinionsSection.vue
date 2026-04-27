@@ -47,7 +47,7 @@ const studentOpinionImages = [
       </header>
 
       <ul
-        class="stagger-children mt-10 grid list-none gap-6 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-7 lg:mt-14 lg:grid-cols-3 lg:gap-8"
+        class="stagger-children mt-10 grid list-none items-start gap-6 p-0 sm:mt-12 sm:grid-cols-2 sm:gap-7 lg:mt-14 lg:grid-cols-3 lg:gap-8"
       >
         <li
           v-for="item in studentOpinionImages"
@@ -55,21 +55,21 @@ const studentOpinionImages = [
           class="scroll-reveal mx-auto w-full max-w-md sm:max-w-none"
         >
           <figure
-            class="group relative overflow-hidden rounded-2xl border border-dark-muted bg-dark-surface shadow-[0_20px_50px_-12px_rgba(0,0,0,0.45)] ring-1 ring-white/5 transition-[border-color,box-shadow,transform] duration-300 ease-out will-change-transform hover:border-amber/20 hover:shadow-[0_24px_60px_-12px_rgba(0,0,0,0.55)] hover:ring-amber/15 motion-reduce:transition-none sm:hover:-translate-y-0.5 motion-reduce:sm:hover:translate-y-0"
+            class="group relative overflow-hidden rounded-2xl border border-dark-muted bg-dark-surface p-1.5 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.45)] ring-1 ring-white/5 transition-[border-color,box-shadow,transform] duration-300 ease-out will-change-transform hover:border-amber/20 hover:shadow-[0_24px_60px_-12px_rgba(0,0,0,0.55)] hover:ring-amber/15 motion-reduce:transition-none sm:p-2 sm:hover:-translate-y-0.5 motion-reduce:sm:hover:translate-y-0"
           >
             <div
-              class="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-dark/40 via-transparent to-transparent opacity-70"
-              aria-hidden="true"
-            />
-            <div class="relative aspect-[4/5] w-full overflow-hidden bg-dark-muted sm:aspect-[3/4]">
+              class="relative flex w-full items-center justify-center overflow-hidden rounded-lg bg-dark-muted/60 sm:rounded-xl"
+            >
+              <div
+                class="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-dark/40 via-transparent to-transparent opacity-70"
+                aria-hidden="true"
+              />
               <img
                 :src="item.src"
                 :alt="item.alt"
-                width="600"
-                height="800"
                 loading="lazy"
                 decoding="async"
-                class="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                class="relative z-0 block h-auto w-full max-w-full object-contain"
               />
             </div>
           </figure>
