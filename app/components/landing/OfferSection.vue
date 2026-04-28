@@ -81,7 +81,7 @@ const included = [
               R$ <span class="text-amber">197</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
-              ou <strong class="text-text-on-dark">12x de R$ 20,37</strong> no
+              ou <strong class="text-text-on-dark">12x de R$ 22,21</strong> no
               cartão
             </p>
           </div>
