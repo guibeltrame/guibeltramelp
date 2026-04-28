@@ -265,7 +265,7 @@ onBeforeUnmount(() => {
       <!-- Header -->
       <div class="mb-3 text-center sm:mb-5 lg:mb-6">
         <p
-          class="text-xs font-semibold uppercase tracking-[0.2em] text-white sm:text-sm"
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
         >
           Você já sabe tocar,
         </p>
@@ -273,13 +273,13 @@ onBeforeUnmount(() => {
           class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
         >
           MAS NA HORA DE
-          <span class="text-amber">CRIAR OU IMPROVISAR</span> SEMPRE
+          <span class="text-amber">IMPROVISAR</span> SEMPRE
           <p>REPETE A MESMA COISA</p>
         </h2>
         <h3
           class="mt-2 text-sm font-bold leading-snug text-text-on-dark sm:text-base md:text-lg"
         >
-          Veja como ter ideias infinitas para criar frases e melodias sem
+          Veja como ter ideias para criar frases e melodias sem
           depender de inspiração, independente do seu nível técnico e sem
           escalas complexas.
 

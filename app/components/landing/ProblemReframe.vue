@@ -53,7 +53,6 @@ const { containerRef } = useScrollReveal();
               >características únicas que podem ser desenvolvidas</strong
             >, mas você não pode depender só de inspiração.
           </p>
-          <p class="scroll-reveal">A verdade é a seguinte:</p>
 
           <!-- Manifesto: frase central da reinterpretação -->
           <article
@@ -73,7 +72,7 @@ const { containerRef } = useScrollReveal();
               id="reframe-manifest-kicker"
               class="relative pl-5 text-xs font-semibold uppercase tracking-[0.2em] text-amber/90 sm:text-sm"
             >
-              O pivô da história
+              A GRANDE VERDADE É:
             </p>
 
             <p
