@@ -1,0 +1,491 @@
+{
+  "site": {
+    "name": "Gui Beltrame - Crie solos do zero",
+    "ogLocale": "pt_BR"
+  },
+  "seo": {
+    "home": {
+      "title": "Gui Beltrame - Crie solos do zero",
+      "description": "Aprenda a criar solos com personalidade usando a técnica que você já tem. Método estruturado para guitarristas que querem sair do piloto automático e improvisar com liberdade.",
+      "ogTitle": "Gui Beltrame - Crie solos do zero",
+      "ogDescription": "Método estruturado para guitarristas que querem sair do piloto automático e improvisar com liberdade criativa."
+    }
+  },
+  "common": {
+    "languageSelector": {
+      "label": "Selecionar idioma",
+      "current": "Idioma atual: {language}",
+      "options": {
+        "pt-BR": "Português",
+        "en-US": "Inglês",
+        "es-ES": "Espanhol"
+      }
+    }
+  },
+  "videoIntro": {
+    "sectionLabel": "Vídeo de apresentação do curso",
+    "kicker": "Você já sabe tocar,",
+    "headline": {
+      "before": "MAS NA HORA DE",
+      "highlight": "CRIAR OU IMPROVISAR",
+      "after": "SEMPRE",
+      "line2": "REPETE A MESMA COISA"
+    },
+    "subheadline": "Veja como ter ideias infinitas para criar frases e melodias sem depender de inspiração, independente do seu nível técnico e sem escalas complexas.",
+    "playPrompt": "Dê o play no vídeo abaixo:",
+    "playerLoading": "Carregando vídeo",
+    "play": "Reproduzir o vídeo",
+    "pause": "Pausar o vídeo",
+    "tapToWatch": "Toque para assistir o vídeo",
+    "startVideo": "Iniciar o vídeo",
+    "ctaPrimary": "ACESSO IMEDIATO E VITALÍCIO",
+    "scrollHint": "Descubra o que preparamos para você"
+  },
+  "studentOpinions": {
+    "heading": "VEJA A OPINIÃO DE ALUNOS QUE PASSARAM PELO MÉTODO",
+    "imageAlt": {
+      "1": "Depoimento visual de aluno 1 sobre o método (imagem placeholder)",
+      "2": "Depoimento visual de aluno 2 sobre o método (imagem placeholder)",
+      "3": "Depoimento visual de aluno 3 sobre o método (imagem placeholder)"
+    }
+  },
+  "pain": {
+    "heading": {
+      "prefix": "Você já se encontrou em",
+      "highlight": "alguma dessas situações?"
+    },
+    "subheading": "Se pelo menos uma dessas frases faz sentido pra você, saiba que existe um caminho pra mudar isso.",
+    "items": {
+      "1": {
+        "title": "Seus solos sempre soam iguais",
+        "description": "Fica sobe e desce de escala, repete os mesmos clichês e sente que todo solo soa igual.",
+        "imageAlt": "Ilustra a sensação de ficar preso aos mesmos licks e frases na guitarra"
+      },
+      "2": {
+        "title": "Insegurança pra improvisar",
+        "description": "No palco ou no quarto fica inseguro para improvisar porque não domina o braço da guitarra.",
+        "imageAlt": "Representa o bloqueio criativo na hora de improvisar na guitarra"
+      },
+      "3": {
+        "title": "Muito conteúdo, pouco resultado",
+        "description": "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar pra criar e improvisar.",
+        "imageAlt": "Sugere a distância entre muito estudo e pouca aplicação na música na prática"
+      },
+      "4": {
+        "title": "Você se compara e se frustra",
+        "description": "Fica frustrado porque vê outros guitarristas criando com as mesmas escalas que você conhece e se pergunta: \"por que eu não consigo fazer isso?\"",
+        "imageAlt": "Traduz a frustração ao comparar o próprio som com outros guitarristas"
+      },
+      "5": {
+        "title": "Toca sem entender o que faz",
+        "description": "Só consegue tocar o que decorou e não entende nada do que está tocando, só reproduzindo no automático.",
+        "imageAlt": "Visualiza a falta de direção e de roteiro no estudo da guitarra"
+      },
+      "6": {
+        "title": "Sente que não evolui",
+        "description": "Estuda há um tempo, mas sente que estagnou e fica desanimado por não ver evolução e seus solos soando iguais toda vez.",
+        "imageAlt": "Remete à busca por um som próprio e identidade musical na guitarra"
+      }
+    }
+  },
+  "reframe": {
+    "eyebrow": "A verdade que ninguém te conta",
+    "heading": {
+      "prefix": "O problema",
+      "highlight": "nunca foi falta de talento."
+    },
+    "p1Before": "Entendo que a maior parte já passou horas e horas estudando, assim como eu. É frustrante estudar mais conteúdos e sentir que não tem",
+    "p1Strong": "nenhum progresso.",
+    "p2Before": "Surge a sensação de que você é só um",
+    "p2Strong": "guitarrista COMUM",
+    "p2After": "e não tem nenhum diferencial.",
+    "p3Before": "Isso não é verdade, todo guitarrista tem",
+    "p3Strong": "características únicas que podem ser desenvolvidas",
+    "p3After": ", mas você não pode depender só de inspiração.",
+    "p4": "A verdade é a seguinte:",
+    "manifestoKicker": "O pivô da história",
+    "manifestoLine1": "Escala ou técnica nenhuma salva",
+    "manifestoLine2Prefix": "um solo",
+    "manifestoLine2Mid": "sem",
+    "manifestoLine2Highlight": "estrutura",
+    "p5Before": "Sem estrutura, seu improviso vira o famoso \"sobe e desce\" de escala. E seu improviso não pode depender apenas e um bom dia de",
+    "p5Strong": "inspiração.",
+    "quote1": "Mas e se eu te disse que tem uma forma de desenvolver sua própria linguagem e não depender só da inspiração pra criar seus próprios solos com um SISTEMA DE VISUALIZAÇÃO CRIATIVO?",
+    "quote2": "Mas antes deixa eu me apresentar..."
+  },
+  "authority": {
+    "videoTitle": "Gravação em estúdio do álbum da banda autoral (Vimeo)",
+    "videoCaption": "Gravação em estúdio do álbum da minha banda autoral",
+    "eyebrow": "Quem vai te guiar",
+    "heading": "EU SOU O GUI BELTRAME",
+    "p1": "Sou professor e criador da SISTEMA DE VISUALIZAÇÃO CRIATIVA. Durante anos, enfrentei exatamente os mesmos problemas que você. E tinha uma sensação que sempre voltava: insegurança e que não tinha talento.",
+    "p2": "Eu ficava perdido no braço e meus improvisos sempre soavam como exercício, não como música.",
+    "p3": "Percebi que o problema não era técnica e muito menos conhecer alguma escala a mais, e sim entender como exercitar a criatividade pra expandir meu vocabulário e entender que todo solo precisa de estrutura. Não importa se você toca 5 ou 50 notas, e sim como você organiza todas elas pra que seu solo realmente soe como uma história.",
+    "p4Strong": "Com uma boa visualização e entendendo essas estruturas você não depende de inspiração ou dom pra criar bons solos.",
+    "credentials": {
+      "1": "Mais de 10 anos ensinando guitarra",
+      "2": "500+ alunos formados",
+      "3": "Método próprio com resultados comprovados"
+    }
+  },
+  "method": {
+    "eyebrow": "O que é o método?",
+    "heading": {
+      "prefix": "Por que sem o",
+      "highlight": "SISTEMA DE VISUALIÇÃO CRIATIVO",
+      "suffix": "você continua repetindo sempre as mesmas frases?"
+    },
+    "subheading": "Três princípios explicam:",
+    "pillarLabel": "Pilar {number}",
+    "pillars": {
+      "1": {
+        "title": "Organização e mapa de melodias",
+        "description": "Criar melodias e frases não pode depender só de um dia inspirado. Logo quem mapeia e organiza a visualização de escalas, consegue criar novos caminhos e construir mais opções para seu vocabulário."
+      },
+      "2": {
+        "title": "Sua técnica é somente um mensageiro",
+        "description": "Um solo com muitas ou poucas notas, pouco importa. Entender como amplificar aquilo que você realmente é bom e tocar as notas certas, no tempo e dinâmica correta é o que vai diferenciar o seu discurso."
+      },
+      "3": {
+        "title": "Todo solo precisa soar como uma história",
+        "description": "Histórias precisam de estrutura, logo um solo sem estrutura soa somente como um monte de notas jogadas fora. Quem entende as estruturas, cria e conecta ideias com mais facilidade."
+      },
+      "4": {
+        "title": "FEELING E CONSCIÊNCIA JUNTOS",
+        "description": "Criar bons solos está ligado a como você estrutura um solo, aumenta seu vocabulário, entende elementos como dinâmica e interpretação para dar vida a cada ideia nova e torna-la única."
+      }
+    }
+  },
+  "hero": {
+    "logoAlt": "Ciência das 6 Cordas — logotipo do curso de guitarra",
+    "socialBadgeBefore": "Mais de",
+    "socialBadgeStrong": "500 alunos",
+    "socialBadgeAfter": "já transformaram sua forma de tocar",
+    "headline": {
+      "prefix": "Chegou a hora de você desenvolver sua",
+      "highlight": "identidade musical"
+    },
+    "subheadlinePrefix": "Um plano guiado para te ensinar a criar solos que soam como gente grande, usando a técnica que você",
+    "subheadlineStrong": "já tem hoje",
+    "subheadlineSuffix": ". Sem depender de inspiração ou frases prontas.",
+    "valueKicker": "TRÊS ETAPAS PARA TRANSFORMAR A SUA FORMA DE CRIAR E IMPROVISAR",
+    "valueHeading": "O CIÊNCIA DAS 6 CORDAS É PARA VOCÊ QUE QUER...",
+    "benefits": {
+      "1": "Criar suas próprias frases",
+      "2": "Improvisar sem ficar naquele sobe e desce de escala",
+      "3": "Aprender TEORIA MUSICAL desde o ZERO ao AVANÇADO",
+      "4": "Enxergar acordes e escalas em qualquer região do braço",
+      "5": "Entender a linguagem de outros guitarristas",
+      "6": "Criar seu melhor solo já nas primeiras semanas"
+    }
+  },
+  "triade": {
+    "heading": {
+      "prefix": "A aprendizagem do Ciência das 6 Cordas é baseada no",
+      "highlight": "SISTEMA DE VISUALIZAÇÃO CRIATIVO"
+    },
+    "pillars": {
+      "visualizacao": {
+        "title": "Visualização",
+        "description": "Construir um mapa de visualização do braço para ter liberdade e fluência sem limitações. Padronizar visualização de escalas, acordes, arpejos."
+      },
+      "criacao": {
+        "title": "Criação",
+        "description": "Construir linguagem e entender estruturas de solos de maneira consciente e criativa, sem só depender de frases prontas. Sair somente do clichês e padrões óbvios."
+      },
+      "analise": {
+        "title": "Análise",
+        "description": "Desenvolver um olhar autocrítico para conseguir explorar uma mesma ideia de diversas maneiras, melhorar e repetir esse processo."
+      }
+    },
+    "demoLead": "Para criar solos do zero como esses:",
+    "videoTitles": {
+      "1": "Demonstração de solo em vídeo — exemplo de improviso (YouTube)",
+      "2": "Demonstração de solo em vídeo — segundo exemplo (YouTube)"
+    },
+    "footer": "Uma sequência lógica de aprendizagem muito mais rápida e efetiva para construir solos tão bons e autênticos como dos seus ídolos."
+  },
+  "testimonials": {
+    "eyebrow": "Resultados reais",
+    "heading": {
+      "prefix": "O que os alunos",
+      "highlight": "estão dizendo"
+    },
+    "trustBadge": "Depoimentos de alunos",
+    "helper": "Clique em qualquer depoimento para ampliar",
+    "lightbox": {
+      "openLabel": "Ver depoimento {index} de {total} em tela cheia",
+      "dialogLabel": "Depoimento {index} de {total} ampliado",
+      "close": "Fechar visualização",
+      "previous": "Depoimento anterior",
+      "next": "Próximo depoimento"
+    },
+    "imageAlt": {
+      "1": "Depoimento real de aluno via WhatsApp sobre o curso de guitarra",
+      "2": "Depoimento real de aluno via WhatsApp — relato de evolução no improviso",
+      "3": "Depoimento real de aluno via WhatsApp — feedback sobre o método",
+      "4": "Depoimento real de aluno via WhatsApp — experiência positiva com as aulas",
+      "5": "Depoimento real de aluno via WhatsApp — progresso na guitarra",
+      "6": "Depoimento real de aluno via WhatsApp — recomendação do curso",
+      "7": "Depoimento real de aluno via WhatsApp — resultado após aplicar o método",
+      "8": "Depoimento real de aluno via WhatsApp — satisfação com o conteúdo"
+    }
+  },
+  "studentVideos": {
+    "eyebrow": "Essa transformação, não aconteceu só comigo...",
+    "heading": {
+      "prefix": "A evolução que dá para",
+      "highlight": "ouvir e ver"
+    },
+    "subheading": "Esses são alunos que aplicaram o método.",
+    "studentBadge": "Aluno",
+    "items": {
+      "lorenzo": {
+        "name": "Lorenzo",
+        "role": "Criação de Solo do ZERO",
+        "blurb": "Ele não sabia nada de escalas e criou essa tema do zero seguindo o método.",
+        "iframeTitle": "Vídeo do aluno Lorenzo tocando guitarra — depoimento em vídeo do curso"
+      },
+      "jose": {
+        "name": "José",
+        "role": "Improvisando de forma livre",
+        "blurb": "Desenvolvendo improviso criando motivos e de forma livre pelo braço.",
+        "iframeTitle": "Vídeo do aluno José tocando guitarra — depoimento em vídeo do curso"
+      },
+      "caio": {
+        "name": "Caio",
+        "role": "Desenvolvimento de vocabulário",
+        "blurb": "Desenvolveu esse solo do zero criando suas próprias frases e aplicando licks dos seus ídolos.",
+        "iframeTitle": "Vídeo do aluno Caio tocando guitarra — depoimento em vídeo do curso"
+      }
+    }
+  },
+  "modules": {
+    "eyebrow": "Sua jornada passo a passo",
+    "heading": {
+      "prefix": "Aprender a criar e conquistar sua",
+      "highlight": "liberdade criativa"
+    },
+    "subheading": "Todos os conceitos e ferramentas essenciais ao longo desse processo para desenvolver sua musicalidade que tornaram sua forma de tocar única.",
+    "listLabel": "Etapas do curso",
+    "stageLabel": "Etapa {number}",
+    "extraLabel": "EXTRA",
+    "items": {
+      "1": {
+        "title": "Base sólida para solos",
+        "description": "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos."
+      },
+      "2": {
+        "title": "Construção de Vocabulário",
+        "description": "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação."
+      },
+      "3": {
+        "title": "Criando solos do ZERO",
+        "description": "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada."
+      },
+      "4": {
+        "title": "Improvisação",
+        "description": "Como trazer todas essas ferramentas de criação para a sua improvisação de forma natural e trabalhar o seu raciocínio."
+      },
+      "5": {
+        "title": "Teoria Musical + Harmonia",
+        "description": "Teoria musical do zero ao avançado com uma apostila e módulo completo com exemplos práticos para quem nunca estudou nada sobre teoria musical."
+      }
+    }
+  },
+  "benefits": {
+    "eyebrow": "Sua experiência dentro do Ciência das 6 Cordas",
+    "heading": {
+      "prefix": "Tudo o que você vai ter",
+      "highlight": "acesso"
+    },
+    "items": {
+      "1": {
+        "title": "Plano Guiado e Prático",
+        "description": "Vídeo aulas de 5 à 12 minutos para aplicação prática e rápida."
+      },
+      "2": {
+        "title": "Níveis de Suporte",
+        "description": "Dúvidas diretamente na plataforma, Comunidade no WhatsApp e um calendário de encontros ao vivo."
+      },
+      "3": {
+        "title": "Acesso Imediato e Vitalício",
+        "description": "Comprou uma vez, é seu para sempre e você recebe acesso a todo material após a compra."
+      },
+      "4": {
+        "title": "Assista de qualquer lugar",
+        "description": "Aulas disponíveis no celular, tablet ou computador. Acesso pela plataforma Hotmart ou Hotmart Sparkle (mobile)."
+      },
+      "5": {
+        "title": "Atualizações",
+        "description": "Preocupado sempre em melhorar a sua experiência de aplicação, você tem acesso a futuras atualizações sem custo nenhum."
+      },
+      "6": {
+        "title": "Material complementar",
+        "description": "Backing tracks, PDFs, tablaturas e exercícios práticos para acelerar seu progresso."
+      }
+    }
+  },
+  "bonus": {
+    "eyebrow": "Bônus exclusivos",
+    "heading": {
+      "prefix": "Além de todo o curso, para contribuir mais na",
+      "highlight": "sua evolução",
+      "suffix": "você recebe"
+    },
+    "freeBadge": "GRÁTIS",
+    "valueLabel": "Valor:",
+    "items": {
+      "1": {
+        "title": "BÔNUS 1 | 10 Melodias Para Começar Seus Solos",
+        "description": "Um pack com 10 exemplos de caminhos melódicos diferentes para você praticar no improviso.",
+        "value": "R$ 97",
+        "imageAlt": "Capa do material bônus: 10 melodias para começar seus solos na guitarra"
+      },
+      "2": {
+        "title": "BÔNUS 2 | Laboratório de Frases ROCK/BLUES",
+        "description": "Um guia com 10 frases de lendas da guitarra como David Gilmour, Slash, etc., explicadas e aplicadas no improviso para incrementar seu vocabulário.",
+        "value": "R$ 97",
+        "imageAlt": "Capa do material bônus: laboratório de frases rock e blues para guitarra"
+      },
+      "3": {
+        "title": "BÔNUS 3 | Rotina Criativa",
+        "description": "Exemplo rápidos e práticos de como inserir treinos de criatividade na sua rotina de estudo, mesmo com pouco tempo.",
+        "value": "R$ 97",
+        "imageAlt": "Capa do material bônus: rotina criativa para estudo de guitarra"
+      }
+    }
+  },
+  "timeValue": {
+    "headlinePrefix": "DÊ VALOR AO SEU",
+    "headlineHighlight": "TEMPO",
+    "leadPrefix": "Com sinceridade,",
+    "leadHighlight": "quanto você já tentou sozinho?",
+    "imageAlt": "Gui Beltrame tocando guitarra em apresentação ao vivo, com iluminação de palco",
+    "p1Prefix": "Quer ser o músico que",
+    "p1Strong1": "não posta um vídeo",
+    "p1Mid": "porque não tira um bom som, ou",
+    "p1Strong2": "o que se orgulha do que ouve?",
+    "p2": "Você prefere ser o cara que fica que fica inseguro tocando na GIG's ou o que sabe o que está fazendo?",
+    "p3Prefix": "Seja no quarto ou no palco:",
+    "p3Highlight": "qual deles você prefere ser?",
+    "anchor": {
+      "kicker": "QUANTO VOCÊ DARIA PRA MUDAR ISSO HOJE?",
+      "body": "Facilmente você pagaria mais de R$2000 por 1 ano de aulas particulares, mas hoje você não vai pagar nem perto disso!",
+      "link": "Ver a oferta abaixo"
+    },
+    "anchorAriaLabel": "Ancoragem de valor"
+  },
+  "offer": {
+    "eyebrow": "Oferta especial com CUPOM de R$200 de DESCONTO",
+    "heading": {
+      "prefix": "Comece sua transformação",
+      "highlight": "agora mesmo"
+    },
+    "includedTitle": "Tudo que está incluso:",
+    "included": {
+      "1": "Plano guiado de aplicação prática em vídeo aulas",
+      "2": "Acesso vitalício",
+      "3": "Material complementar (PDFs, tablaturas, backing tracks)",
+      "4": "Suporte para dúvidas",
+      "5": "Atualizações gratuitas de conteúdo",
+      "6": "Bônus: 10 Melodias Para Você Começar Seus Solos",
+      "7": "Bônus: Laboratório de Frases do ROCK/BLUES",
+      "8": "Bônus: Rotina Criativa"
+    },
+    "priceFromLabel": "De",
+    "priceFrom": "R$397",
+    "priceCurrency": "R$",
+    "priceValue": "197",
+    "installmentPrefix": "ou",
+    "installmentStrong": "12x de R$ 20,37",
+    "installmentSuffix": "no cartão",
+    "ctaLabel": "ACESSO IMEDIATO E VITALÍCIO",
+    "trust": {
+      "secure": "Compra segura",
+      "data": "Dados protegidos",
+      "guarantee": "7 dias de garantia"
+    }
+  },
+  "guarantee": {
+    "headingPrefix": "Garantia incondicional de",
+    "headingHighlight": "7 dias",
+    "p1Prefix": "Se dentro de 7 dias você sentir que o curso não é pra você, basta solicitar reembolso e devolvemos",
+    "p1Strong": "100% do seu investimento",
+    "p1Suffix": ". Sem perguntas, sem burocracia, sem letras miúdas.",
+    "p2": "O risco é todo nosso. Sua única missão é assistir às aulas, praticar e aplicar o conteúdo."
+  },
+  "transformation": {
+    "eyebrow": "Ainda tem dúvidas se é para você?",
+    "heading": {
+      "prefix": "De guitarrista travado para guitarrista que",
+      "highlight": "cria com liberdade"
+    },
+    "beforeTitle": "Antes do método",
+    "afterTitle": "Depois do método",
+    "before": {
+      "1": "Improvisa sempre com as mesmas frases",
+      "2": "Congela na hora de solar",
+      "3": "Estuda muito, mas não aplica nada",
+      "4": "Não tem identidade no instrumento",
+      "5": "Pula de método em método sem resultado"
+    },
+    "after": {
+      "1": "Cria solos com uma linguagem única",
+      "2": "Improvisa com confiança",
+      "3": "Não se perde mais no braço da guitarra",
+      "4": "Não é mais o cara que só sabe copiar",
+      "5": "Desenvolve sua própria criatividade"
+    }
+  },
+  "faq": {
+    "heading": "Perguntas frequentes",
+    "subheading": "Ainda tem alguma dúvida? Veja se a resposta está aqui.",
+    "items": {
+      "1": {
+        "question": "Preciso ter experiência prévia com guitarra?",
+        "answer": "Sim, o curso é voltado para guitarristas que já tocam o mínimo pelo menos. Você não precisa ser avançado, mas precisa saber o básico do instrumento — como posicionar os dedos, fazer acordes e tirar músicas."
+      },
+      "2": {
+        "question": "Quanto tempo leva para ver resultados?",
+        "answer": "O resultado é variavel de acordo com o seu tempo de prática. O curso foi desenhado para gerar resultados rápidos e progressivos."
+      },
+      "3": {
+        "question": "O acesso é realmente vitalício?",
+        "answer": "Sim. Uma vez que você compra, o acesso é seu para sempre. Sem mensalidades, sem renovações, sem prazo de expiração. Além disso, todas as atualizações futuras estão inclusas."
+      },
+      "4": {
+        "question": "Funciona para qualquer estilo musical?",
+        "answer": "O método é focado em desenvolver estrutura criativa, o que se aplica a qualquer estilo, mas é mais direcionado a linguagem rock, blues e fusion. Os princípios são universais e você os adapta ao seu contexto musical."
+      },
+      "5": {
+        "question": "E se eu não gostar do curso?",
+        "answer": "Você tem 7 dias de garantia incondicional. Se dentro desse período sentir que não é pra você, basta solicitar reembolso e devolvemos 100% do seu dinheiro. Sem perguntas."
+      },
+      "6": {
+        "question": "As aulas são ao vivo ou gravadas?",
+        "answer": "As aulas são gravadas em alta qualidade e ficam disponíveis 24/7 na plataforma. Você estuda no seu ritmo, revisa quantas vezes quiser e avança conforme sua rotina permite."
+      },
+      "7": {
+        "question": "Quero aprender técnicas como palhetada alternada e afins, é para mim?",
+        "answer": "Não, o curso é focado para quem quer começar no mundo da improvisação ou sente que está estagnado e quer desenvolver seu vocabulário. Não ensinamos fundamentos de técnica."
+      },
+      "8": {
+        "question": "Como funciona o suporte?",
+        "answer": "Você pode tirar dúvidas diretamente pela plataforma ou pela comunidade exclusiva de alunos. Nossa equipe responde em até 24 horas em dias úteis."
+      }
+    }
+  },
+  "finalCta": {
+    "heading": "Ficou com alguma dúvida?",
+    "subheading": "Pare de improvisar no piloto automático. Comece a criar música com identidade, liberdade e personalidade — usando a técnica que você já tem hoje.",
+    "ctaLabel": "CHAMAR NO WHATSAPP",
+    "guaranteeNote": "Garantia incondicional de 7 dias — risco zero pra você"
+  },
+  "footer": {
+    "ariaLabel": "Rodapé",
+    "linksLabel": "Links legais",
+    "contact": "Contato",
+    "copyright": "GT BELT - Copyright © {year} - Todos os direitos reservados."
+  }
+}

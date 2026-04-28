@@ -47,7 +47,7 @@ const headingId = computed(() => `student-card-${props.vimeoId}`);
         <span
           class="shrink-0 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-text-on-dark-muted"
         >
-          Aluno
+          {{ $t("studentVideos.studentBadge") }}
         </span>
       </div>
 

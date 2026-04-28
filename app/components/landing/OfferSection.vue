@@ -1,16 +1,10 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const included = [
-  "Plano guiado de aplicação prática em vídeo aulas",
-  "Acesso vitalício",
-  "Material complementar (PDFs, tablaturas, backing tracks)",
-  "Suporte para dúvidas",
-  "Atualizações gratuitas de conteúdo",
-  "Bônus: 10 Melodias Para Você Começar Seus Solos",
-  "Bônus: Laboratório de Frases do ROCK/BLUES",
-  "Bônus: Rotina Criativa",
-];
+const included = computed(() =>
+  ([1, 2, 3, 4, 5, 6, 7, 8] as const).map((n) => t(`offer.included.${n}`)),
+);
 </script>
 
 <template>
@@ -29,14 +23,14 @@ const included = [
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Oferta especial com CUPOM de R$200 de DESCONTO
+          {{ $t("offer.eyebrow") }}
         </p>
         <h2
           id="offer-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Comece sua transformação
-          <span class="text-amber">agora mesmo</span>
+          {{ $t("offer.heading.prefix") }}
+          <span class="text-amber">{{ $t("offer.heading.highlight") }}</span>
         </h2>
       </div>
 
@@ -47,7 +41,7 @@ const included = [
         >
           <!-- What's included -->
           <h3 class="text-lg font-bold text-text-on-dark">
-            Tudo que está incluso:
+            {{ $t("offer.includedTitle") }}
           </h3>
 
           <ul class="mt-6 space-y-3" role="list">
@@ -73,23 +67,30 @@ const included = [
           <!-- Price -->
           <div class="text-center">
             <p class="text-sm text-text-on-dark-muted">
-              De <span class="text-lg line-through">R$397</span>
+              {{ $t("offer.priceFromLabel") }}
+              <span class="text-lg line-through">{{
+                $t("offer.priceFrom")
+              }}</span>
             </p>
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"
             >
-              R$ <span class="text-amber">197</span>
+              {{ $t("offer.priceCurrency") }}
+              <span class="text-amber">{{ $t("offer.priceValue") }}</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
-              ou <strong class="text-text-on-dark">12x de R$ 20,37</strong> no
-              cartão
+              {{ $t("offer.installmentPrefix") }}
+              <strong class="text-text-on-dark">{{
+                $t("offer.installmentStrong")
+              }}</strong>
+              {{ $t("offer.installmentSuffix") }}
             </p>
           </div>
 
           <!-- CTA -->
           <div class="mt-8">
             <UiCtaButton
-              label="ACESSO IMEDIATO E VITALÍCIO"
+              :label="$t('offer.ctaLabel')"
               href="https://pay.hotmart.com/A96166604R?off=utywll39&checkoutMode=10&bid=1776467144426"
               target="_blank"
               variant="primary"
@@ -108,7 +109,7 @@ const included = [
                 class="size-4 text-amber"
                 aria-hidden="true"
               />
-              Compra segura
+              {{ $t("offer.trust.secure") }}
             </span>
             <span class="flex items-center gap-1.5">
               <Icon
@@ -116,7 +117,7 @@ const included = [
                 class="size-4 text-amber"
                 aria-hidden="true"
               />
-              Dados protegidos
+              {{ $t("offer.trust.data") }}
             </span>
             <span class="flex items-center gap-1.5">
               <Icon
@@ -124,7 +125,7 @@ const included = [
                 class="size-4 text-amber"
                 aria-hidden="true"
               />
-              7 dias de garantia
+              {{ $t("offer.trust.guarantee") }}
             </span>
           </div>
         </div>

@@ -1,54 +1,43 @@
 <script setup lang="ts">
+const { t } = useI18n();
+const { containerRef } = useScrollReveal();
+
 /**
  * Vídeos YouTube da seção — altere só aqui.
  * IDs: trecho após youtu.be/ ou youtube.com/watch?v=
- *
- * Links atuais (referência):
- * - https://youtu.be/oAkWkao9cy8
- * - https://youtu.be/hYuCfJtwvRk
  */
 const TRIADE_DEMO_YOUTUBE = [
-  {
-    videoId: "oAkWkao9cy8",
-    iframeTitle:
-      "Demonstração de solo em vídeo — exemplo de improviso (YouTube)",
-  },
-  {
-    videoId: "hYuCfJtwvRk",
-    iframeTitle: "Demonstração de solo em vídeo — segundo exemplo (YouTube)",
-  },
+  { videoId: "oAkWkao9cy8", titleKey: "1" as const },
+  { videoId: "hYuCfJtwvRk", titleKey: "2" as const },
 ] as const;
 
-const demoVideos = TRIADE_DEMO_YOUTUBE.map((v) => ({
-  id: v.videoId,
-  iframeTitle: v.iframeTitle,
-}));
+const demoVideos = computed(() =>
+  TRIADE_DEMO_YOUTUBE.map((v) => ({
+    id: v.videoId,
+    iframeTitle: t(`triade.videoTitles.${v.titleKey}`),
+  })),
+);
 
-const pillars = [
+const pillars = computed(() => [
   {
     key: "visualizacao",
-    title: "Visualização",
-    description:
-      "Construir um mapa de visualização do braço para ter liberdade e fluência sem limitações. Padronizar visualização de escalas, acordes, arpejos.",
+    title: t("triade.pillars.visualizacao.title"),
+    description: t("triade.pillars.visualizacao.description"),
     icon: "lucide:eye",
   },
   {
     key: "criacao",
-    title: "Criação",
-    description:
-      "Construir linguagem e entender estruturas de solos de maneira consciente e criativa, sem só depender de frases prontas. Sair somente do clichês e padrões óbvios.",
+    title: t("triade.pillars.criacao.title"),
+    description: t("triade.pillars.criacao.description"),
     icon: "lucide:sparkles",
   },
   {
     key: "analise",
-    title: "Análise",
-    description:
-      "Desenvolver um olhar autocrítico para conseguir explorar uma mesma ideia de diversas maneiras, melhorar e repetir esse processo.",
+    title: t("triade.pillars.analise.title"),
+    description: t("triade.pillars.analise.description"),
     icon: "lucide:scan-search",
   },
-] as const;
-
-const { containerRef } = useScrollReveal();
+]);
 </script>
 
 <template>
@@ -77,8 +66,8 @@ const { containerRef } = useScrollReveal();
           id="triade-heading"
           class="text-balance text-xl font-extrabold uppercase leading-tight tracking-[0.02em] text-text-on-dark sm:text-2xl md:text-3xl lg:text-4xl lg:leading-tight"
         >
-          A aprendizagem do Ciência das 6 Cordas é baseada no
-          <span class="text-amber">SISTEMA DE VISUALIZAÇÃO CRIATIVO</span>
+          {{ $t("triade.heading.prefix") }}
+          <span class="text-amber">{{ $t("triade.heading.highlight") }}</span>
         </h2>
       </header>
 
@@ -115,7 +104,7 @@ const { containerRef } = useScrollReveal();
         <p
           class="text-base font-bold uppercase tracking-wide text-text-on-dark sm:text-lg md:text-xl"
         >
-          Para criar solos do zero como esses:
+          {{ $t("triade.demoLead") }}
         </p>
       </div>
 
@@ -161,8 +150,7 @@ const { containerRef } = useScrollReveal();
         <p
           class="text-balance text-sm font-bold uppercase leading-relaxed tracking-[0.06em] text-text-on-dark sm:text-base md:text-lg"
         >
-          Uma sequência lógica de aprendizagem muito mais rápida e efetiva para
-          construir solos tão bons e autênticos como dos seus ídolos.
+          {{ $t("triade.footer") }}
         </p>
       </footer>
     </div>

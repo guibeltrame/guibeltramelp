@@ -1,35 +1,16 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const bonuses = [
-  {
-    image: "/images/bonus1.jpg",
-    title: "BÔNUS 1 | 10 Melodias Para Começar Seus Solos",
-    description:
-      "Um pack com 10 exemplos de caminhos melódicos diferentes para você praticar no improviso.",
-    value: "R$ 97",
-    imageAlt:
-      "Capa do material bônus: 10 melodias para começar seus solos na guitarra",
-  },
-  {
-    image: "/images/bonus2.jpg",
-    title: "BÔNUS 2 | Laboratório de Frases ROCK/BLUES",
-    description:
-      "Um guia com 10 frases de lendas da guitarra como David Gilmour, Slash, etc., explicadas e aplicadas no improviso para incrementar seu vocabulário.",
-    value: "R$ 97",
-    imageAlt:
-      "Capa do material bônus: laboratório de frases rock e blues para guitarra",
-  },
-  {
-    image: "/images/bonus3.jpg",
-    title: "BÔNUS 3 | Rotina Criativa",
-    description:
-      "Exemplo rápidos e práticos de como inserir treinos de criatividade na sua rotina de estudo, mesmo com pouco tempo.",
-    value: "R$ 97",
-    imageAlt:
-      "Capa do material bônus: rotina criativa para estudo de guitarra",
-  },
-];
+const bonuses = computed(() =>
+  ([1, 2, 3] as const).map((n) => ({
+    image: `/images/bonus${n}.jpg`,
+    title: t(`bonus.items.${n}.title`),
+    description: t(`bonus.items.${n}.description`),
+    value: t(`bonus.items.${n}.value`),
+    imageAlt: t(`bonus.items.${n}.imageAlt`),
+  })),
+);
 </script>
 
 <template>
@@ -51,14 +32,15 @@ const bonuses = [
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Bônus exclusivos
+          {{ $t("bonus.eyebrow") }}
         </p>
         <h2
           id="bonus-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Além de todo o curso, para contribuir mais na
-          <span class="text-amber">sua evolução</span> você recebe
+          {{ $t("bonus.heading.prefix") }}
+          <span class="text-amber">{{ $t("bonus.heading.highlight") }}</span>
+          {{ $t("bonus.heading.suffix") }}
         </h2>
       </div>
 
@@ -75,7 +57,7 @@ const bonuses = [
             <span
               class="absolute right-4 top-4 z-10 rounded-full bg-amber px-3 py-1 text-xs font-bold text-dark shadow-sm"
             >
-              GRÁTIS
+              {{ $t("bonus.freeBadge") }}
             </span>
 
             <div
@@ -111,7 +93,7 @@ const bonuses = [
             </p>
 
             <p class="mt-6 border-t border-dark-muted pt-5 text-sm text-text-on-dark-muted">
-              Valor:
+              {{ $t("bonus.valueLabel") }}
               <span class="text-text-on-dark line-through">{{
                 bonus.value
               }}</span>

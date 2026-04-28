@@ -1,14 +1,15 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const benefitItems = [
-  "Criar suas próprias frases",
-  "Improvisar sem ficar naquele sobe e desce de escala",
-  "Aprender TEORIA MUSICAL desde o ZERO ao AVANÇADO",
-  "Enxergar acordes e escalas em qualquer região do braço",
-  "Entender a linguagem de outros guitarristas",
-  "Criar seu melhor solo já nas primeiras semanas",
-] as const;
+const benefitItems = computed(() => [
+  t("hero.benefits.1"),
+  t("hero.benefits.2"),
+  t("hero.benefits.3"),
+  t("hero.benefits.4"),
+  t("hero.benefits.5"),
+  t("hero.benefits.6"),
+]);
 </script>
 
 <template>
@@ -53,10 +54,13 @@ const benefitItems = [
             class="size-4 text-amber"
             aria-hidden="true"
           />
-          <span
-            >Mais de <strong class="text-text-on-dark">500 alunos</strong> já
-            transformaram sua forma de tocar</span
-          >
+          <span>
+            {{ $t("hero.socialBadgeBefore") }}
+            <strong class="text-text-on-dark">{{
+              $t("hero.socialBadgeStrong")
+            }}</strong>
+            {{ $t("hero.socialBadgeAfter") }}
+          </span>
         </div>
 
         <!-- Headline -->
@@ -64,18 +68,19 @@ const benefitItems = [
           id="hero-heading"
           class="scroll-reveal mx-auto max-w-3xl text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6xl"
         >
-          Chegou a hora de você desenvolver sua
-          <span class="text-amber">identidade musical</span>
+          {{ $t("hero.headline.prefix") }}
+          <span class="text-amber">{{ $t("hero.headline.highlight") }}</span>
         </h1>
 
         <!-- Subheadline -->
         <p
           class="scroll-reveal mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted sm:text-xl"
         >
-          Um plano guiado para te ensinar a criar solos que soam como gente
-          grande, usando a técnica que você
-          <strong class="text-text-on-dark">já tem hoje</strong>. Sem depender
-          de inspiração ou frases prontas.
+          {{ $t("hero.subheadlinePrefix") }}
+          <strong class="text-text-on-dark">{{
+            $t("hero.subheadlineStrong")
+          }}</strong
+          >{{ $t("hero.subheadlineSuffix") }}
         </p>
 
         <!-- Bloco de valor: selo, apoio e benefícios -->
@@ -100,14 +105,14 @@ const benefitItems = [
               <p
                 class="mx-auto inline-block rounded-full border border-amber/25 bg-amber/5 px-4 py-2 text-[0.65rem] font-semibold uppercase leading-snug tracking-[0.2em] text-amber sm:px-5 sm:text-xs sm:tracking-[0.22em]"
               >
-                TRÊS ETAPAS PARA TRANSFORMAR A SUA FORMA DE CRIAR E IMPROVISAR
+                {{ $t("hero.valueKicker") }}
               </p>
 
               <h2
                 id="hero-value-subheading"
                 class="mx-auto mt-6 max-w-3xl text-balance text-lg font-bold leading-snug tracking-tight text-text-on-dark sm:text-xl md:text-2xl"
               >
-                O CIÊNCIA DAS 6 CORDAS É PARA VOCÊ QUE QUER...
+                {{ $t("hero.valueHeading") }}
               </h2>
             </div>
 

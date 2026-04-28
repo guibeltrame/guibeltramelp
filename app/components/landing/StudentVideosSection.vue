@@ -1,35 +1,22 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const students = [
-  {
-    name: "Lorenzo",
-    role: "Criação de Solo do ZERO",
-    vimeoId: "1116623847",
-    blurb:
-      "Ele não sabia nada de escalas e criou essa tema do zero seguindo o método.",
-    iframeTitle:
-      "Vídeo do aluno Lorenzo tocando guitarra — depoimento em vídeo do curso",
-  },
-  {
-    name: "José",
-    role: "Improvisando de forma livre",
-    vimeoId: "1168210484",
-    blurb:
-      "Desenvolvendo improviso criando motivos e de forma livre pelo braço.",
-    iframeTitle:
-      "Vídeo do aluno José tocando guitarra — depoimento em vídeo do curso",
-  },
-  {
-    name: "Caio",
-    role: "Desenvolvimento de vocabulário",
-    vimeoId: "1074795813",
-    blurb:
-      "Desenvolveu esse solo do zero criando suas próprias frases e aplicando licks dos seus ídolos.",
-    iframeTitle:
-      "Vídeo do aluno Caio tocando guitarra — depoimento em vídeo do curso",
-  },
-] as const;
+const students = computed(() =>
+  (
+    [
+      { key: "lorenzo", vimeoId: "1116623847" },
+      { key: "jose", vimeoId: "1168210484" },
+      { key: "caio", vimeoId: "1074795813" },
+    ] as const
+  ).map((s) => ({
+    name: t(`studentVideos.items.${s.key}.name`),
+    role: t(`studentVideos.items.${s.key}.role`),
+    blurb: t(`studentVideos.items.${s.key}.blurb`),
+    iframeTitle: t(`studentVideos.items.${s.key}.iframeTitle`),
+    vimeoId: s.vimeoId,
+  })),
+);
 </script>
 
 <template>
@@ -50,19 +37,21 @@ const students = [
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <header class="scroll-reveal mx-auto max-w-3xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Essa transformação, não aconteceu só comigo...
+          {{ $t("studentVideos.eyebrow") }}
         </p>
         <h2
           id="student-videos-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          A evolução que dá para
-          <span class="text-amber">ouvir e ver</span>
+          {{ $t("studentVideos.heading.prefix") }}
+          <span class="text-amber">{{
+            $t("studentVideos.heading.highlight")
+          }}</span>
         </h2>
         <p
           class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          Esses são alunos que aplicaram o método.
+          {{ $t("studentVideos.subheading") }}
         </p>
       </header>
 

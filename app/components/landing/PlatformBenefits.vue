@@ -1,43 +1,23 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const benefits = [
-  {
-    icon: "lucide:gauge",
-    title: "Plano Guiado e Prático",
-    description: "Vídeo aulas de 5 à 12 minutos para aplicação prática e rápida.",
-  },
-  {
-    icon: "lucide:headphones",
-    title: "Níveis de Suporte",
-    description:
-      "Dúvidas diretamente na plataforma, Comunidade no WhatsApp e um calendário de encontros ao vivo.",
-  },
-  {
-    icon: "lucide:infinity",
-    title: "Acesso Imediato e Vitalício",
-    description:
-      "Comprou uma vez, é seu para sempre e você recebe acesso a todo material após a compra.",
-  },
-  {
-    icon: "lucide:smartphone",
-    title: "Assista de qualquer lugar",
-    description:
-      "Aulas disponíveis no celular, tablet ou computador. Acesso pela plataforma Hotmart ou Hotmart Sparkle (mobile).",
-  },
-  {
-    icon: "lucide:refresh-cw",
-    title: "Atualizações",
-    description:
-      "Preocupado sempre em melhorar a sua experiência de aplicação, você tem acesso a futuras atualizações sem custo nenhum.",
-  },
-  {
-    icon: "lucide:download",
-    title: "Material complementar",
-    description:
-      "Backing tracks, PDFs, tablaturas e exercícios práticos para acelerar seu progresso.",
-  },
-];
+const ICONS = [
+  "lucide:gauge",
+  "lucide:headphones",
+  "lucide:infinity",
+  "lucide:smartphone",
+  "lucide:refresh-cw",
+  "lucide:download",
+] as const;
+
+const benefits = computed(() =>
+  ([1, 2, 3, 4, 5, 6] as const).map((n, i) => ({
+    icon: ICONS[i]!,
+    title: t(`benefits.items.${n}.title`),
+    description: t(`benefits.items.${n}.description`),
+  })),
+);
 </script>
 
 <template>
@@ -52,14 +32,16 @@ const benefits = [
         <p
           class="text-sm font-semibold uppercase tracking-widest text-amber-dark"
         >
-          Sua experiência dentro do Ciência das 6 Cordas
+          {{ $t("benefits.eyebrow") }}
         </p>
         <h2
           id="benefits-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-light sm:text-3xl md:text-4xl"
         >
-          Tudo o que você vai ter
-          <span class="text-amber-dark">acesso</span>
+          {{ $t("benefits.heading.prefix") }}
+          <span class="text-amber-dark">{{
+            $t("benefits.heading.highlight")
+          }}</span>
         </h2>
       </div>
 

@@ -1,0 +1,491 @@
+{
+  "site": {
+    "name": "Gui Beltrame - Build solos from scratch",
+    "ogLocale": "en_US"
+  },
+  "seo": {
+    "home": {
+      "title": "Gui Beltrame - Build solos from scratch",
+      "description": "Learn to build solos with personality using the technique you already have. A structured method for guitar players who want to break out of autopilot and improvise with freedom.",
+      "ogTitle": "Gui Beltrame - Build solos from scratch",
+      "ogDescription": "A structured method for guitar players who want to break out of autopilot and improvise with creative freedom."
+    }
+  },
+  "common": {
+    "languageSelector": {
+      "label": "Select language",
+      "current": "Current language: {language}",
+      "options": {
+        "pt-BR": "Portuguese",
+        "en-US": "English",
+        "es-ES": "Spanish"
+      }
+    }
+  },
+  "videoIntro": {
+    "sectionLabel": "Course intro video",
+    "kicker": "You already know how to play,",
+    "headline": {
+      "before": "BUT WHEN IT'S TIME TO",
+      "highlight": "CREATE OR IMPROVISE",
+      "after": "YOU ALWAYS",
+      "line2": "REPEAT THE SAME THING"
+    },
+    "subheadline": "See how to have endless ideas to build phrases and melodies without depending on inspiration — no matter your technical level and without any complex scales.",
+    "playPrompt": "Hit play on the video below:",
+    "playerLoading": "Loading video",
+    "play": "Play the video",
+    "pause": "Pause the video",
+    "tapToWatch": "Tap to watch the video",
+    "startVideo": "Start the video",
+    "ctaPrimary": "INSTANT, LIFETIME ACCESS",
+    "scrollHint": "See what we've prepared for you"
+  },
+  "studentOpinions": {
+    "heading": "SEE WHAT STUDENTS WHO WENT THROUGH THE METHOD HAVE TO SAY",
+    "imageAlt": {
+      "1": "Student 1's visual testimonial about the method (placeholder image)",
+      "2": "Student 2's visual testimonial about the method (placeholder image)",
+      "3": "Student 3's visual testimonial about the method (placeholder image)"
+    }
+  },
+  "pain": {
+    "heading": {
+      "prefix": "Have you ever found yourself in",
+      "highlight": "any of these situations?"
+    },
+    "subheading": "If at least one of these lines hits home, know that there's a way to change it.",
+    "items": {
+      "1": {
+        "title": "Your solos always sound the same",
+        "description": "You go up and down the same scale, repeat the same clichés, and feel like every solo sounds identical.",
+        "imageAlt": "Illustrates the feeling of being stuck on the same licks and phrases on guitar"
+      },
+      "2": {
+        "title": "Insecurity when improvising",
+        "description": "On stage or in your bedroom, you feel insecure improvising because you don't own the fretboard.",
+        "imageAlt": "Represents the creative block when it's time to improvise on guitar"
+      },
+      "3": {
+        "title": "Tons of content, little progress",
+        "description": "You get lost in the flood of online content and don't even know where to start to create and improvise.",
+        "imageAlt": "Suggests the gap between heavy studying and little real-world music application"
+      },
+      "4": {
+        "title": "You compare yourself and get frustrated",
+        "description": "You get frustrated watching other guitarists create with the same scales you know and ask yourself: \"why can't I do that?\"",
+        "imageAlt": "Captures the frustration of comparing your own sound to other guitar players"
+      },
+      "5": {
+        "title": "You play without understanding what you do",
+        "description": "You can only play what you've memorized and don't truly understand any of it — you're just running on autopilot.",
+        "imageAlt": "Visualizes the lack of direction and roadmap when studying guitar"
+      },
+      "6": {
+        "title": "You feel stuck",
+        "description": "You've been studying for a while, but feel stagnant and discouraged because you don't see progress and your solos keep sounding the same.",
+        "imageAlt": "Speaks to the search for a personal sound and musical identity on guitar"
+      }
+    }
+  },
+  "reframe": {
+    "eyebrow": "The truth nobody tells you",
+    "heading": {
+      "prefix": "The problem",
+      "highlight": "was never a lack of talent."
+    },
+    "p1Before": "I get it — most people have already spent hours and hours studying, just like I did. It's frustrating to keep stacking up content and feel like there's",
+    "p1Strong": "no progress at all.",
+    "p2Before": "And then comes the feeling that you're just an",
+    "p2Strong": "ORDINARY guitarist",
+    "p2After": "with nothing that sets you apart.",
+    "p3Before": "That's not true. Every guitar player has",
+    "p3Strong": "unique traits that can be developed",
+    "p3After": " — but you can't rely on inspiration alone.",
+    "p4": "Here's the truth:",
+    "manifestoKicker": "The story's turning point",
+    "manifestoLine1": "No scale or technique can save",
+    "manifestoLine2Prefix": "a solo",
+    "manifestoLine2Mid": "with no",
+    "manifestoLine2Highlight": "structure",
+    "p5Before": "Without structure, your improvisation turns into the classic \"up-and-down\" scale run. And your improvising can't depend solely on a good day of",
+    "p5Strong": "inspiration.",
+    "quote1": "But what if I told you there's a way to develop your own language and not depend only on inspiration to create your own solos — using a CREATIVE VISUALIZATION SYSTEM?",
+    "quote2": "But first, let me introduce myself..."
+  },
+  "authority": {
+    "videoTitle": "Studio recording of the original band's album (Vimeo)",
+    "videoCaption": "Studio recording of my original band's album",
+    "eyebrow": "Who's going to guide you",
+    "heading": "I'M GUI BELTRAME",
+    "p1": "I'm a teacher and the creator of the CREATIVE VISUALIZATION SYSTEM. For years, I dealt with the exact same problems you're dealing with. And there was a feeling that kept coming back: insecurity, and the sense that I had no talent.",
+    "p2": "I'd get lost on the fretboard and my improvising always sounded like an exercise — not like music.",
+    "p3": "I realized the problem wasn't technique, much less learning yet another scale. It was understanding how to train creativity to expand my vocabulary, and seeing that every solo needs structure. It doesn't matter if you play 5 notes or 50 — what matters is how you organize them so your solo actually sounds like a story.",
+    "p4Strong": "With strong visualization and an understanding of these structures, you no longer need inspiration or talent to create great solos.",
+    "credentials": {
+      "1": "10+ years teaching guitar",
+      "2": "500+ students trained",
+      "3": "Proprietary method with proven results"
+    }
+  },
+  "method": {
+    "eyebrow": "What's the method?",
+    "heading": {
+      "prefix": "Why, without the",
+      "highlight": "CREATIVE VISUALIZATION SYSTEM",
+      "suffix": "do you keep repeating the same phrases over and over?"
+    },
+    "subheading": "Three principles explain it:",
+    "pillarLabel": "Pillar {number}",
+    "pillars": {
+      "1": {
+        "title": "Organization and a melody map",
+        "description": "Creating melodies and phrases can't depend on having an inspired day. Whoever maps and organizes their visualization of scales unlocks new pathways and builds more options for their vocabulary."
+      },
+      "2": {
+        "title": "Your technique is just a messenger",
+        "description": "A solo with many or few notes doesn't really matter. Knowing how to amplify what you're truly good at and play the right notes — at the right time, with the right dynamics — is what sets your voice apart."
+      },
+      "3": {
+        "title": "Every solo needs to sound like a story",
+        "description": "Stories need structure, so a solo without structure just sounds like a pile of random notes. Whoever understands the structures can build and connect ideas with much more ease."
+      },
+      "4": {
+        "title": "FEELING AND AWARENESS, TOGETHER",
+        "description": "Building great solos comes down to how you structure them, expand your vocabulary, and understand elements like dynamics and interpretation to bring every new idea to life and make it unique."
+      }
+    }
+  },
+  "hero": {
+    "logoAlt": "Ciência das 6 Cordas — guitar course logo",
+    "socialBadgeBefore": "More than",
+    "socialBadgeStrong": "500 students",
+    "socialBadgeAfter": "have already transformed the way they play",
+    "headline": {
+      "prefix": "It's time to develop your",
+      "highlight": "musical identity"
+    },
+    "subheadlinePrefix": "A guided plan to teach you how to build solos that sound truly pro, using the technique you",
+    "subheadlineStrong": "already have today",
+    "subheadlineSuffix": ". No relying on inspiration or canned licks.",
+    "valueKicker": "THREE STEPS TO TRANSFORM THE WAY YOU CREATE AND IMPROVISE",
+    "valueHeading": "CIÊNCIA DAS 6 CORDAS IS FOR YOU IF YOU WANT TO...",
+    "benefits": {
+      "1": "Create your own phrases",
+      "2": "Improvise without that endless up-and-down the scale",
+      "3": "Learn MUSIC THEORY from ZERO to ADVANCED",
+      "4": "See chords and scales anywhere on the fretboard",
+      "5": "Understand the language of other guitarists",
+      "6": "Build your best solo within the first weeks"
+    }
+  },
+  "triade": {
+    "heading": {
+      "prefix": "Learning inside Ciência das 6 Cordas is built on the",
+      "highlight": "CREATIVE VISUALIZATION SYSTEM"
+    },
+    "pillars": {
+      "visualizacao": {
+        "title": "Visualization",
+        "description": "Build a clear map of the fretboard for full freedom and fluency, with no limits. Standardize how you visualize scales, chords, and arpeggios."
+      },
+      "criacao": {
+        "title": "Creation",
+        "description": "Build your own language and understand solo structures in a conscious, creative way — without relying only on canned phrases. Step away from clichés and obvious patterns."
+      },
+      "analise": {
+        "title": "Analysis",
+        "description": "Develop a self-critical ear so you can explore the same idea in many different ways, refine it, and repeat the process."
+      }
+    },
+    "demoLead": "To build solos from scratch like these:",
+    "videoTitles": {
+      "1": "Solo demonstration video — improvisation example (YouTube)",
+      "2": "Solo demonstration video — second example (YouTube)"
+    },
+    "footer": "A logical learning sequence — far faster and more effective for building solos as good and authentic as the ones from your idols."
+  },
+  "testimonials": {
+    "eyebrow": "Real results",
+    "heading": {
+      "prefix": "What students",
+      "highlight": "are saying"
+    },
+    "trustBadge": "Student testimonials",
+    "helper": "Click any testimonial to enlarge",
+    "lightbox": {
+      "openLabel": "View testimonial {index} of {total} in full screen",
+      "dialogLabel": "Testimonial {index} of {total} enlarged",
+      "close": "Close view",
+      "previous": "Previous testimonial",
+      "next": "Next testimonial"
+    },
+    "imageAlt": {
+      "1": "Real student testimonial via WhatsApp about the guitar course",
+      "2": "Real student testimonial via WhatsApp — progress in improvisation",
+      "3": "Real student testimonial via WhatsApp — feedback on the method",
+      "4": "Real student testimonial via WhatsApp — positive experience with the lessons",
+      "5": "Real student testimonial via WhatsApp — guitar progress",
+      "6": "Real student testimonial via WhatsApp — course recommendation",
+      "7": "Real student testimonial via WhatsApp — results after applying the method",
+      "8": "Real student testimonial via WhatsApp — satisfaction with the content"
+    }
+  },
+  "studentVideos": {
+    "eyebrow": "This transformation didn't only happen to me...",
+    "heading": {
+      "prefix": "Progress you can",
+      "highlight": "hear and see"
+    },
+    "subheading": "These are students who applied the method.",
+    "studentBadge": "Student",
+    "items": {
+      "lorenzo": {
+        "name": "Lorenzo",
+        "role": "Building a solo from ZERO",
+        "blurb": "He didn't know any scales and built this theme from scratch by following the method.",
+        "iframeTitle": "Video of student Lorenzo playing guitar — video testimonial from the course"
+      },
+      "jose": {
+        "name": "José",
+        "role": "Improvising freely",
+        "blurb": "Developing his improvisation by creating motifs and moving freely across the fretboard.",
+        "iframeTitle": "Video of student José playing guitar — video testimonial from the course"
+      },
+      "caio": {
+        "name": "Caio",
+        "role": "Building vocabulary",
+        "blurb": "He built this solo from scratch, creating his own phrases and applying licks from his idols.",
+        "iframeTitle": "Video of student Caio playing guitar — video testimonial from the course"
+      }
+    }
+  },
+  "modules": {
+    "eyebrow": "Your journey, step by step",
+    "heading": {
+      "prefix": "Learn to create and unlock your",
+      "highlight": "creative freedom"
+    },
+    "subheading": "Every concept and tool you need along the way to develop your musicality and make the way you play truly unique.",
+    "listLabel": "Course stages",
+    "stageLabel": "Stage {number}",
+    "extraLabel": "EXTRA",
+    "items": {
+      "1": {
+        "title": "A solid foundation for solos",
+        "description": "Build a unique, solid system for visualizing scales so that — beyond never getting lost on the fretboard again — you can see new pathways and melodic possibilities to kick off your creative process for phrases and solos."
+      },
+      "2": {
+        "title": "Vocabulary building",
+        "description": "Hands-on application of ideas so you can build your own phrases and pull existing phrases apart to apply them in real creation and improvisation contexts."
+      },
+      "3": {
+        "title": "Building solos from ZERO",
+        "description": "Develop the skill behind crafting solos — understanding the idea and structure from the simplest themes to the most complex ones, in a no-nonsense way."
+      },
+      "4": {
+        "title": "Improvisation",
+        "description": "How to bring all these creation tools into your improvisation naturally and sharpen your musical thinking."
+      },
+      "5": {
+        "title": "Music Theory + Harmony",
+        "description": "Music theory from zero to advanced, with a complete handbook and module full of practical examples — perfect for someone who has never studied any theory at all."
+      }
+    }
+  },
+  "benefits": {
+    "eyebrow": "Your experience inside Ciência das 6 Cordas",
+    "heading": {
+      "prefix": "Everything you'll get",
+      "highlight": "access to"
+    },
+    "items": {
+      "1": {
+        "title": "Guided, Practical Plan",
+        "description": "Video lessons of 5 to 12 minutes for fast, hands-on application."
+      },
+      "2": {
+        "title": "Multiple Support Channels",
+        "description": "Q&A directly on the platform, a WhatsApp community, and a calendar of live meetups."
+      },
+      "3": {
+        "title": "Instant, Lifetime Access",
+        "description": "Pay once and it's yours forever. You get access to all the material right after purchase."
+      },
+      "4": {
+        "title": "Watch from anywhere",
+        "description": "Lessons available on phone, tablet, or computer. Access via the Hotmart platform or Hotmart Sparkle (mobile)."
+      },
+      "5": {
+        "title": "Updates",
+        "description": "We're always working to improve your experience — and you'll get every future update at no extra cost."
+      },
+      "6": {
+        "title": "Extra materials",
+        "description": "Backing tracks, PDFs, tabs, and practical exercises to speed up your progress."
+      }
+    }
+  },
+  "bonus": {
+    "eyebrow": "Exclusive bonuses",
+    "heading": {
+      "prefix": "On top of the full course, to give an extra boost to",
+      "highlight": "your progress",
+      "suffix": "you also get"
+    },
+    "freeBadge": "FREE",
+    "valueLabel": "Value:",
+    "items": {
+      "1": {
+        "title": "BONUS 1 | 10 Melodies to Kick Off Your Solos",
+        "description": "A pack with 10 different melodic pathways for you to practice in your improvisation.",
+        "value": "R$ 97",
+        "imageAlt": "Bonus material cover: 10 melodies to kick off your guitar solos"
+      },
+      "2": {
+        "title": "BONUS 2 | ROCK/BLUES Phrase Lab",
+        "description": "A guide with 10 phrases from guitar legends like David Gilmour, Slash and others — explained and applied in improvisation to expand your vocabulary.",
+        "value": "R$ 97",
+        "imageAlt": "Bonus material cover: rock and blues phrase lab for guitar"
+      },
+      "3": {
+        "title": "BONUS 3 | Creative Routine",
+        "description": "Quick, practical examples of how to plug creativity drills into your study routine — even when you're short on time.",
+        "value": "R$ 97",
+        "imageAlt": "Bonus material cover: creative routine for guitar study"
+      }
+    }
+  },
+  "timeValue": {
+    "headlinePrefix": "VALUE YOUR",
+    "headlineHighlight": "TIME",
+    "leadPrefix": "Honestly,",
+    "leadHighlight": "how much have you already tried on your own?",
+    "imageAlt": "Gui Beltrame playing guitar live on stage, under stage lighting",
+    "p1Prefix": "Do you want to be the musician who",
+    "p1Strong1": "doesn't post a video",
+    "p1Mid": "because they can't get a good sound, or",
+    "p1Strong2": "the one who's proud of what they hear?",
+    "p2": "Would you rather be the guy who feels insecure playing gigs, or the one who knows exactly what he's doing?",
+    "p3Prefix": "Whether it's your bedroom or the stage:",
+    "p3Highlight": "which one do you want to be?",
+    "anchor": {
+      "kicker": "HOW MUCH WOULD YOU PAY TO CHANGE THIS TODAY?",
+      "body": "You'd easily pay more than R$2,000 for a year of private lessons — but today, you won't pay anywhere near that!",
+      "link": "See the offer below"
+    },
+    "anchorAriaLabel": "Value anchor"
+  },
+  "offer": {
+    "eyebrow": "Special offer with R$200 OFF COUPON",
+    "heading": {
+      "prefix": "Start your transformation",
+      "highlight": "right now"
+    },
+    "includedTitle": "Everything that's included:",
+    "included": {
+      "1": "Guided plan with hands-on video lessons",
+      "2": "Lifetime access",
+      "3": "Extra materials (PDFs, tabs, backing tracks)",
+      "4": "Q&A support",
+      "5": "Free content updates",
+      "6": "Bonus: 10 Melodies to Kick Off Your Solos",
+      "7": "Bonus: ROCK/BLUES Phrase Lab",
+      "8": "Bonus: Creative Routine"
+    },
+    "priceFromLabel": "From",
+    "priceFrom": "R$397",
+    "priceCurrency": "R$",
+    "priceValue": "197",
+    "installmentPrefix": "or",
+    "installmentStrong": "12x R$ 20.37",
+    "installmentSuffix": "by credit card",
+    "ctaLabel": "INSTANT, LIFETIME ACCESS",
+    "trust": {
+      "secure": "Secure checkout",
+      "data": "Data protected",
+      "guarantee": "7-day guarantee"
+    }
+  },
+  "guarantee": {
+    "headingPrefix": "Unconditional",
+    "headingHighlight": "7-day guarantee",
+    "p1Prefix": "If within 7 days you feel the course isn't for you, just request a refund and we'll return",
+    "p1Strong": "100% of your investment",
+    "p1Suffix": ". No questions, no red tape, no fine print.",
+    "p2": "The risk is all on us. Your only job is to watch the lessons, practice, and apply the content."
+  },
+  "transformation": {
+    "eyebrow": "Still wondering if it's for you?",
+    "heading": {
+      "prefix": "From a stuck guitarist to one who",
+      "highlight": "creates with freedom"
+    },
+    "beforeTitle": "Before the method",
+    "afterTitle": "After the method",
+    "before": {
+      "1": "Always improvises with the same phrases",
+      "2": "Freezes when it's time to solo",
+      "3": "Studies a lot, but applies nothing",
+      "4": "Has no identity on the instrument",
+      "5": "Jumps from method to method with no results"
+    },
+    "after": {
+      "1": "Builds solos with a unique voice",
+      "2": "Improvises with confidence",
+      "3": "Never gets lost on the fretboard again",
+      "4": "Is no longer the guy who only knows how to copy",
+      "5": "Develops their own creativity"
+    }
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "subheading": "Still have a question? See if the answer is right here.",
+    "items": {
+      "1": {
+        "question": "Do I need previous guitar experience?",
+        "answer": "Yes — the course is designed for guitar players who can already play at least the basics. You don't need to be advanced, but you do need to know the fundamentals of the instrument: how to position your fingers, play chords, and figure out songs."
+      },
+      "2": {
+        "question": "How long does it take to see results?",
+        "answer": "Results vary depending on how much you practice. The course is designed to deliver fast, progressive results."
+      },
+      "3": {
+        "question": "Is access really for life?",
+        "answer": "Yes. Once you buy, access is yours forever. No monthly fees, no renewals, no expiration date. Plus, all future updates are included."
+      },
+      "4": {
+        "question": "Does it work for any musical style?",
+        "answer": "The method is focused on developing creative structure, which applies to any style — but it leans more toward rock, blues, and fusion. The principles are universal, and you adapt them to your own musical context."
+      },
+      "5": {
+        "question": "What if I don't like the course?",
+        "answer": "You have a 7-day unconditional guarantee. If within that window you feel it's not for you, just request a refund and we return 100% of your money. No questions asked."
+      },
+      "6": {
+        "question": "Are the lessons live or recorded?",
+        "answer": "Lessons are recorded in high quality and available 24/7 on the platform. You learn at your own pace, rewatch as many times as you want, and move forward as your routine allows."
+      },
+      "7": {
+        "question": "I want to learn techniques like alternate picking and so on — is this for me?",
+        "answer": "No — the course is focused on people who want to start out in improvisation, or who feel stuck and want to develop their vocabulary. We don't teach the fundamentals of technique."
+      },
+      "8": {
+        "question": "How does support work?",
+        "answer": "You can ask questions directly on the platform or in the exclusive student community. Our team replies within 24 hours on business days."
+      }
+    }
+  },
+  "finalCta": {
+    "heading": "Still have any doubts?",
+    "subheading": "Stop improvising on autopilot. Start making music with identity, freedom and personality — using the technique you already have today.",
+    "ctaLabel": "MESSAGE US ON WHATSAPP",
+    "guaranteeNote": "7-day unconditional guarantee — zero risk for you"
+  },
+  "footer": {
+    "ariaLabel": "Footer",
+    "linksLabel": "Legal links",
+    "contact": "Contact",
+    "copyright": "GT BELT - Copyright © {year} - All rights reserved."
+  }
+}

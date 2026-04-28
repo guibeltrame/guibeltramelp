@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 const isHydrated = ref(false);
 const isReleased = ref(false);
 
@@ -13,24 +15,19 @@ function onVideoReleased() {
 }
 
 useSeoMeta({
-  title: "Gui Beltrame - Crie solos do zero",
-  description:
-    "Aprenda a criar solos com personalidade usando a técnica que você já tem. Método estruturado para guitarristas que querem sair do piloto automático e improvisar com liberdade.",
-  ogTitle: "Gui Beltrame - Crie solos do zero",
-  ogDescription:
-    "Método estruturado para guitarristas que querem sair do piloto automático e improvisar com liberdade criativa.",
+  title: () => t("seo.home.title"),
+  description: () => t("seo.home.description"),
+  ogTitle: () => t("seo.home.ogTitle"),
+  ogDescription: () => t("seo.home.ogDescription"),
   ogType: "website",
-  ogLocale: "pt_BR",
-  ogSiteName: "Gui Beltrame - Crie solos do zero",
-});
-
-useHead({
-  link: [{ rel: "canonical", href: "https://exemplo.com.br" }],
+  ogSiteName: () => t("site.name"),
 });
 </script>
 
 <template>
   <div>
+    <SiteHeader :hidden="isContentLocked" />
+
     <LandingVideoIntro video-id="ooGThGr93XE" @released="onVideoReleased" />
 
     <main

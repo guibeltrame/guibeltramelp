@@ -21,20 +21,18 @@ const { containerRef } = useScrollReveal();
           id="final-cta-heading"
           class="text-2xl font-bold leading-tight tracking-tight text-text-on-dark sm:text-3xl md:text-4xl lg:text-5xl"
         >
-          Ficou com alguma dúvida?
+          {{ $t("finalCta.heading") }}
         </h2>
 
         <p
           class="mt-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          Pare de improvisar no piloto automático. Comece a criar música com
-          identidade, liberdade e personalidade — usando a técnica que você já
-          tem hoje.
+          {{ $t("finalCta.subheading") }}
         </p>
 
         <div class="mt-10">
           <UiCtaButton
-            label="CHAMAR NO WHATSAPP"
+            :label="$t('finalCta.ctaLabel')"
             href="https://wa.me/5511972040643?text=Fala%20Gui,%20tudo%20bem?%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20Ci%C3%AAncia%20das%206%20Cordas"
             target="_blank"
             variant="primary"
@@ -48,7 +46,7 @@ const { containerRef } = useScrollReveal();
             class="mr-1 inline size-4 text-amber"
             aria-hidden="true"
           />
-          Garantia incondicional de 7 dias — risco zero pra você
+          {{ $t("finalCta.guaranteeNote") }}
         </p>
       </div>
     </div>

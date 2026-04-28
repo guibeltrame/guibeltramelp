@@ -7,6 +7,8 @@ const emit = defineEmits<{
   released: [];
 }>();
 
+const { t } = useI18n();
+
 /**
  * Tempo mínimo de vídeo (em segundos) para liberar a landing page.
  * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
@@ -250,7 +252,7 @@ onBeforeUnmount(() => {
 <template>
   <section
     class="relative flex min-h-dvh items-center justify-center bg-dark px-4 py-6 sm:px-6 sm:py-8 lg:py-10"
-    aria-label="Vídeo de apresentação do curso"
+    :aria-label="t('videoIntro.sectionLabel')"
   >
     <!-- Ambient glow -->
     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
@@ -267,23 +269,26 @@ onBeforeUnmount(() => {
         <p
           class="text-xs font-semibold uppercase tracking-[0.2em] text-white sm:text-sm"
         >
-          Você já sabe tocar,
+          {{ t("videoIntro.kicker") }}
         </p>
         <h2
           class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
         >
-          MAS NA HORA DE
-          <span class="text-amber">CRIAR OU IMPROVISAR</span> SEMPRE
-          <p>REPETE A MESMA COISA</p>
+          {{ t("videoIntro.headline.before") }}
+          <span class="text-amber">{{
+            t("videoIntro.headline.highlight")
+          }}</span>
+          {{ t("videoIntro.headline.after") }}
+          <p>{{ t("videoIntro.headline.line2") }}</p>
         </h2>
         <h3
           class="mt-2 text-sm font-bold leading-snug text-text-on-dark sm:text-base md:text-lg"
         >
-          Veja como ter ideias infinitas para criar frases e melodias sem
-          depender de inspiração, independente do seu nível técnico e sem
-          escalas complexas.
+          {{ t("videoIntro.subheadline") }}
 
-          <p class="mt-3 sm:mt-6 lg:mt-8">Dê o play no vídeo abaixo:</p>
+          <p class="mt-3 sm:mt-6 lg:mt-8">
+            {{ t("videoIntro.playPrompt") }}
+          </p>
         </h3>
       </div>
 
@@ -325,7 +330,9 @@ onBeforeUnmount(() => {
             type="button"
             class="yt-like-transport pointer-events-auto mb-2.5 ml-2.5 flex size-9 shrink-0 items-center justify-center rounded-sm bg-black/60 text-white shadow-sm ring-1 ring-white/10 transition-[background,transform] hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-0 active:scale-95 sm:mb-3 sm:ml-3 sm:size-10"
             :aria-pressed="isYtPlaying"
-            :aria-label="isYtPlaying ? 'Pausar o vídeo' : 'Reproduzir o vídeo'"
+            :aria-label="
+              isYtPlaying ? t('videoIntro.pause') : t('videoIntro.play')
+            "
             @click="togglePlayPause"
           >
             <svg
@@ -358,7 +365,7 @@ onBeforeUnmount(() => {
             v-if="isPlayerReady && !hasUserStarted"
             type="button"
             class="play-cta group absolute inset-0 z-30 flex items-center justify-center bg-black/45 backdrop-blur-[1px] transition-colors duration-200 hover:bg-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
-            aria-label="Iniciar o vídeo"
+            :aria-label="t('videoIntro.startVideo')"
             @click="startPlayback"
           >
             <span
@@ -374,7 +381,7 @@ onBeforeUnmount(() => {
                   d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
                 />
               </svg>
-              Toque para assistir o vídeo
+              {{ t("videoIntro.tapToWatch") }}
             </span>
           </button>
         </Transition>
@@ -392,7 +399,7 @@ onBeforeUnmount(() => {
             rel="noopener noreferrer"
             class="cta-glow cta-pulse group relative inline-flex items-center gap-2.5 rounded-xl bg-amber px-8 py-4 text-base font-bold text-dark shadow-lg shadow-amber/25 transition-all duration-300 hover:bg-amber-light hover:shadow-xl hover:shadow-amber/35 focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark active:scale-[0.97] active:bg-amber-dark sm:px-10 sm:py-4.5 sm:text-lg"
           >
-            <span>ACESSO IMEDIATO E VITALÍCIO</span>
+            <span>{{ t("videoIntro.ctaPrimary") }}</span>
             <svg
               class="size-5 transition-transform duration-300 group-hover:translate-x-0.5"
               viewBox="0 0 20 20"
@@ -410,7 +417,7 @@ onBeforeUnmount(() => {
           <!-- Scroll indicator -->
           <div class="flex flex-col items-center gap-2 pt-1">
             <p class="text-xs tracking-wide text-text-on-dark-muted sm:text-sm">
-              Descubra o que preparamos para você
+              {{ t("videoIntro.scrollHint") }}
             </p>
             <div
               class="scroll-indicator flex flex-col items-center"

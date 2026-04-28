@@ -1,24 +1,24 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-/** Troque `src` e `alt` por imagens reais de depoimentos quando tiver. */
-const studentOpinionImages = [
+const studentOpinionImages = computed(() => [
   {
     id: "opinion-1",
     src: "/images/depi1.jpeg",
-    alt: "Depoimento visual de aluno 1 sobre o método (imagem placeholder)",
+    alt: t("studentOpinions.imageAlt.1"),
   },
   {
     id: "opinion-2",
     src: "/images/depi2.png",
-    alt: "Depoimento visual de aluno 2 sobre o método (imagem placeholder)",
+    alt: t("studentOpinions.imageAlt.2"),
   },
   {
     id: "opinion-3",
     src: "/images/depi3.jpeg",
-    alt: "Depoimento visual de aluno 3 sobre o método (imagem placeholder)",
+    alt: t("studentOpinions.imageAlt.3"),
   },
-] as const;
+]);
 </script>
 
 <template>
@@ -42,7 +42,7 @@ const studentOpinionImages = [
           id="student-method-opinions-heading"
           class="text-balance text-2xl font-extrabold uppercase leading-[1.15] tracking-tight text-text-on-dark sm:text-3xl md:text-4xl lg:text-[2.35rem] lg:leading-tight"
         >
-          VEJA A OPINIÃO DE ALUNOS QUE PASSARAM PELO MÉTODO
+          {{ $t("studentOpinions.heading") }}
         </h2>
       </header>
 

@@ -30,16 +30,18 @@ const { containerRef } = useScrollReveal();
             id="time-value-heading"
             class="mt-4 text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl"
           >
-            DÊ VALOR AO SEU
-            <span class="text-amber">TEMPO</span>
+            {{ $t("timeValue.headlinePrefix") }}
+            <span class="text-amber">{{
+              $t("timeValue.headlineHighlight")
+            }}</span>
           </h2>
           <p
             class="mt-6 text-lg font-medium leading-relaxed text-text-on-dark sm:text-xl"
           >
-            Com sinceridade,
-            <span class="text-text-on-dark"
-              >quanto você já tentou sozinho?</span
-            >
+            {{ $t("timeValue.leadPrefix") }}
+            <span class="text-text-on-dark">{{
+              $t("timeValue.leadHighlight")
+            }}</span>
           </p>
         </header>
 
@@ -56,7 +58,7 @@ const { containerRef } = useScrollReveal();
             />
             <img
               src="/images/prof.jpeg"
-              alt="Gui Beltrame tocando guitarra em apresentação ao vivo, com iluminação de palco"
+              :alt="$t('timeValue.imageAlt')"
               width="600"
               height="800"
               loading="lazy"
@@ -74,23 +76,20 @@ const { containerRef } = useScrollReveal();
             class="space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
           >
             <p>
-              Quer ser o músico que
-              <strong class="font-semibold text-text-on-dark"
-                >não posta um vídeo</strong
-              >
-              porque não tira um bom som, ou
-              <strong class="font-semibold text-amber"
-                >o que se orgulha do que ouve?</strong
-              >
+              {{ $t("timeValue.p1Prefix") }}
+              <strong class="font-semibold text-text-on-dark">{{
+                $t("timeValue.p1Strong1")
+              }}</strong>
+              {{ $t("timeValue.p1Mid") }}
+              <strong class="font-semibold text-amber">{{
+                $t("timeValue.p1Strong2")
+              }}</strong>
             </p>
-            <p>
-              Você prefere ser o cara que fica que fica inseguro tocando na
-              GIG's ou o que sabe o que está fazendo?
-            </p>
+            <p>{{ $t("timeValue.p2") }}</p>
 
             <p class="text-lg font-medium text-text-on-dark sm:text-xl">
-              Seja no quarto ou no palco:
-              <span class="text-amber">qual deles você prefere ser?</span>
+              {{ $t("timeValue.p3Prefix") }}
+              <span class="text-amber">{{ $t("timeValue.p3Highlight") }}</span>
             </p>
           </div>
           <div
@@ -100,24 +99,23 @@ const { containerRef } = useScrollReveal();
               <span
                 class="block text-sm font-semibold uppercase tracking-wide text-amber/90"
               >
-                QUANTO VOCÊ DARIA PRA MUDAR ISSO HOJE?
+                {{ $t("timeValue.anchor.kicker") }}
               </span>
               <span class="mt-2 block">
-                Facilmente você pagaria mais de R$2000 por 1 ano de aulas
-                particulares, mas hoje você não vai pagar nem perto disso!
+                {{ $t("timeValue.anchor.body") }}
               </span>
             </p>
             <a
               href="#oferta"
               class="text-sm font-medium text-amber underline decoration-amber/40 underline-offset-4 transition hover:text-amber-light hover:decoration-amber"
             >
-              Ver a oferta abaixo
+              {{ $t("timeValue.anchor.link") }}
             </a>
           </div>
           <div
             class="border-l-4 border-amber pl-5 sm:pl-6"
             role="note"
-            aria-label="Ancoragem de valor"
+            :aria-label="$t('timeValue.anchorAriaLabel')"
           ></div>
         </div>
       </div>

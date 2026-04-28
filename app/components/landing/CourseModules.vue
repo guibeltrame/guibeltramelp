@@ -1,43 +1,14 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const modules = [
-  {
-    number: "01",
-    title: "Base sólida para solos",
-    description:
-      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos.",
-    lessons: 10,
-  },
-  {
-    number: "02",
-    title: "Construção de Vocabulário",
-    description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação.",
-    lessons: 10,
-  },
-  {
-    number: "03",
-    title: "Criando solos do ZERO",
-    description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada.",
-    lessons: 10,
-  },
-  {
-    number: "04",
-    title: "Improvisação",
-    description:
-      "Como trazer todas essas ferramentas de criação para a sua improvisação de forma natural e trabalhar o seu raciocínio.",
-    lessons: 14,
-  },
-  {
-    number: "05",
-    title: "Teoria Musical + Harmonia",
-    description:
-      "Teoria musical do zero ao avançado com uma apostila e módulo completo com exemplos práticos para quem nunca estudou nada sobre teoria musical.",
-    lessons: 16,
-  },
-];
+const modules = computed(() =>
+  ([1, 2, 3, 4, 5] as const).map((n) => ({
+    number: String(n).padStart(2, "0"),
+    title: t(`modules.items.${n}.title`),
+    description: t(`modules.items.${n}.description`),
+  })),
+);
 </script>
 
 <template>
@@ -55,21 +26,19 @@ const modules = [
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Sua jornada passo a passo
+          {{ $t("modules.eyebrow") }}
         </p>
         <h2
           id="modules-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Aprender a criar e conquistar sua
-          <span class="text-amber">liberdade criativa</span>
+          {{ $t("modules.heading.prefix") }}
+          <span class="text-amber">{{ $t("modules.heading.highlight") }}</span>
         </h2>
         <p
           class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          Todos os conceitos e ferramentas essenciais ao longo desse processo
-          para desenvolver sua musicalidade que tornaram sua forma de tocar
-          única.
+          {{ $t("modules.subheading") }}
         </p>
       </div>
 
@@ -77,7 +46,7 @@ const modules = [
       <div class="mx-auto mt-12 max-w-3xl lg:mt-16">
         <ol
           class="stagger-children list-none space-y-0"
-          aria-label="Etapas do curso"
+          :aria-label="$t('modules.listLabel')"
         >
           <li
             v-for="(mod, index) in modules"
@@ -91,7 +60,11 @@ const modules = [
                 <span
                   class="inline-flex items-center rounded-full border border-amber/25 bg-dark-surface/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.22em] text-amber shadow-sm ring-1 ring-white/5 sm:px-3.5 sm:py-2 sm:text-xs"
                 >
-                  {{ index + 1 == 5 ? "EXTRA" : `Etapa ${index + 1}` }}
+                  {{
+                    index + 1 === 5
+                      ? $t("modules.extraLabel")
+                      : $t("modules.stageLabel", { number: index + 1 })
+                  }}
                 </span>
               </div>
 

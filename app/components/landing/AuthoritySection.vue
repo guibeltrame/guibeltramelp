@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
 /** Vimeo: https://vimeo.com/1074793365 */
@@ -14,11 +15,11 @@ function vimeoEmbedSrc(id: string) {
   return `https://player.vimeo.com/video/${id}?${params.toString()}`;
 }
 
-const credentials = [
-  { icon: "lucide:guitar", text: "Mais de 10 anos ensinando guitarra" },
-  { icon: "lucide:users", text: "500+ alunos formados" },
-  { icon: "lucide:award", text: "Método próprio com resultados comprovados" },
-];
+const credentials = computed(() => [
+  { icon: "lucide:guitar", text: t("authority.credentials.1") },
+  { icon: "lucide:users", text: t("authority.credentials.2") },
+  { icon: "lucide:award", text: t("authority.credentials.3") },
+]);
 </script>
 
 <template>
@@ -37,11 +38,10 @@ const credentials = [
             <div
               class="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-black shadow-[0_24px_60px_-28px_rgba(0,0,0,0.18)] ring-1 ring-black/5"
             >
-              <!-- 16:9 em moldura 3/4 — equivalente visual ao object-cover da foto -->
               <iframe
                 :src="vimeoEmbedSrc(AUTHORITY_VIMEO_ID)"
                 class="pointer-events-auto absolute left-1/2 top-0 h-full w-[calc(100%*64/27)] max-w-none -translate-x-1/2 border-0"
-                title="Gravação em estúdio do álbum da banda autoral (Vimeo)"
+                :title="$t('authority.videoTitle')"
                 allow="
                   autoplay;
                   fullscreen;
@@ -63,7 +63,7 @@ const credentials = [
           <figcaption
             class="mt-4 max-w-sm px-1 text-center text-xs font-medium italic leading-relaxed tracking-wide text-text-on-light-muted sm:text-sm"
           >
-            Gravação em estúdio do álbum da minha banda autoral
+            {{ $t("authority.videoCaption") }}
           </figcaption>
         </figure>
 
@@ -72,40 +72,25 @@ const credentials = [
           <p
             class="scroll-reveal text-sm font-semibold uppercase tracking-widest text-amber-dark"
           >
-            Quem vai te guiar
+            {{ $t("authority.eyebrow") }}
           </p>
 
           <h2
             id="authority-heading"
             class="scroll-reveal mt-3 text-2xl font-bold tracking-tight text-text-on-light sm:text-3xl md:text-4xl"
           >
-            EU SOU O GUI BELTRAME
+            {{ $t("authority.heading") }}
           </h2>
 
           <div
             class="scroll-reveal mt-6 space-y-4 text-base leading-relaxed text-text-on-light-muted sm:text-lg"
           >
-            <p>
-              Sou professor e criador da SISTEMA DE VISUALIZAÇÃO CRIATIVA. Durante anos,
-              enfrentei exatamente os mesmos problemas que você. E tinha uma
-              sensação que sempre voltava: insegurança e que não tinha talento.
-            </p>
-            <p>
-              Eu ficava perdido no braço e meus improvisos sempre soavam como
-              exercício, não como música.
-            </p>
-            <p>
-              Percebi que o problema não era técnica e muito menos conhecer
-              alguma escala a mais, e sim entender como exercitar a
-              criatividade pra expandir meu vocabulário e entender que todo
-              solo precisa de estrutura. Não importa se você toca 5 ou 50
-              notas, e sim como você organiza todas elas pra que seu solo
-              realmente soe como uma história.
-            </p>
+            <p>{{ $t("authority.p1") }}</p>
+            <p>{{ $t("authority.p2") }}</p>
+            <p>{{ $t("authority.p3") }}</p>
             <p>
               <strong class="text-text-on-light">
-                Com uma boa visualização e entendendo essas estruturas você
-                não depende de inspiração ou dom pra criar bons solos.
+                {{ $t("authority.p4Strong") }}
               </strong>
             </p>
           </div>

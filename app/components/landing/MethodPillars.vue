@@ -1,39 +1,36 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const pillars = [
+const pillars = computed(() => [
   {
     number: "01",
-    title: "Organização e mapa de melodias",
-    description:
-      "Criar melodias e frases não pode depender só de um dia inspirado. Logo quem mapeia e organiza a visualização de escalas, consegue criar novos caminhos e construir mais opções para seu vocabulário.",
+    title: t("method.pillars.1.title"),
+    description: t("method.pillars.1.description"),
     icon: "lucide:layout-grid",
   },
   {
     number: "02",
-    title: "Sua técnica é somente um mensageiro",
-    description:
-      "Um solo com muitas ou poucas notas, pouco importa. Entender como amplificar aquilo que você realmente é bom e tocar as notas certas, no tempo e dinâmica correta é o que vai diferenciar o seu discurso.",
+    title: t("method.pillars.2.title"),
+    description: t("method.pillars.2.description"),
     icon: "lucide:message-square",
   },
   {
     number: "03",
-    title: "Todo solo precisa soar como uma história",
-    description:
-      "Histórias precisam de estrutura, logo um solo sem estrutura soa somente como um monte de notas jogadas fora. Quem entende as estruturas, cria e conecta ideias com mais facilidade.",
+    title: t("method.pillars.3.title"),
+    description: t("method.pillars.3.description"),
     icon: "lucide:fingerprint",
   },
   {
     number: "04",
-    title: "FEELING E CONSCIÊNCIA JUNTOS",
-    description:
-      "Criar bons solos está ligado a como você estrutura um solo, aumenta seu vocabulário, entende elementos como dinâmica e interpretação para dar vida a cada ideia nova e torna-la única.",
+    title: t("method.pillars.4.title"),
+    description: t("method.pillars.4.description"),
     icon: "lucide:target",
   },
-];
+]);
 
-const mainPillars = pillars.slice(0, 3);
-const fourthPillar = pillars[3]!;
+const mainPillars = computed(() => pillars.value.slice(0, 3));
+const fourthPillar = computed(() => pillars.value[3]!);
 </script>
 
 <template>
@@ -53,20 +50,22 @@ const fourthPillar = pillars[3]!;
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          O que é o método?
+          {{ $t("method.eyebrow") }}
         </p>
         <h2
           id="method-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Por que sem o
-          <span class="text-amber">SISTEMA DE VISUALIÇÃO CRIATIVO</span> você
-          continua repetindo sempre as mesmas frases?
+          {{ $t("method.heading.prefix") }}
+          <span class="text-amber">{{
+            $t("method.heading.highlight")
+          }}</span>
+          {{ $t("method.heading.suffix") }}
         </h2>
         <p
           class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          Três princípios explicam:
+          {{ $t("method.subheading") }}
         </p>
       </div>
 
@@ -93,7 +92,7 @@ const fourthPillar = pillars[3]!;
               <span
                 class="text-xs font-bold uppercase tracking-widest text-amber/60"
               >
-                Pilar {{ pillar.number }}
+                {{ $t("method.pillarLabel", { number: pillar.number }) }}
               </span>
               <h3 class="mt-1 text-lg font-bold text-text-on-dark">
                 {{ pillar.title }}

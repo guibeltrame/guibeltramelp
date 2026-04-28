@@ -1,47 +1,22 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const testimonials = [
-  {
-    src: "/images/dep_01.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp sobre o curso de guitarra",
-  },
-  {
-    src: "/images/dep_02.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — relato de evolução no improviso",
-  },
-  {
-    src: "/images/dep_03.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — feedback sobre o método",
-  },
-  {
-    src: "/images/dep_04.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — experiência positiva com as aulas",
-  },
-  {
-    src: "/images/dep_05.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — progresso na guitarra",
-  },
-  {
-    src: "/images/dep_06.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — recomendação do curso",
-  },
-  {
-    src: "/images/dep_07.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — resultado após aplicar o método",
-  },
-  {
-    src: "/images/dep_08.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — satisfação com o conteúdo",
-  },
-];
+const testimonials = computed(() =>
+  ([1, 2, 3, 4, 5, 6, 7, 8] as const).map((n) => ({
+    src: `/images/dep_0${n}.jpeg`,
+    alt: t(`testimonials.imageAlt.${n}`),
+  })),
+);
 
 const lightboxOpen = ref(false);
 const lightboxIndex = ref(0);
 const closeBtnRef = ref<HTMLButtonElement | null>(null);
 let triggerEl: HTMLElement | null = null;
 
-const activeTestimonial = computed(() => testimonials[lightboxIndex.value]!);
+const activeTestimonial = computed(
+  () => testimonials.value[lightboxIndex.value]!,
+);
 
 function openLightbox(index: number, event: Event) {
   triggerEl = event.currentTarget as HTMLElement;
@@ -59,8 +34,8 @@ function closeLightbox() {
 
 function navigateLightbox(direction: 1 | -1) {
   lightboxIndex.value =
-    (lightboxIndex.value + direction + testimonials.length) %
-    testimonials.length;
+    (lightboxIndex.value + direction + testimonials.value.length) %
+    testimonials.value.length;
 }
 
 function onLightboxKeydown(e: KeyboardEvent) {
@@ -108,14 +83,16 @@ onUnmounted(() => {
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Resultados reais
+          {{ $t("testimonials.eyebrow") }}
         </p>
         <h2
           id="testimonials-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          O que os alunos
-          <span class="text-amber">estão dizendo</span>
+          {{ $t("testimonials.heading.prefix") }}
+          <span class="text-amber">{{
+            $t("testimonials.heading.highlight")
+          }}</span>
         </h2>
       </div>
 
@@ -130,7 +107,7 @@ onUnmounted(() => {
             aria-hidden="true"
           />
           <span class="text-xs font-medium text-text-on-dark-muted sm:text-sm">
-            Depoimentos de alunos
+            {{ $t("testimonials.trustBadge") }}
           </span>
         </div>
       </div>
@@ -146,7 +123,12 @@ onUnmounted(() => {
         >
           <button
             class="group relative w-full cursor-pointer overflow-hidden rounded-xl border border-dark-muted bg-dark-surface p-1.5 transition-all duration-300 hover:-translate-y-1 hover:border-amber/30 hover:shadow-lg hover:shadow-amber/5 sm:rounded-2xl sm:p-2"
-            :aria-label="`Ver depoimento ${index + 1} de ${testimonials.length} em tela cheia`"
+            :aria-label="
+              $t('testimonials.lightbox.openLabel', {
+                index: index + 1,
+                total: testimonials.length,
+              })
+            "
             @click="openLightbox(index, $event)"
           >
             <img
@@ -179,7 +161,7 @@ onUnmounted(() => {
       <p
         class="scroll-reveal mt-6 text-center text-xs text-text-on-dark-muted/60 sm:mt-8 sm:text-sm"
       >
-        Clique em qualquer depoimento para ampliar
+        {{ $t("testimonials.helper") }}
       </p>
     </div>
 
@@ -198,7 +180,12 @@ onUnmounted(() => {
           class="fixed inset-0 z-[100] flex items-center justify-center bg-dark/95 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
-          :aria-label="`Depoimento ${lightboxIndex + 1} de ${testimonials.length} ampliado`"
+          :aria-label="
+            $t('testimonials.lightbox.dialogLabel', {
+              index: lightboxIndex + 1,
+              total: testimonials.length,
+            })
+          "
           @keydown="onLightboxKeydown"
           @click.self="closeLightbox"
           @touchstart.passive="onTouchStart"
@@ -208,7 +195,7 @@ onUnmounted(() => {
           <button
             ref="closeBtnRef"
             class="absolute top-4 right-4 z-10 flex size-10 items-center justify-center rounded-full bg-white/10 text-white/80 transition-colors hover:bg-white/20 hover:text-white sm:top-6 sm:right-6 sm:size-11"
-            aria-label="Fechar visualização"
+            :aria-label="$t('testimonials.lightbox.close')"
             @click="closeLightbox"
           >
             <Icon name="lucide:x" class="size-5" />
@@ -224,7 +211,7 @@ onUnmounted(() => {
           <!-- Prev -->
           <button
             class="absolute left-2 z-10 flex size-10 items-center justify-center rounded-full bg-white/10 text-white/80 transition-colors hover:bg-white/20 hover:text-white sm:left-4 sm:size-11"
-            aria-label="Depoimento anterior"
+            :aria-label="$t('testimonials.lightbox.previous')"
             @click="navigateLightbox(-1)"
           >
             <Icon name="lucide:chevron-left" class="size-5" />
@@ -251,7 +238,7 @@ onUnmounted(() => {
           <!-- Next -->
           <button
             class="absolute right-2 z-10 flex size-10 items-center justify-center rounded-full bg-white/10 text-white/80 transition-colors hover:bg-white/20 hover:text-white sm:right-4 sm:size-11"
-            aria-label="Próximo depoimento"
+            :aria-label="$t('testimonials.lightbox.next')"
             @click="navigateLightbox(1)"
           >
             <Icon name="lucide:chevron-right" class="size-5" />

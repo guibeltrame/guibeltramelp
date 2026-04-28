@@ -21,7 +21,7 @@ const imgClass =
 <template>
   <img
     src="/images/logo.png"
-    alt="Ciência das 6 Cordas — logotipo do curso de guitarra"
+    :alt="$t('hero.logoAlt')"
     width="256"
     height="256"
     decoding="async"

@@ -20,7 +20,7 @@ const { containerRef } = useScrollReveal();
         <p
           class="scroll-reveal text-sm font-semibold uppercase tracking-widest text-amber"
         >
-          A verdade que ninguém te conta
+          {{ $t("reframe.eyebrow") }}
         </p>
 
         <!-- Headline -->
@@ -28,8 +28,10 @@ const { containerRef } = useScrollReveal();
           id="reframe-heading"
           class="scroll-reveal mt-4 text-2xl font-bold leading-tight tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          O problema
-          <span class="text-amber">nunca foi falta de talento.</span>
+          {{ $t("reframe.heading.prefix") }}
+          <span class="text-amber">{{
+            $t("reframe.heading.highlight")
+          }}</span>
         </h2>
 
         <!-- Body -->
@@ -37,23 +39,27 @@ const { containerRef } = useScrollReveal();
           class="stagger-children mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
           <p class="scroll-reveal">
-            Entendo que a maior parte já passou horas e horas estudando, assim
-            como eu. É frustrante estudar mais conteúdos e sentir que não tem
-            <strong class="text-text-on-dark">nenhum progresso.</strong>
+            {{ $t("reframe.p1Before") }}
+            <strong class="text-text-on-dark">{{
+              $t("reframe.p1Strong")
+            }}</strong>
           </p>
           <p class="scroll-reveal">
-            Surge a sensação de que você é só um
-            <strong class="text-text-on-dark">guitarrista COMUM</strong> e não
-            tem nenhum diferencial.
+            {{ $t("reframe.p2Before") }}
+            <strong class="text-text-on-dark">{{
+              $t("reframe.p2Strong")
+            }}</strong>
+            {{ $t("reframe.p2After") }}
           </p>
 
           <p class="scroll-reveal">
-            Isso não é verdade, todo guitarrista tem
-            <strong class="text-text-on-dark"
-              >características únicas que podem ser desenvolvidas</strong
-            >, mas você não pode depender só de inspiração.
+            {{ $t("reframe.p3Before") }}
+            <strong class="text-text-on-dark">{{
+              $t("reframe.p3Strong")
+            }}</strong
+            >{{ $t("reframe.p3After") }}
           </p>
-          <p class="scroll-reveal">A verdade é a seguinte:</p>
+          <p class="scroll-reveal">{{ $t("reframe.p4") }}</p>
 
           <!-- Manifesto: frase central da reinterpretação -->
           <article
@@ -73,7 +79,7 @@ const { containerRef } = useScrollReveal();
               id="reframe-manifest-kicker"
               class="relative pl-5 text-xs font-semibold uppercase tracking-[0.2em] text-amber/90 sm:text-sm"
             >
-              O pivô da história
+              {{ $t("reframe.manifestoKicker") }}
             </p>
 
             <p
@@ -82,39 +88,40 @@ const { containerRef } = useScrollReveal();
               <span
                 class="block text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
               >
-                Escala ou técnica nenhuma salva
+                {{ $t("reframe.manifestoLine1") }}
               </span>
               <span
                 class="mt-1 block text-2xl leading-[1.12] text-amber sm:mt-2 sm:text-3xl md:text-4xl md:leading-[1.1] lg:text-5xl lg:leading-[1.08]"
               >
-                um solo
-                <span class="text-text-on-dark"> sem </span>
+                {{ $t("reframe.manifestoLine2Prefix") }}
+                <span class="text-text-on-dark">
+                  {{ $t("reframe.manifestoLine2Mid") }}
+                </span>
                 <span
                   class="underline decoration-amber/45 decoration-2 underline-offset-[5px] sm:decoration-[3px] sm:underline-offset-[7px]"
                 >
-                  estrutura
+                  {{ $t("reframe.manifestoLine2Highlight") }}
                 </span>
               </span>
             </p>
           </article>
 
           <p class="scroll-reveal">
-            Sem estrutura, seu improviso vira o famoso "sobe e desce" de escala.
-            E seu improviso não pode depender apenas e um bom dia de
-            <strong class="text-text-on-dark">inspiração.</strong>
+            {{ $t("reframe.p5Before") }}
+            <strong class="text-text-on-dark">{{
+              $t("reframe.p5Strong")
+            }}</strong>
           </p>
         </div>
 
         <!-- Visual separator / quote -->
         <blockquote class="scroll-reveal mt-10 border-l-4 border-amber pl-6">
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
-            Mas e se eu te disse que tem uma forma de desenvolver sua própria
-            linguagem e não depender só da inspiração pra criar seus próprios
-            solos com um SISTEMA DE VISUALIZAÇÃO CRIATIVO?
+            {{ $t("reframe.quote1") }}
           </p>
 
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
-            Mas antes deixa eu me apresentar...
+            {{ $t("reframe.quote2") }}
           </p>
         </blockquote>
       </div>

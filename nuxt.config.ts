@@ -7,7 +7,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: "pt-BR" },
       link: [
         {
           rel: "preload",
@@ -38,5 +37,43 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ["@nuxt/icon", "@nuxtjs/robots"],
+  modules: ["@nuxt/icon", "@nuxtjs/robots", "@nuxtjs/i18n"],
+
+  i18n: {
+    strategy: "prefix_except_default",
+    defaultLocale: "pt-BR",
+    locales: [
+      {
+        code: "pt-BR",
+        language: "pt-BR",
+        name: "Português",
+        file: "pt-BR.json",
+      },
+      {
+        code: "en-US",
+        language: "en-US",
+        name: "English",
+        file: "en-US.json",
+      },
+      {
+        code: "es-ES",
+        language: "es-ES",
+        name: "Español",
+        file: "es-ES.json",
+      },
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      cookieSecure: true,
+      cookieCrossOrigin: false,
+      redirectOn: "root",
+      fallbackLocale: "pt-BR",
+      alwaysRedirect: false,
+    },
+    baseUrl: "https://exemplo.com.br",
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
+  },
 });

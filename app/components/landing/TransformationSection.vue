@@ -1,21 +1,13 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const { containerRef } = useScrollReveal();
 
-const before = [
-  "Improvisa sempre com as mesmas frases",
-  "Congela na hora de solar",
-  "Estuda muito, mas não aplica nada",
-  "Não tem identidade no instrumento",
-  "Pula de método em método sem resultado",
-];
-
-const after = [
-  "Cria solos com uma linguagem única",
-  "Improvisa com confiança",
-  "Não se perde mais no braço da guitarra",
-  "Não é mais o cara que só sabe copiar",
-  "Desenvolve sua própria criatividade",
-];
+const before = computed(() =>
+  ([1, 2, 3, 4, 5] as const).map((n) => t(`transformation.before.${n}`)),
+);
+const after = computed(() =>
+  ([1, 2, 3, 4, 5] as const).map((n) => t(`transformation.after.${n}`)),
+);
 </script>
 
 <template>
@@ -30,14 +22,16 @@ const after = [
         <p
           class="text-sm font-semibold uppercase tracking-widest text-amber-dark"
         >
-          Ainda tem dúvidas se é para você?
+          {{ $t("transformation.eyebrow") }}
         </p>
         <h2
           id="transformation-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-light sm:text-3xl md:text-4xl"
         >
-          De guitarrista travado para guitarrista que
-          <span class="text-amber-dark">cria com liberdade</span>
+          {{ $t("transformation.heading.prefix") }}
+          <span class="text-amber-dark">{{
+            $t("transformation.heading.highlight")
+          }}</span>
         </h2>
       </div>
 
@@ -58,7 +52,7 @@ const after = [
               />
             </div>
             <h3 class="text-lg font-bold text-text-on-light">
-              Antes do método
+              {{ $t("transformation.beforeTitle") }}
             </h3>
           </div>
           <ul class="space-y-4" role="list">
@@ -96,7 +90,7 @@ const after = [
               />
             </div>
             <h3 class="text-lg font-bold text-text-on-light">
-              Depois do método
+              {{ $t("transformation.afterTitle") }}
             </h3>
           </div>
           <ul class="space-y-4" role="list">
