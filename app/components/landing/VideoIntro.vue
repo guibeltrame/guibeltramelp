@@ -249,7 +249,7 @@ onBeforeUnmount(() => {
 
 <template>
   <section
-    class="relative flex min-h-dvh items-center justify-center bg-dark px-4 py-6 sm:px-6 sm:py-8 lg:py-10"
+    class="video-intro-section relative flex min-h-dvh items-center justify-center bg-dark px-4 py-6 sm:px-6 sm:py-8 lg:py-10"
     aria-label="Vídeo de apresentação do curso"
   >
     <!-- Ambient glow -->
@@ -260,112 +260,90 @@ onBeforeUnmount(() => {
     </div>
 
     <div
-      class="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center"
+      class="video-intro-inner relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center"
     >
-      <!-- Header -->
-      <div class="mb-3 text-center sm:mb-5 lg:mb-6">
-        <p
-          class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
-        >
-          Você já sabe tocar,
-        </p>
-        <h2
-          class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
-        >
-          MAS NA HORA DE
-          <span class="text-amber">IMPROVISAR</span> SEMPRE
-          <p>REPETE A MESMA COISA</p>
-        </h2>
-        <h3
-          class="mt-2 text-sm font-bold leading-snug text-text-on-dark sm:text-base md:text-lg"
-        >
-          Veja como ter ideias para criar frases e melodias sem
-          depender de inspiração, independente do seu nível técnico e sem
-          escalas complexas.
-
-          <p class="mt-3 sm:mt-6 lg:mt-8">Dê o play no vídeo abaixo:</p>
-        </h3>
-      </div>
-
-      <!-- Video -->
-      <div
-        class="video-wrapper relative overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
-      >
-        <Transition name="spinner-fade">
-          <div
-            v-if="!isPlayerReady"
-            class="absolute inset-0 z-10 flex items-center justify-center bg-dark-surface"
+      <!-- Copy + vídeo: agrupados para layout compacto em landscape / altura curta -->
+      <div class="video-intro-main w-full">
+        <!-- Header -->
+        <div class="video-intro-copy mb-3 text-center sm:mb-5 lg:mb-6">
+          <p
+            class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
           >
-            <div
-              class="size-10 animate-spin rounded-full border-[3px] border-dark-muted border-t-amber sm:size-12"
-            />
-          </div>
-        </Transition>
-
-        <div :id="PLAYER_EL_ID" />
-
-        <!--
-          Overlay clique-bloqueador: impede que o usuário pause o vídeo
-          clicando no iframe ou interaja com o branding do YouTube.
-          Aparece somente após o vídeo iniciar; antes disso, o próprio
-          botão de play cobre toda a área do player.
-        -->
-        <div
-          v-if="isPlayerReady && hasUserStarted"
-          class="absolute inset-0 z-20"
-          aria-hidden="true"
-        />
-
-        <!-- Controle play/pause estilo barra do YouTube (canto inferior esquerdo) -->
-        <div
-          v-if="isPlayerReady && hasUserStarted"
-          class="pointer-events-none absolute inset-0 z-30 flex items-end"
-        >
-          <button
-            type="button"
-            class="yt-like-transport pointer-events-auto mb-2.5 ml-2.5 flex size-9 shrink-0 items-center justify-center rounded-sm bg-black/60 text-white shadow-sm ring-1 ring-white/10 transition-[background,transform] hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-0 active:scale-95 sm:mb-3 sm:ml-3 sm:size-10"
-            :aria-pressed="isYtPlaying"
-            :aria-label="isYtPlaying ? 'Pausar o vídeo' : 'Reproduzir o vídeo'"
-            @click="togglePlayPause"
+            Você já sabe tocar,
+          </p>
+          <h2
+            class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
           >
-            <svg
-              v-if="isYtPlaying"
-              class="size-[18px] shrink-0 sm:size-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <!-- Barras centradas no viewBox 24×24 (o path padrão do heroicons fica à esquerda) -->
-              <path d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z" />
-            </svg>
-            <svg
-              v-else
-              class="ml-0.5 size-[18px] sm:size-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-              />
-            </svg>
-          </button>
+            MAS NA HORA DE
+            <span class="text-amber">IMPROVISAR</span> SEMPRE
+            <p>REPETE A MESMA COISA</p>
+          </h2>
+          <h3
+            class="mt-2 text-sm font-bold leading-snug text-text-on-dark sm:text-base md:text-lg"
+          >
+            Veja como ter ideias para criar frases e melodias sem
+            depender de inspiração, independente do seu nível técnico e sem
+            escalas complexas.
+
+            <p class="mt-3 sm:mt-6 lg:mt-8">Dê o play no vídeo abaixo:</p>
+          </h3>
         </div>
 
-        <!-- Botão Play: cobre o player até o usuário iniciar o vídeo -->
-        <Transition name="play-cta-fade">
-          <button
-            v-if="isPlayerReady && !hasUserStarted"
-            type="button"
-            class="play-cta group absolute inset-0 z-30 flex items-center justify-center bg-black/45 backdrop-blur-[1px] transition-colors duration-200 hover:bg-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
-            aria-label="Iniciar o vídeo"
-            @click="startPlayback"
+        <div class="video-intro-video-shell w-full min-h-0 min-w-0">
+          <!-- Video -->
+          <div
+            class="video-wrapper relative min-h-0 w-full shrink-0 overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
           >
-            <span
-              class="pointer-events-none flex items-center gap-2.5 rounded-xl bg-amber px-5 py-3 text-sm font-bold uppercase tracking-wide text-dark shadow-xl shadow-black/40 transition-transform duration-200 group-hover:scale-[1.04] sm:gap-3 sm:px-6 sm:py-3.5 sm:text-base"
+          <Transition name="spinner-fade">
+            <div
+              v-if="!isPlayerReady"
+              class="absolute inset-0 z-10 flex items-center justify-center bg-dark-surface"
+            >
+              <div
+                class="size-10 animate-spin rounded-full border-[3px] border-dark-muted border-t-amber sm:size-12"
+              />
+            </div>
+          </Transition>
+
+          <div :id="PLAYER_EL_ID" class="relative min-h-0 w-full" />
+
+          <!--
+            Overlay clique-bloqueador: impede que o usuário pause o vídeo
+            clicando no iframe ou interaja com o branding do YouTube.
+            Aparece somente após o vídeo iniciar; antes disso, o próprio
+            botão de play cobre toda a área do player.
+          -->
+          <div
+            v-if="isPlayerReady && hasUserStarted"
+            class="absolute inset-0 z-20"
+            aria-hidden="true"
+          />
+
+          <!-- Controle play/pause estilo barra do YouTube (canto inferior esquerdo) -->
+          <div
+            v-if="isPlayerReady && hasUserStarted"
+            class="pointer-events-none absolute inset-0 z-30 flex items-end"
+          >
+            <button
+              type="button"
+              class="yt-like-transport pointer-events-auto mb-2.5 ml-2.5 flex size-9 shrink-0 items-center justify-center rounded-sm bg-black/60 text-white shadow-sm ring-1 ring-white/10 transition-[background,transform] hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-0 active:scale-95 sm:mb-3 sm:ml-3 sm:size-10"
+              :aria-pressed="isYtPlaying"
+              :aria-label="isYtPlaying ? 'Pausar o vídeo' : 'Reproduzir o vídeo'"
+              @click="togglePlayPause"
             >
               <svg
-                class="size-5 sm:size-6"
+                v-if="isYtPlaying"
+                class="size-[18px] shrink-0 sm:size-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <!-- Barras centradas no viewBox 24×24 (o path padrão do heroicons fica à esquerda) -->
+                <path d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z" />
+              </svg>
+              <svg
+                v-else
+                class="ml-0.5 size-[18px] sm:size-5"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 aria-hidden="true"
@@ -374,10 +352,37 @@ onBeforeUnmount(() => {
                   d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
                 />
               </svg>
-              Toque para assistir o vídeo
-            </span>
-          </button>
-        </Transition>
+            </button>
+          </div>
+
+          <!-- Botão Play: cobre o player até o usuário iniciar o vídeo -->
+          <Transition name="play-cta-fade">
+            <button
+              v-if="isPlayerReady && !hasUserStarted"
+              type="button"
+              class="play-cta group absolute inset-0 z-30 flex items-center justify-center bg-black/45 backdrop-blur-[1px] transition-colors duration-200 hover:bg-black/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
+              aria-label="Iniciar o vídeo"
+              @click="startPlayback"
+            >
+              <span
+                class="pointer-events-none flex items-center gap-2.5 rounded-xl bg-amber px-5 py-3 text-sm font-bold uppercase tracking-wide text-dark shadow-xl shadow-black/40 transition-transform duration-200 group-hover:scale-[1.04] sm:gap-3 sm:px-6 sm:py-3.5 sm:text-base"
+              >
+                <svg
+                  class="size-5 sm:size-6"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                  />
+                </svg>
+                Toque para assistir o vídeo
+              </span>
+            </button>
+          </Transition>
+        </div>
+        </div>
       </div>
 
       <!-- CTA + Scroll indicator (aparecem após liberação) -->
@@ -484,38 +489,139 @@ onBeforeUnmount(() => {
 }
 
 /*
- * Wrapper do player: preserva proporção 16:9 e garante que o vídeo
- * caiba na altura útil do viewport, encolhendo proporcionalmente
- * (largura E altura) quando a altura é o fator limitante.
- *
- * --reserved: espaço vertical aproximado consumido pelo header,
- * paddings da section e respiro visual. Reduzido em telas curtas
- * para que o vídeo permaneça com tamanho confortável.
+ * Bloco copy + vídeo: coluna no portrait; em landscape com pouca altura
+ * vira grid para o player ficar na faixa útil sem ser empurrado pra fora.
+ */
+.video-intro-inner {
+  min-width: 0;
+  min-height: 0;
+  /* Altura de referência estável para zoom + mobile (progressive enhancement). */
+  --intro-vh: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .video-intro-inner {
+    --intro-vh: min(100vh, 100dvh);
+  }
+}
+
+@supports (height: 100svh) {
+  .video-intro-inner {
+    --intro-vh: min(100svh, 100vh);
+  }
+}
+
+@supports (height: 100svh) and (height: 100dvh) {
+  .video-intro-inner {
+    --intro-vh: min(100svh, 100dvh);
+  }
+}
+
+.video-intro-main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.video-intro-video-shell {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media (orientation: landscape) and (max-height: 37.5rem) {
+  .video-intro-section {
+    padding-block: 0.375rem;
+    padding-inline: 0.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .video-intro-section {
+      padding-inline: 1rem;
+    }
+  }
+
+  .video-intro-main {
+    display: grid;
+    grid-template-columns: minmax(0, min(38vw, 14rem)) minmax(0, 1fr);
+    grid-template-rows: minmax(0, calc(var(--intro-vh) - 0.75rem));
+    column-gap: 0.5rem;
+    align-items: stretch;
+    align-content: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    box-sizing: border-box;
+  }
+
+  .video-intro-copy {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0 !important;
+    text-align: left;
+    align-self: start;
+    min-height: 0;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding-right: 0.125rem;
+  }
+
+  .video-intro-video-shell {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-height: 100%;
+    min-height: 0;
+    min-width: 0;
+  }
+}
+
+/*
+ * Wrapper do player: 16:9 com teto em viewport estável + --reserved em clamp
+ * (rem + svh) para não “explodir” só em rem com zoom do browser.
  */
 .video-wrapper {
-  --reserved: 17rem;
+  --v-cap: var(--intro-vh);
+  --reserved: clamp(8.5rem, 11svh + 5.25rem, 20rem);
   width: 100%;
-  max-width: min(100%, calc((100dvh - var(--reserved)) * 16 / 9));
+  max-width: min(
+    100%,
+    max(0px, calc((var(--v-cap) - var(--reserved)) * 16 / 9))
+  );
+  max-height: max(0px, calc(var(--v-cap) - var(--reserved)));
   aspect-ratio: 16 / 9;
   margin-inline: auto;
 }
 
+@media (orientation: landscape) and (max-height: 37.5rem) {
+  .video-wrapper {
+    --v-cap: var(--intro-vh);
+    --reserved: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
 @media (min-width: 640px) {
   .video-wrapper {
-    --reserved: 20rem;
+    --reserved: clamp(10rem, 12svh + 5.75rem, 21rem);
   }
 }
 
 @media (min-width: 1024px) {
   .video-wrapper {
-    --reserved: 22rem;
-  }
-}
-
-/* Fallback para navegadores sem suporte a 100dvh */
-@supports not (height: 100dvh) {
-  .video-wrapper {
-    max-width: min(100%, calc((100vh - var(--reserved)) * 16 / 9));
+    --reserved: clamp(11rem, 13svh + 6rem, 22rem);
   }
 }
 
