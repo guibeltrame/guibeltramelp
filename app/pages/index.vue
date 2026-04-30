@@ -31,7 +31,7 @@ useHead({
 
 <template>
   <div>
-    <LandingVideoIntro video-id="ooGThGr93XE" @released="onVideoReleased" />
+    <LandingVideoIntro video-id="JjVtwGpAaIA" @released="onVideoReleased" />
 
     <main
       :inert="isContentLocked || undefined"
