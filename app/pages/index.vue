@@ -1,17 +1,4 @@
 <script setup lang="ts">
-const isHydrated = ref(false);
-const isReleased = ref(false);
-
-onMounted(() => {
-  isHydrated.value = true;
-});
-
-const isContentLocked = computed(() => isHydrated.value && !isReleased.value);
-
-function onVideoReleased() {
-  isReleased.value = true;
-}
-
 useSeoMeta({
   title: "Gui Beltrame - Crie solos do zero",
   description:
@@ -31,12 +18,9 @@ useHead({
 
 <template>
   <div>
-    <LandingVideoIntro video-id="JjVtwGpAaIA" @released="onVideoReleased" />
+    <LandingVideoIntro video-id="JjVtwGpAaIA" />
 
-    <main
-      :inert="isContentLocked || undefined"
-      :aria-hidden="isContentLocked || undefined"
-    >
+    <main>
       <LandingStudentMethodOpinionsSection />
 
       <LandingPainIdentification />

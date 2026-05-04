@@ -8,7 +8,7 @@ Este arquivo é o **manual de bordo** do seu site de vendas (landing page). A id
 
 - **O que é:** um **site de uma página só** (landing page) feito com ferramentas modernas de desenvolvimento web. Na prática, é o **arquivo do seu site** que o computador entende e transforma em página bonita no navegador.
 - **Para que serve:** apresentar uma oferta (curso, produto, serviço), explicar benefícios, mostrar depoimentos, tirar dúvidas e levar a pessoa a **clicar no botão de compra ou contato**.
-- **O que você pode mudar sozinho (na maioria dos casos):** textos, títulos, listas, preços de exemplo, links dos botões, **ID do vídeo do YouTube**, **tempo até liberar o restante da página**, cores “oficiais” do site (tons de fundo, âmbar/dourado, texto), e ajustes de tamanho de letra quando aparecem classes como `text-lg`, `text-2xl`, etc.
+- **O que você pode mudar sozinho (na maioria dos casos):** textos, títulos, listas, preços de exemplo, links dos botões, **ID do vídeo do YouTube**, **tempo em segundos para exibir o CTA abaixo do vídeo**, cores “oficiais” do site (tons de fundo, âmbar/dourado, texto), e ajustes de tamanho de letra quando aparecem classes como `text-lg`, `text-2xl`, etc.
 - **O que é melhor pedir para um desenvolvedor:** criar **nova seção** do zero, mudar **layout** (colunas, ordem visual pesada), mexer em **animações**, **formulários**, **pagamento**, **integração com e-mail** ou **analytics**, ou se algo **parar de funcionar** depois de uma edição.
 
 ---
@@ -35,7 +35,7 @@ Use esta tabela para **achar rápido** onde editar cada bloco:
 
 | Arquivo                     | Conteúdo típico                                                                                                |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `VideoIntro.vue`            | Textos do **fullscreen** do vídeo, botão “Quero começar agora”, e o **tempo em segundos** para liberar o site. |
+| `VideoIntro.vue`            | Textos do vídeo inicial e o **tempo em segundos** para exibir o CTA abaixo do player. |
 | `HeroSection.vue`           | **Título principal**, subtítulo, botões do topo.                                                               |
 | `SocialProofBar.vue`        | Números da faixa (alunos, nota, etc.).                                                                         |
 | `PainIdentification.vue`    | Dor/problema do público.                                                                                       |
@@ -186,7 +186,7 @@ Nos componentes, os tamanhos aparecem como classes Tailwind, por exemplo:
 2. Procure a linha parecida com:
 
    ```vue
-   <LandingVideoIntro video-id="JphhnzD1l5g" @released="onVideoReleased" />
+   <LandingVideoIntro video-id="JjVtwGpAaIA" />
    ```
 
 3. Troque **`JphhnzD1l5g`** pelo **ID do vídeo** que você quer.
@@ -201,15 +201,16 @@ Nos componentes, os tamanhos aparecem como classes Tailwind, por exemplo:
 
 ---
 
-## 9. Como alterar o tempo de “bloqueio” do vídeo
+## 9. Como alterar o tempo para exibir o CTA do vídeo
 
-Enquanto o visitante não assiste o suficiente (ou o vídeo não termina), o restante da página fica **travado para interação** (é o comportamento programado do template).
+No comportamento atual, a landing fica **sempre visível e rolável**.  
+O `UNLOCK_TIME_SECONDS` controla **somente** quando o bloco de CTA abaixo do vídeo aparece.
 
 1. Abra **`app/components/landing/VideoIntro.vue`**.
 2. No topo do `<script setup>`, localize algo como:
 
    ```ts
-   const UNLOCK_TIME_SECONDS = 10;
+  const UNLOCK_TIME_SECONDS = 1179;
    ```
 
 3. Esse número está em **segundos**.
@@ -223,9 +224,12 @@ Enquanto o visitante não assiste o suficiente (ou o vídeo não termina), o res
 | `180` | 3 minutos                           |
 | `232` | 3 minutos e 52 segundos (3×60 + 52) |
 
-Há um comentário no código dizendo que, em produção, costuma-se usar algo próximo da **duração total do vídeo**. O valor `10` no código é útil para **testar rápido**.
+Há um comentário no código dizendo que, em produção, costuma-se usar algo próximo da **duração total do vídeo**.
 
-**O que acontece se eu colocar um número muito alto?** A pessoa demora mais para conseguir rolar a página (pode irritar). Se colocar **muito baixo**, libera quase na hora.
+**O que acontece se eu colocar um número muito alto?** O CTA vai demorar mais para aparecer.  
+Se colocar **muito baixo**, o CTA aparece quase na hora.
+
+> **Importante (regra atual):** não existe bloqueio de página e não existe persistência dessa progressão em `localStorage`.
 
 ---
 
@@ -253,9 +257,10 @@ Exemplo de uso:
 
 **Link padrão:** se você não passar `href`, o componente usa **`#oferta`** (definido em `app/components/ui/CtaButton.vue`).
 
-### Botão “Quero começar agora” no vídeo
+### Botão principal no bloco do vídeo
 
-- Está **dentro** de `VideoIntro.vue`, é um `<a>` com `href="#hero-section"` e texto **“Quero começar agora”**. Dá para mudar o texto e o `href` ali.
+- Está em `VideoIntro.vue` e hoje aponta para o checkout da Hotmart.
+- Ele só aparece quando o `UNLOCK_TIME_SECONDS` for atingido (ou no fim/erro do player).
 
 ### Como validar
 
@@ -323,7 +328,7 @@ Considere ajuda profissional se você quiser:
 
 - **Nova seção** ou mudar o **desenho** (layout) inteiro.
 - **Formulários**, **área de membros**, **checkout**, **pixel** de anúncio, **tag do Google**.
-- **Trocar animações** ou o jeito que o vídeo trava/destrava a página.
+- **Trocar animações** ou mexer no comportamento do player sem testar responsividade e acessibilidade.
 - Incluir **foto real** no lugar do placeholder da autoridade sem risco de quebrar o layout.
 - **Corrigir erro** que impede o site de subir ou aparecer em branco.
 
@@ -340,14 +345,14 @@ Considere ajuda profissional se você quiser:
 **Como coloco outro vídeo?**  
 → Troque o **`video-id`** em **`app/pages/index.vue`** (veja seção 8).
 
-**Como aumento o tempo de bloqueio até liberar o site?**  
+**Como aumento o tempo para aparecer o CTA abaixo do vídeo?**  
 → Aumente **`UNLOCK_TIME_SECONDS`** em **`app/components/landing/VideoIntro.vue`** (veja seção 9).
 
 **O que fazer se algo quebrar?**  
 → Use **Ctrl+Z** no editor para desfazer, ou **git** para voltar versão (se você usa). Se não souber, **chame quem mantém o código** com a mensagem de erro copiada.
 
 **Onde fica o preço e o botão de compra?**  
-→ **`app/components/landing/OfferSection.vue`**. O botão principal hoje aponta para **`href="#"`** — troque pelo **link real** da sua página de pagamento.
+→ **`app/components/landing/OfferSection.vue`**. O botão principal já aponta para um checkout Hotmart; altere o `href` se quiser trocar o destino.
 
 **Onde mudo e-mail e links do rodapé?**  
 → **`app/components/landing/FooterSection.vue`** (ex.: `mailto:contato@exemplo.com.br`).
@@ -359,7 +364,7 @@ Considere ajuda profissional se você quiser:
 | Quero mudar…                                     | Olhe primeiro este arquivo                 |
 | ------------------------------------------------ | ------------------------------------------ |
 | Título/descrição do Google e ID do vídeo         | `app/pages/index.vue`                      |
-| Tempo até liberar após o vídeo                   | `app/components/landing/VideoIntro.vue`    |
+| Tempo para exibir CTA abaixo do vídeo            | `app/components/landing/VideoIntro.vue`    |
 | Cores principais da marca                        | `app/assets/css/main.css`                  |
 | Textos do herói e botões do topo                 | `app/components/landing/HeroSection.vue`   |
 | Prints de depoimentos (WhatsApp)                 | `app/components/landing/TestimonialsSection.vue` + `public/images/dep_*.jpeg` |
