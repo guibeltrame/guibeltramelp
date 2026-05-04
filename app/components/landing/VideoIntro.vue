@@ -73,6 +73,8 @@ function createPlayer() {
       modestbranding: 1,
       playsinline: 1,
       iv_load_policy: 3,
+      enablejsapi: 1,
+      origin: window.location.origin,
     },
     events: {
       onReady: () => {
@@ -139,11 +141,6 @@ function togglePlayPause() {
   } else {
     player.playVideo();
   }
-}
-
-function resumePlaybackFromOverlay() {
-  if (!player || !hasUserStarted.value || isYtPlaying.value) return;
-  player.playVideo();
 }
 
 onMounted(async () => {
@@ -222,16 +219,15 @@ onBeforeUnmount(() => {
           <div :id="PLAYER_EL_ID" class="relative min-h-0 w-full" />
 
           <!--
-            Overlay clique-bloqueador: impede que o usuário pause o vídeo
-            clicando no iframe ou interaja com o branding do YouTube.
-            Aparece somente após o vídeo iniciar; antes disso, o próprio
-            botão de play cobre toda a área do player.
+            Camada sobre o iframe: bloqueia clique direto no YouTube e
+            espelha play/pause no centro (mesma API que o botão do canto).
           -->
-          <div
+          <button
             v-if="isPlayerReady && hasUserStarted"
-            class="absolute inset-0 z-20"
-            aria-hidden="true"
-            @click="resumePlaybackFromOverlay"
+            type="button"
+            class="absolute inset-0 z-20 cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
+            :aria-label="isYtPlaying ? 'Pausar o vídeo' : 'Reproduzir o vídeo'"
+            @click="togglePlayPause"
           />
 
           <!-- Controle play/pause estilo barra do YouTube (canto inferior esquerdo) -->
