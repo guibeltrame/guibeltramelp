@@ -141,6 +141,11 @@ function togglePlayPause() {
   }
 }
 
+function resumePlaybackFromOverlay() {
+  if (!player || !hasUserStarted.value || isYtPlaying.value) return;
+  player.playVideo();
+}
+
 onMounted(async () => {
   try {
     await loadYouTubeAPI();
@@ -226,6 +231,7 @@ onBeforeUnmount(() => {
             v-if="isPlayerReady && hasUserStarted"
             class="absolute inset-0 z-20"
             aria-hidden="true"
+            @click="resumePlaybackFromOverlay"
           />
 
           <!-- Controle play/pause estilo barra do YouTube (canto inferior esquerdo) -->
