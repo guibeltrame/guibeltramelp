@@ -17,8 +17,6 @@ const isReleased = ref(false);
 const peakWatchedSeconds = ref(0);
 /** Usuário já iniciou a reprodução nesta página. */
 const hasUserStarted = ref(false);
-/** Sincronizado com o YouTube: reproduzindo (inclui buffering) ou pausado. */
-const isYtPlaying = ref(false);
 
 let player: {
   destroy(): void;
@@ -66,9 +64,9 @@ function createPlayer() {
   player = new YT.Player(PLAYER_EL_ID, {
     videoId: props.videoId,
     playerVars: {
-      controls: 0,
-      disablekb: 1,
-      fs: 0,
+      controls: 1,
+      disablekb: 0,
+      fs: 1,
       rel: 0,
       modestbranding: 1,
       playsinline: 1,
@@ -81,14 +79,6 @@ function createPlayer() {
         isPlayerReady.value = true;
       },
       onStateChange: (e: { data: number }) => {
-        if (
-          e.data === YT.PlayerState.PLAYING ||
-          e.data === YT.PlayerState.BUFFERING
-        ) {
-          isYtPlaying.value = true;
-        } else {
-          isYtPlaying.value = false;
-        }
         if (e.data === YT.PlayerState.ENDED) {
           release();
         }
@@ -132,15 +122,6 @@ function startPlayback() {
   player.playVideo();
   hasUserStarted.value = true;
   startTimeCheck();
-}
-
-function togglePlayPause() {
-  if (!player) return;
-  if (isYtPlaying.value) {
-    player.pauseVideo();
-  } else {
-    player.playVideo();
-  }
 }
 
 onMounted(async () => {
@@ -217,54 +198,6 @@ onBeforeUnmount(() => {
           </Transition>
 
           <div :id="PLAYER_EL_ID" class="relative min-h-0 w-full" />
-
-          <!--
-            Camada sobre o iframe: bloqueia clique direto no YouTube e
-            espelha play/pause no centro (mesma API que o botão do canto).
-          -->
-          <button
-            v-if="isPlayerReady && hasUserStarted"
-            type="button"
-            class="absolute inset-0 z-20 cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
-            :aria-label="isYtPlaying ? 'Pausar o vídeo' : 'Reproduzir o vídeo'"
-            @click="togglePlayPause"
-          />
-
-          <!-- Controle play/pause estilo barra do YouTube (canto inferior esquerdo) -->
-          <div
-            v-if="isPlayerReady && hasUserStarted"
-            class="pointer-events-none absolute inset-0 z-30 flex items-end"
-          >
-            <button
-              type="button"
-              class="yt-like-transport pointer-events-auto mb-2.5 ml-2.5 flex size-9 shrink-0 items-center justify-center rounded-sm bg-black/60 text-white shadow-sm ring-1 ring-white/10 transition-[background,transform] hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-0 active:scale-95 sm:mb-3 sm:ml-3 sm:size-10"
-              :aria-pressed="isYtPlaying"
-              :aria-label="isYtPlaying ? 'Pausar o vídeo' : 'Reproduzir o vídeo'"
-              @click="togglePlayPause"
-            >
-              <svg
-                v-if="isYtPlaying"
-                class="size-[18px] shrink-0 sm:size-5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <!-- Barras centradas no viewBox 24×24 (o path padrão do heroicons fica à esquerda) -->
-                <path d="M6.5 5.25h2v13.5h-2V5.25ZM15.5 5.25h2v13.5h-2V5.25Z" />
-              </svg>
-              <svg
-                v-else
-                class="ml-0.5 size-[18px] sm:size-5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-                />
-              </svg>
-            </button>
-          </div>
 
           <!-- Botão Play: cobre o player até o usuário iniciar o vídeo -->
           <Transition name="play-cta-fade">
