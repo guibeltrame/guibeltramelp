@@ -53,7 +53,7 @@ const headingId = computed(() => `student-card-${props.vimeoId}`);
 
       <div
         class="relative bg-black/50"
-        style="aspect-ratio: 16 / 9"
+        style="aspect-ratio: 9 / 16"
       >
         <iframe
           :src="embedSrc(vimeoId)"
