@@ -16,17 +16,10 @@ const { containerRef } = useScrollReveal();
 
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-3xl">
-        <!-- Eyebrow -->
-        <p
-          class="scroll-reveal text-sm font-semibold uppercase tracking-widest text-amber"
-        >
-          A verdade que ninguém te conta
-        </p>
-
         <!-- Headline -->
         <h2
           id="reframe-heading"
-          class="scroll-reveal mt-4 text-2xl font-bold leading-tight tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
+          class="scroll-reveal text-2xl font-bold leading-tight tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
           O problema
           <span class="text-amber">nunca foi falta de talento.</span>
@@ -54,9 +47,13 @@ const { containerRef } = useScrollReveal();
             >, mas você não pode depender só de inspiração.
           </p>
 
+          <p id="reframe-manifest-kicker" class="scroll-reveal text-center">
+            A grande verdade é:
+          </p>
+
           <!-- Manifesto: frase central da reinterpretação -->
           <article
-            class="scroll-reveal relative overflow-hidden rounded-2xl border border-amber/20 bg-dark-surface/90 p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] sm:p-8 md:p-10"
+            class="scroll-reveal relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-amber/20 bg-dark-surface/90 p-6 text-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] sm:max-w-2xl sm:p-8 md:p-10"
             aria-labelledby="reframe-manifest-kicker"
           >
             <div
@@ -69,30 +66,13 @@ const { containerRef } = useScrollReveal();
             />
 
             <p
-              id="reframe-manifest-kicker"
-              class="relative pl-5 text-xs font-semibold uppercase tracking-[0.2em] text-amber/90 sm:text-sm"
-            >
-              A GRANDE VERDADE É:
-            </p>
-
-            <p
-              class="relative mt-5 max-w-prose font-bold leading-[1.15] tracking-tight text-text-on-dark"
+              class="relative mx-auto max-w-[min(100%,19rem)] font-bold leading-[1.15] tracking-tight text-text-on-dark sm:max-w-[22rem] md:max-w-[24rem] md:leading-tight"
             >
               <span
-                class="block text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
+                class="text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
               >
-                Escala ou técnica nenhuma salva
-              </span>
-              <span
-                class="mt-1 block text-2xl leading-[1.12] text-amber sm:mt-2 sm:text-3xl md:text-4xl md:leading-[1.1] lg:text-5xl lg:leading-[1.08]"
-              >
-                um solo
-                <span class="text-text-on-dark"> sem </span>
-                <span
-                  class="underline decoration-amber/45 decoration-2 underline-offset-[5px] sm:decoration-[3px] sm:underline-offset-[7px]"
-                >
-                  estrutura
-                </span>
+                ESCALA OU TÉCNICA NENHUMA SALVA
+                <span class="text-amber">SOLO SEM ESTRUTURA</span>
               </span>
             </p>
           </article>
@@ -107,7 +87,7 @@ const { containerRef } = useScrollReveal();
         <!-- Visual separator / quote -->
         <blockquote class="scroll-reveal mt-10 border-l-4 border-amber pl-6">
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
-            Mas e se eu te disse que tem uma forma de desenvolver sua própria
+            Mas e se eu te disser que tem uma forma de desenvolver sua própria
             linguagem e não depender só da inspiração pra criar seus próprios
             solos com um SISTEMA DE VISUALIZAÇÃO CRIATIVO?
           </p>
