@@ -161,19 +161,19 @@ onBeforeUnmount(() => {
           <p
             class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
           >
-            Você já sabe tocar,
+            Você já sabe tocar, agora
           </p>
           <h2
-            class="mt-2 text-base font-bold leading-tight text-text-on-dark sm:text-2xl md:text-3xl"
+            class="mt-2 text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
-            MAS NA HORA DE
-            <span class="text-amber">IMPROVISAR</span> SEMPRE
-            <p>REPETE A MESMA COISA</p>
+            APRENDA A
+            <span class="text-amber">CRIAR SOLOS</span> E DESCUBRA SUA
+            <p>IDENTIDADE NA GUITARRA</p>
           </h2>
           <h3
-            class="mt-2 text-sm font-bold leading-snug text-text-on-dark sm:text-base md:text-lg"
+            class="mt-3 text-sm font-bold leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-lg"
           >
-            Veja como ter ideias para criar frases e melodias sem
+            Crie frases e melodias sem
             depender de inspiração, independente do seu nível técnico e sem
             escalas complexas.
 
