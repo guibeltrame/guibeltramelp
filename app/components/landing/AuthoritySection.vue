@@ -16,7 +16,6 @@ function vimeoEmbedSrc(id: string) {
 
 const credentials = [
   { icon: "lucide:guitar", text: "Mais de 10 anos ensinando guitarra" },
-  { icon: "lucide:users", text: "500+ alunos formados" },
   { icon: "lucide:award", text: "Método próprio com resultados comprovados" },
 ];
 </script>

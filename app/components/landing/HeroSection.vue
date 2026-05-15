@@ -44,21 +44,6 @@ const benefitItems = [
           </div>
         </div>
 
-        <!-- Badge de prova social -->
-        <div
-          class="scroll-reveal mb-8 inline-flex items-center gap-2 rounded-full border border-dark-muted bg-dark-surface px-4 py-2 text-sm text-text-on-dark-muted"
-        >
-          <Icon
-            name="lucide:users"
-            class="size-4 text-amber"
-            aria-hidden="true"
-          />
-          <span
-            >Mais de <strong class="text-text-on-dark">500 alunos</strong> já
-            transformaram sua forma de tocar</span
-          >
-        </div>
-
         <!-- Headline -->
         <h1
           id="hero-heading"
@@ -97,15 +82,9 @@ const benefitItems = [
             />
 
             <div class="relative text-center">
-              <p
-                class="mx-auto inline-block rounded-full border border-amber/25 bg-amber/5 px-4 py-2 text-[0.65rem] font-semibold uppercase leading-snug tracking-[0.2em] text-amber sm:px-5 sm:text-xs sm:tracking-[0.22em]"
-              >
-                TRÊS ETAPAS PARA TRANSFORMAR A SUA FORMA DE CRIAR E IMPROVISAR
-              </p>
-
               <h2
                 id="hero-value-subheading"
-                class="mx-auto mt-6 max-w-3xl text-balance text-lg font-bold leading-snug tracking-tight text-text-on-dark sm:text-xl md:text-2xl"
+                class="mx-auto max-w-3xl text-balance text-lg font-bold leading-snug tracking-tight text-text-on-dark sm:text-xl md:text-2xl"
               >
                 O CIÊNCIA DAS 6 CORDAS É PARA VOCÊ QUE QUER...
               </h2>
