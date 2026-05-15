@@ -7,12 +7,12 @@ const testimonials = [
     alt: "Depoimento real de aluno via WhatsApp sobre o curso de guitarra",
   },
   {
-    src: "/images/dep_02.jpeg",
-    alt: "Depoimento real de aluno via WhatsApp — relato de evolução no improviso",
-  },
-  {
     src: "/images/dep_03.jpeg",
     alt: "Depoimento real de aluno via WhatsApp — feedback sobre o método",
+  },
+  {
+    src: "/images/dep_02.jpeg",
+    alt: "Depoimento real de aluno via WhatsApp — relato de evolução no improviso",
   },
   {
     src: "/images/dep_04.jpeg",
@@ -33,6 +33,10 @@ const testimonials = [
   {
     src: "/images/dep_08.jpeg",
     alt: "Depoimento real de aluno via WhatsApp — satisfação com o conteúdo",
+  },
+  {
+    src: "/images/depi2.jpg",
+    alt: "Depoimento real de aluno sobre o método de guitarra",
   },
 ];
 
@@ -137,7 +141,7 @@ onUnmounted(() => {
 
       <!-- Grid -->
       <div
-        class="stagger-children mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-5"
+        class="stagger-children mx-auto mt-10 grid w-[77%] grid-cols-3 gap-3 sm:mt-12 sm:gap-4 lg:gap-5"
       >
         <div
           v-for="(testimonial, index) in testimonials"

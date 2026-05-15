@@ -21,16 +21,14 @@ useHead({
     <LandingVideoIntro video-id="JjVtwGpAaIA" />
 
     <main>
-      <LandingStudentMethodOpinionsSection />
-
       <LandingPainIdentification />
       <LandingProblemReframe />
       <LandingAuthoritySection />
       <LandingMethodPillars />
       <LandingHeroSection />
       <LandingTriadeCreativaSection />
-      <LandingTestimonialsSection />
       <LandingStudentVideosSection />
+      <LandingTestimonialsSection />
       <LandingCourseModules />
       <LandingPlatformBenefits />
       <LandingBonusSection />
