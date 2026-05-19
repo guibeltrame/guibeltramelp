@@ -4,30 +4,30 @@ const { containerRef } = useScrollReveal();
 const modules = [
   {
     number: "01",
-    title: "Base sólida para solos",
+    title: "BASE SÓLIDA DA CRIATIVIDADE",
     description:
-      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos.",
+      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Nothing Else Matters (Metallica) e Wasting Love (Iron Maiden)'.",
     lessons: 10,
   },
   {
     number: "02",
-    title: "Construção de Vocabulário",
+    title: "CONSTRUÇÃO DE VOCABULÁRIO",
     description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação.",
+      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer), The Thrill Is Gone (B.B. King) e Fade To Black (Metallica)'.",
     lessons: 10,
   },
   {
     number: "03",
-    title: "Criando solos do ZERO",
+    title: "CRIANDO SOLOS DO ZERO",
     description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Entenda a estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd) e Seize The Day (Avenged Sevenfold)'.",
     lessons: 10,
   },
   {
     number: "04",
-    title: "Improvisação",
+    title: "SOLO SIGNATURE",
     description:
-      "Como trazer todas essas ferramentas de criação para a sua improvisação de forma natural e trabalhar o seu raciocínio.",
+      "Aprimorar todas as ferramentas de criação para desenvolver sua linguagem e criar solos que soam profissionais e únicos. Aqui você aprende elementos que impulsionam ainda mais sua interpretação e entende isso acontecendo em músicas como 'November Rain (Guns n' Roses), Smoke On The Water (Deep Purple) e Slow Train (Chris Buck)'.",
     lessons: 14,
   },
   {
