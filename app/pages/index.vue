@@ -27,9 +27,9 @@ useHead({
       <LandingMethodPillars />
       <LandingHeroSection />
       <LandingTriadeCreativaSection />
+      <LandingCourseModules />
       <LandingStudentVideosSection />
       <LandingTestimonialsSection />
-      <LandingCourseModules />
       <LandingPlatformBenefits />
       <LandingBonusSection />
       <LandingTimeValueSection />
