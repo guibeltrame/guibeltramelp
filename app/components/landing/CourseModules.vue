@@ -6,28 +6,28 @@ const modules = [
     number: "01",
     title: "BASE SÓLIDA DA CRIATIVIDADE",
     description:
-      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Nothing Else Matters (Metallica) e Wasting Love (Iron Maiden)'.",
+      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Nothing Else Matters (Metallica) e Wasting Love (Iron Maiden)'. OBJETIVO: Desenvolver um padrão de visualização das escalas.",
     lessons: 10,
   },
   {
     number: "02",
     title: "CONSTRUÇÃO DE VOCABULÁRIO",
     description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer), The Thrill Is Gone (B.B. King) e Fade To Black (Metallica)'.",
+      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer) e Seize The Day (Avenged Sevenfold).'. OBJETIVO: Referências para você criar suas próprias frases.",
     lessons: 10,
   },
   {
     number: "03",
     title: "CRIANDO SOLOS DO ZERO",
     description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Entenda a estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd) e Seize The Day (Avenged Sevenfold)'.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Entenda a estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd)'. OBJETIVO: Criar seu primeiro solo estruturado.",
     lessons: 10,
   },
   {
     number: "04",
     title: "SOLO SIGNATURE",
     description:
-      "Aprimorar todas as ferramentas de criação para desenvolver sua linguagem e criar solos que soam profissionais e únicos. Aqui você aprende elementos que impulsionam ainda mais sua interpretação e entende isso acontecendo em músicas como 'November Rain (Guns n' Roses), Smoke On The Water (Deep Purple) e Slow Train (Chris Buck)'.",
+      "Aprimorar todas as ferramentas de criação para desenvolver elementos que impulsionam ainda mais sua interpretação, que deixam seus solos mais sofisticados e você comece a desenvolver suas características únicas. Você conta com a análise de solos na linguagem Blues e Rock. OBJETIVO: Aperfeiçoar a habilidade de criação adicionando mais elementos ritmicos e de interpretação.",
     lessons: 14,
   },
   {
