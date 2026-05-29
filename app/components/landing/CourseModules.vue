@@ -13,7 +13,7 @@ const modules = [
     number: "02",
     title: "CONSTRUÇÃO DE VOCABULÁRIO",
     description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer) e Seize The Day (Avenged Sevenfold).'. OBJETIVO: Referências para você criar suas próprias frases.",
+      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer), Tennesse Whiskey (Chris Stapleton), Seize The Day (Avenged Sevenfold).'. OBJETIVO: Referências para você criar suas próprias frases.",
     lessons: 10,
   },
   {

@@ -73,15 +73,15 @@ const included = [
           <!-- Price -->
           <div class="text-center">
             <p class="text-sm text-text-on-dark-muted">
-              De <span class="text-lg line-through">R$497</span>
+              De <span class="text-lg line-through">R$397</span>
             </p>
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"
             >
-              R$ <span class="text-amber">297</span>
+              R$ <span class="text-amber">179</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
-              ou <strong class="text-text-on-dark">12x de R$ 30,72</strong> no
+              ou <strong class="text-text-on-dark">12x de R$ 18,51</strong> no
               cartão
             </p>
           </div>
@@ -90,7 +90,7 @@ const included = [
           <div class="mt-8">
             <UiCtaButton
               label="ACESSO IMEDIATO E VITALÍCIO"
-              href="https://pay.hotmart.com/A96166604R?off=utywll39&checkoutMode=10&bid=1776467144426"
+              href="https://pay.hotmart.com/A96166604R?off=utywll39"
               target="_blank"
               variant="primary"
               size="lg"
