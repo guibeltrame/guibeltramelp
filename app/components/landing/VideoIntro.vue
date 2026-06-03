@@ -161,21 +161,20 @@ onBeforeUnmount(() => {
           <p
             class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
           >
-            Você já sabe tocar, agora
+            Você aprendeu a tocar shapes de escalas
           </p>
           <h2
             class="mt-2 text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
-            APRENDA A
-            <span class="text-amber">CRIAR SOLOS</span> E DESCUBRA SUA
-            <p>IDENTIDADE NA GUITARRA</p>
+           MAS NINGUÉM ENSINOU A 
+            <span class="text-amber">CONSTRUIR SOLOS</span> COM COMEÇO, MEIO E FIM
           </h2>
           <h3
-            class="mt-3 text-sm font-bold leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-lg"
+            class="mt-3 text-sm leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
           >
-            Crie frases e melodias sem
-            depender de inspiração, independente do seu nível técnico e sem
-            escalas complexas.
+            Desenvolva criatividade para criar solos com estrutura — aplicando três ferramentas práticas, 
+            sem depender de inspiração e sem precisar passar anos tentando descobrir sozinho o que faz um 
+            solo soar bem.
 
             <p class="mt-3 sm:mt-6 lg:mt-8">Dê o play no vídeo abaixo:</p>
           </h3>

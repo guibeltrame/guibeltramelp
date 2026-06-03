@@ -89,7 +89,7 @@ const { containerRef } = useScrollReveal();
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
             Mas e se eu te disser que tem uma forma de desenvolver sua própria
             linguagem e não depender só da inspiração pra criar seus próprios
-            solos com um SISTEMA DE VISUALIZAÇÃO CRIATIVO?
+            solos com um TRÍADE CRIATIVA?
           </p>
 
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">

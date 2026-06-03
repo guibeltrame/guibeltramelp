@@ -85,7 +85,7 @@ const credentials = [
             class="scroll-reveal mt-6 space-y-4 text-base leading-relaxed text-text-on-light-muted sm:text-lg"
           >
             <p>
-              Sou professor e criador da SISTEMA DE VISUALIZAÇÃO CRIATIVA. Durante anos,
+              Sou professor e criador da TRÍADE CRIATIVA. Durante anos,
               enfrentei exatamente os mesmos problemas que você. E tinha uma
               sensação que sempre voltava: insegurança e que não tinha talento.
             </p>

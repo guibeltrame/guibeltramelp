@@ -59,8 +59,8 @@ const fourthPillar = pillars[3]!;
           id="method-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Por que sem o
-          <span class="text-amber">SISTEMA DE VISUALIÇÃO CRIATIVO</span> você
+          Por que sem a
+          <span class="text-amber">TRÍADE CRIATIVA</span> você
           continua repetindo sempre as mesmas frases?
         </h2>
         <p

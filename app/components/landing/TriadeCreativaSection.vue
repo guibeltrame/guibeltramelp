@@ -77,8 +77,8 @@ const { containerRef } = useScrollReveal();
           id="triade-heading"
           class="text-balance text-xl font-extrabold uppercase leading-tight tracking-[0.02em] text-text-on-dark sm:text-2xl md:text-3xl lg:text-4xl lg:leading-tight"
         >
-          A aprendizagem do Ciência das 6 Cordas é baseada no
-          <span class="text-amber">SISTEMA DE VISUALIZAÇÃO CRIATIVO</span>
+          A aprendizagem do Ciência das 6 Cordas é baseada na
+          <span class="text-amber">TRÍADE CRIATIVA</span>
         </h2>
       </header>
 

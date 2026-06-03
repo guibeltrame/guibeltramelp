@@ -6,7 +6,7 @@ const modules = [
     number: "01",
     title: "BASE SÓLIDA DA CRIATIVIDADE",
     description:
-      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Nothing Else Matters (Metallica) e Wasting Love (Iron Maiden)'. OBJETIVO: Desenvolver um padrão de visualização das escalas.",
+      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Wasting Love (Iron Maiden)'. OBJETIVO: Desenvolver um padrão de visualização das escalas.",
     lessons: 10,
   },
   {
@@ -20,7 +20,7 @@ const modules = [
     number: "03",
     title: "CRIANDO SOLOS DO ZERO",
     description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Entenda a estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd)'. OBJETIVO: Criar seu primeiro solo estruturado.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Aprenda também através da estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd)'. OBJETIVO: Criar seu primeiro solo estruturado.",
     lessons: 10,
   },
   {
