@@ -43,7 +43,7 @@ const pillars = [
     key: "analise",
     title: "Análise",
     description:
-      "Desenvolver um olhar autocrítico para conseguir explorar uma mesma ideia de diversas maneiras, melhorar e repetir esse processo.",
+      "Entender como explorar uma mesma ideia de diversas maneiras ritmicas, dinâmica e interpretação, além de enxergar a lógica por trás do fraseado de outros guitarristas.",
     icon: "lucide:scan-search",
   },
 ] as const;

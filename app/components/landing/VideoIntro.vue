@@ -159,7 +159,7 @@ onBeforeUnmount(() => {
         <!-- Header -->
         <div class="video-intro-copy mb-3 text-center sm:mb-5 lg:mb-6">
           <p
-            class="text-xs font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
+            class="text-xm font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
           >
             Você aprendeu a tocar shapes de escalas
           </p>
