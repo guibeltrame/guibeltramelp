@@ -168,7 +168,7 @@ onBeforeUnmount(() => {
             <p><span class="text-amber">CONSTRUIR SOLOS</span> QUE SOEM BEM</p>
           </h2>
           <h3
-            class="mt-3 text-sm leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
+            class="mt-3 text-[18px] text-sm leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
           >
             Seja altamente criativo nos seus solos, 
             aplicando <p>3 elementos práticos que irão organizar suas ideias</p>
