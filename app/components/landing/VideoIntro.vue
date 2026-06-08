@@ -166,17 +166,15 @@ onBeforeUnmount(() => {
           <h2
             class="mt-2 text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
-           MAS NINGUÉM ENSINOU A 
-            <span class="text-amber">CONSTRUIR SOLOS</span> COM COMEÇO, MEIO E FIM
+           MAS AINDA NÃO CONSEGUE 
+            <span class="text-amber">CONSTRUIR SOLOS</span> COM ESTRUTURA E QUE SOEM BEM
           </h2>
           <h3
             class="mt-3 text-sm leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
           >
-            Desenvolva criatividade para criar solos com estrutura — aplicando três ferramentas práticas, 
-            sem depender de inspiração e sem precisar passar anos tentando descobrir sozinho o que faz um 
-            solo soar bem.
-
-            <p class="mt-3 sm:mt-6 lg:mt-8">Dê o play no vídeo abaixo:</p>
+            Não te falta criatividade, nem mesmo aprender mais uma escala ou lick diferente. 
+            Apenas entendendo 3 elementos você consegue criar seus próprios solos 
+            e improvisos de maneira estruturada apenas com pentatônica e escala maior, sem depender apenas de um dia de inspiração.
           </h3>
         </div>
 
