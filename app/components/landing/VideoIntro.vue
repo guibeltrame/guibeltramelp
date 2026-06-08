@@ -162,7 +162,7 @@ onBeforeUnmount(() => {
             Você aprendeu a tocar shapes de escalas
           </p>
           <h2
-            class="mt-2 text-[28px] text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
+            class="mt-2 text-[26px] text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
            MAS AINDA NÃO CONSEGUE 
             <p><span class="text-amber">CONSTRUIR SOLOS</span> QUE SOEM BEM</p>
