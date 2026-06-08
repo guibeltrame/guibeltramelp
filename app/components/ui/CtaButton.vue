@@ -29,7 +29,7 @@ const relAttr = computed(() => {
 
 const classes = computed(() => {
   const base =
-    "inline-flex items-center justify-center font-bold rounded-xl transition-all duration-300 cursor-pointer select-none";
+  "flex items-center justify-center whitespace-nowrap sm:whitespace-normal font-bold rounded-xl transition-all duration-300 cursor-pointer select-none";
 
   const sizeClasses =
     props.size === "lg" ? "px-10 py-4 text-lg" : "px-8 py-3.5 text-base";
