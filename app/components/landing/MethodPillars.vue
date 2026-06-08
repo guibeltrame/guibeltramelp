@@ -6,14 +6,14 @@ const pillars = [
     number: "01",
     title: "Organização e mapa de melodias",
     description:
-      "Criar melodias e frases não pode depender só de um dia inspirado. Logo quem mapeia e organiza a visualização de escalas, consegue criar novos caminhos e construir mais opções para seu vocabulário.",
+      "Criar melodias e frases não pode depender só de um dia inspirado. Mapear e organizar a visualização de escalas facilita para criar novos caminhos e construir mais opções para seu vocabulário.",
     icon: "lucide:layout-grid",
   },
   {
     number: "02",
-    title: "Sua técnica é somente um mensageiro",
+    title: "Sua técnica é o mensageiro",
     description:
-      "Um solo com muitas ou poucas notas, pouco importa. Entender como amplificar aquilo que você realmente é bom e tocar as notas certas, no tempo e dinâmica correta é o que vai diferenciar o seu discurso.",
+      "Tocar muitas ou poucas notas, pouco importa. A técnica é responsável por como você passa a mensagem e trabalhar elementos de interpretação como dinâmica, rítmica, respiro e expressividade vai dar vida às notas das escalas.",
     icon: "lucide:message-square",
   },
   {
@@ -27,7 +27,7 @@ const pillars = [
     number: "04",
     title: "FEELING E CONSCIÊNCIA JUNTOS",
     description:
-      "Criar bons solos está ligado a como você estrutura um solo, aumenta seu vocabulário, entende elementos como dinâmica e interpretação para dar vida a cada ideia nova e torna-la única.",
+      "Criar bons solos está ligado a como você estrutura um solo, aumenta seu vocabulário, entende elementos de interpretação para dar vida a cada ideia nova e torna-la única.",
     icon: "lucide:target",
   },
 ];
