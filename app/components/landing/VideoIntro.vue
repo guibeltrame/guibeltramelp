@@ -7,7 +7,7 @@ const props = defineProps<{
  * Tempo mínimo de vídeo (em segundos) para exibir o botão abaixo do player.
  * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
  */
-const UNLOCK_TIME_SECONDS = 1179;
+const UNLOCK_TIME_SECONDS = 467;
 
 const PLAYER_EL_ID = "yt-intro-player";
 const isPlayerReady = ref(false);
@@ -158,23 +158,20 @@ onBeforeUnmount(() => {
       <div class="video-intro-main w-full">
         <!-- Header -->
         <div class="video-intro-copy mb-3 text-center sm:mb-5 lg:mb-6">
-          <p
-            class="text-xm font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm"
-          >
+          <p class="text-xm font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm lg:text-[16px]">
             Você aprendeu a tocar shapes de escalas
           </p>
           <h2
             class="mt-2 text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
            MAS AINDA NÃO CONSEGUE 
-            <span class="text-amber">CONSTRUIR SOLOS</span> COM ESTRUTURA E QUE SOEM BEM
+            <p><span class="text-amber">CONSTRUIR SOLOS</span> QUE SOEM BEM</p>
           </h2>
           <h3
             class="mt-3 text-sm leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
           >
-            Não te falta criatividade, nem mesmo aprender mais uma escala ou lick diferente. 
-            Apenas entendendo 3 elementos você consegue criar seus próprios solos 
-            e improvisos de maneira estruturada apenas com pentatônica e escala maior, sem depender apenas de um dia de inspiração.
+            Seja altamente criativo nos seus solos, 
+            aplicando <p>3 elementos práticos que irão organizar suas ideias</p>
           </h3>
         </div>
 

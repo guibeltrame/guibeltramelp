@@ -5,37 +5,19 @@ const benefits = [
   {
     icon: "lucide:gauge",
     title: "Plano Guiado e Prático",
-    description: "Vídeo aulas de 5 à 12 minutos para aplicação prática e rápida.",
+    description: "Vídeo aulas de 5 à 12 minutos para aplicação prática e rápida. Mais materiais em PDF, Apostila e Backing Tracks.",
   },
   {
     icon: "lucide:headphones",
     title: "Níveis de Suporte",
     description:
-      "Dúvidas diretamente na plataforma, Comunidade no WhatsApp e um calendário de encontros ao vivo.",
+      "Dúvidas diretamente na plataforma e grupo de alunos no WhatsApp.",
   },
   {
     icon: "lucide:infinity",
     title: "Acesso Imediato e Vitalício",
     description:
-      "Comprou uma vez, é seu para sempre e você recebe acesso a todo material após a compra.",
-  },
-  {
-    icon: "lucide:smartphone",
-    title: "Assista de qualquer lugar",
-    description:
-      "Aulas disponíveis no celular, tablet ou computador. Acesso pela plataforma Hotmart ou Hotmart Sparkle (mobile).",
-  },
-  {
-    icon: "lucide:refresh-cw",
-    title: "Atualizações",
-    description:
-      "Preocupado sempre em melhorar a sua experiência de aplicação, você tem acesso a futuras atualizações sem custo nenhum.",
-  },
-  {
-    icon: "lucide:download",
-    title: "Material complementar",
-    description:
-      "Backing tracks, PDFs, tablaturas e exercícios práticos para acelerar seu progresso.",
+      "Você compra e recebe acesso a todo material após a compra na plataforma da Hotmart e a toda nova atualização de material.",
   },
 ];
 </script>
