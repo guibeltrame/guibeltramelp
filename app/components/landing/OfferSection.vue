@@ -73,15 +73,15 @@ const included = [
           <!-- Price -->
           <div class="text-center">
             <p class="text-sm text-text-on-dark-muted">
-              De <span class="text-lg line-through">R$297</span>
+              De <span class="text-lg line-through">R$347</span>
             </p>
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"
             >
-              R$ <span class="text-amber">97</span>
+              R$ <span class="text-amber">147</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
-              ou <strong class="text-text-on-dark">12x de R$ 10,03</strong> no
+              ou <strong class="text-text-on-dark">12x de R$ 15,20</strong> no
               cartão
             </p>
           </div>

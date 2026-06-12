@@ -18,7 +18,7 @@ useHead({
 
 <template>
   <div>
-    <LandingVideoIntro video-id="C7vyDqgcmCU" />
+    <LandingVideoIntro video-id="kKwVh1mwM8E" />
 
     <main>
       <LandingPainIdentification />
