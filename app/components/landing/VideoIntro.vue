@@ -165,7 +165,7 @@ onBeforeUnmount(() => {
             class="mt-2 text-[26px] text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
            MAS AINDA NÃO CONSEGUE 
-            <p><span class="text-amber">CONSTRUIR SOLOS</span> QUE SOEM BEM</p>
+            <p><span class="text-amber">CONSTRUIR SOLOS</span> QUE SOEM BEM?</p>
           </h2>
           <h3
   class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
