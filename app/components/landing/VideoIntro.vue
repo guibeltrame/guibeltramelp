@@ -7,7 +7,7 @@ const props = defineProps<{
  * Tempo mínimo de vídeo (em segundos) para exibir o botão abaixo do player.
  * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
  */
-const UNLOCK_TIME_SECONDS = 410;
+const UNLOCK_TIME_SECONDS = 431;
 
 const PLAYER_EL_ID = "yt-intro-player";
 const isPlayerReady = ref(false);
