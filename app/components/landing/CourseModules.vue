@@ -6,28 +6,33 @@ const modules = [
     number: "01",
     title: "BASE SÓLIDA DA CRIATIVIDADE",
     description:
-      "Construir um sistema de visualização único e sólido das escalas, para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Wasting Love (Iron Maiden)'. OBJETIVO: Desenvolver um padrão de visualização das escalas.",
+      "Construir um sistema de visualização e padronizacão das escalas, arpejos e acordes para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Wasting Love (Iron Maiden)'.",
+    objective: "Liberdade ao longo do braço para tocar em qualquer tom.",
     lessons: 10,
   },
   {
     number: "02",
     title: "CONSTRUÇÃO DE VOCABULÁRIO",
     description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer), Tennesse Whiskey (Chris Stapleton), Seize The Day (Avenged Sevenfold).'. OBJETIVO: Referências para você criar suas próprias frases.",
+      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer), Tennesse Whiskey (Chris Stapleton), Seize The Day (Avenged Sevenfold).'.",
+    objective: "Reconhecer os principais detalhes para criar boas frases.",
     lessons: 10,
   },
   {
     number: "03",
     title: "CRIANDO SOLOS DO ZERO",
     description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Aprenda também através da estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd)'. OBJETIVO: Criar seu primeiro solo estruturado.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Aprenda também através da estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd)'.",
+    objective: "Criar e entender estruturas para seu primeiro solo.",
     lessons: 10,
   },
   {
     number: "04",
     title: "SOLO SIGNATURE",
     description:
-      "Aprimorar todas as ferramentas de criação para desenvolver elementos que impulsionam ainda mais sua interpretação, que deixam seus solos mais sofisticados e você comece a desenvolver suas características únicas. Você conta com a análise de solos na linguagem Blues e Rock. OBJETIVO: Aperfeiçoar a habilidade de criação adicionando mais elementos ritmicos e de interpretação.",
+      "Aprimorar todas as ferramentas de criação para desenvolver elementos que impulsionam ainda mais sua interpretação, que deixam seus solos mais sofisticados e você comece a desenvolver suas características únicas. Você conta com a análise de solos na linguagem Blues e Rock.",
+    objective:
+      "Aperfeiçoar a habilidade de criação adicionando mais elementos mais profundos de análise e interpretação.",
     lessons: 14,
   },
   {
@@ -105,6 +110,28 @@ const modules = [
                 class="mt-3 max-w-prose text-base leading-relaxed text-text-on-dark-muted sm:mt-4 sm:text-lg"
               >
                 {{ mod.description }}
+              </p>
+
+              <p
+                v-if="mod.objective"
+                class="mt-4 flex max-w-prose items-start gap-2.5 rounded-lg border border-amber/20 bg-amber/5 px-3.5 py-3 text-base leading-relaxed sm:mt-5 sm:text-lg"
+              >
+                <Icon
+                  name="lucide:target"
+                  class="mt-1 size-4 shrink-0 text-amber/70"
+                  aria-hidden="true"
+                />
+                <span>
+                  <span
+                    class="font-semibold uppercase tracking-wide text-amber"
+                  >
+                    Objetivo
+                  </span>
+                  <br />
+                  <span class="text-text-on-dark-muted">
+                    {{ mod.objective }}
+                  </span>
+                </span>
               </p>
             </article>
           </li>

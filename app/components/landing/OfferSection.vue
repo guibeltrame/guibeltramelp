@@ -7,7 +7,7 @@ const included = [
   "Material complementar (PDFs, tablaturas, backing tracks)",
   "Suporte para dúvidas",
   "Atualizações gratuitas de conteúdo",
-  "Bônus: 10 Melodias Para Você Começar Seus Solos",
+  "Bônus: 10 Melodias Para Começar Seus Solos",
   "Bônus: Laboratório de Frases do ROCK/BLUES",
   "Bônus: Rotina Criativa",
 ];
