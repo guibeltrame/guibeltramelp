@@ -7,7 +7,7 @@ const students = [
     role: "Criação de Solo do ZERO",
     vimeoId: "1116623847",
     blurb:
-      "Ele não sabia nada de escalas e criou essa tema do zero seguindo o método.",
+      "Ele não sabia nada de escalas e criou esse tema do zero seguindo o método.",
     iframeTitle:
       "Vídeo do aluno Lorenzo tocando guitarra — depoimento em vídeo do curso",
   },
