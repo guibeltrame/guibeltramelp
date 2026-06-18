@@ -3,8 +3,18 @@ const props = defineProps<{
   videoId: string;
 }>();
 
+/**
+ * Tempo mínimo de vídeo (em segundos) para exibir o botão abaixo do player.
+ * DEBUG: ajuste este valor para testar rapidamente. Valor final de produção: ~duração total do vídeo.
+ */
+const UNLOCK_TIME_SECONDS = 431;
+
 const PLAYER_EL_ID = "yt-intro-player";
 const isPlayerReady = ref(false);
+/** Após esse instante o CTA sob o vídeo (link Hotmart + indicador de rolagem) é exibido. */
+const isReleased = ref(false);
+/** Pico de tempo assistido nesta página (somente esta visita — sem persistência). */
+const peakWatchedSeconds = ref(0);
 /** Usuário já iniciou a reprodução nesta página. */
 const hasUserStarted = ref(false);
 
@@ -17,6 +27,8 @@ let player: {
   unMute(): void;
   setVolume(volume: number): void;
 } | null = null;
+let timeCheckInterval: ReturnType<typeof setInterval> | null = null;
+
 function loadYouTubeAPI(): Promise<void> {
   return new Promise((resolve, reject) => {
     if ((window as any).YT?.Player) {
@@ -66,8 +78,41 @@ function createPlayer() {
       onReady: () => {
         isPlayerReady.value = true;
       },
+      onStateChange: (e: { data: number }) => {
+        if (e.data === YT.PlayerState.ENDED) {
+          release();
+        }
+      },
+      onError: () => {
+        release();
+      },
     },
   });
+}
+
+function startTimeCheck() {
+  timeCheckInterval = setInterval(() => {
+    if (!player) return;
+    const rawT = player.getCurrentTime();
+    const fromPlayer = Number.isFinite(rawT) ? Math.max(0, rawT) : 0;
+    peakWatchedSeconds.value = Math.max(peakWatchedSeconds.value, fromPlayer);
+    if (peakWatchedSeconds.value >= UNLOCK_TIME_SECONDS) {
+      release();
+    }
+  }, 500);
+}
+
+function stopTimeCheck() {
+  if (timeCheckInterval) {
+    clearInterval(timeCheckInterval);
+    timeCheckInterval = null;
+  }
+}
+
+function release() {
+  if (isReleased.value) return;
+  isReleased.value = true;
+  stopTimeCheck();
 }
 
 function startPlayback() {
@@ -76,6 +121,7 @@ function startPlayback() {
   player.setVolume(100);
   player.playVideo();
   hasUserStarted.value = true;
+  startTimeCheck();
 }
 
 onMounted(async () => {
@@ -83,11 +129,12 @@ onMounted(async () => {
     await loadYouTubeAPI();
     createPlayer();
   } catch {
-    // Player indisponível — CTA permanece visível abaixo do vídeo
+    release();
   }
 });
 
 onBeforeUnmount(() => {
+  stopTimeCheck();
   player?.destroy();
 });
 </script>
@@ -177,8 +224,12 @@ onBeforeUnmount(() => {
         </div>
       </div>
 
-      <!-- CTA + Scroll indicator -->
-      <div class="mt-6 flex flex-col items-center gap-5 sm:mt-8">
+      <!-- CTA + Scroll indicator (após tempo mínimo de visualização do vídeo) -->
+      <Transition name="cta-reveal">
+        <div
+          v-if="isReleased"
+          class="mt-6 flex flex-col items-center gap-5 sm:mt-8"
+        >
           <a
             href="https://pay.hotmart.com/A96166604R?off=utywll39"
             target="_blank"
@@ -234,6 +285,7 @@ onBeforeUnmount(() => {
             </div>
           </div>
         </div>
+      </Transition>
     </div>
   </section>
 </template>
