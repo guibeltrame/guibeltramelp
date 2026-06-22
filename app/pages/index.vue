@@ -18,9 +18,9 @@ useHead({
 
 <template>
   <div>
-    <LandingVideoIntro video-id="itH_OI_-Yg4" />
+    <LandingVideoIntro />
 
-    <main>
+    <main id="esconder">
       <LandingPainIdentification />
       <LandingProblemReframe />
       <LandingAuthoritySection />
