@@ -78,10 +78,12 @@ onMounted(() => {
           <div
             class="video-wrapper relative min-h-0 w-full shrink-0 overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
           >
-            <vturb-smartplayer
-              id="ab-6a39ac2e0c9bdb871a3aaf4a"
-              style="display: block; margin: 0 auto; width: 100%"
-            />
+          <ClientOnly>
+  <vturb-smartplayer
+    id="ab-6a39ac2e0c9bdb871a3aaf4a"
+    style="display: block; margin: 0 auto; width: 100%"
+  ></vturb-smartplayer>
+</ClientOnly>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ useHead({
   <div>
     <LandingVideoIntro />
 
-    <main id="esconder">
+    <main>
       <LandingPainIdentification />
       <LandingProblemReframe />
       <LandingAuthoritySection />
