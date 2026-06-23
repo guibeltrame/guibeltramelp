@@ -2,32 +2,6 @@
 const VTURB_PLAYER_SCRIPT =
   "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a39ac2e0c9bdb871a3aaf4a/player.js";
 
-useHead({
-  script: [
-    {
-      innerHTML:
-        "!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);",
-    },
-  ],
-  link: [
-    {
-      rel: "preload",
-      href: VTURB_PLAYER_SCRIPT,
-      as: "script",
-    },
-    {
-      rel: "preload",
-      href: "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js",
-      as: "script",
-    },
-    { rel: "dns-prefetch", href: "https://cdn.converteai.net" },
-    { rel: "dns-prefetch", href: "https://scripts.converteai.net" },
-    { rel: "dns-prefetch", href: "https://images.converteai.net" },
-    { rel: "dns-prefetch", href: "https://m3u8.vturb.net" },
-    { rel: "dns-prefetch", href: "https://license.vturb.com" },
-  ],
-});
-
 onMounted(() => {
   if (document.querySelector(`script[src="${VTURB_PLAYER_SCRIPT}"]`)) return;
 
@@ -40,7 +14,7 @@ onMounted(() => {
 
 <template>
   <section
-    class="video-intro-section relative flex min-h-dvh items-center justify-center bg-dark px-4 py-6 sm:px-6 sm:py-8 lg:py-10"
+    class="video-intro-section relative flex min-h-dvh items-center justify-center bg-dark px-4 pt-6 pb-28 sm:px-6 sm:pt-8 sm:pb-32 lg:pt-10 lg:pb-36"
     aria-label="Vídeo de apresentação do curso"
   >
     <!-- Ambient glow -->
@@ -76,15 +50,17 @@ onMounted(() => {
 
         <div class="video-intro-video-shell w-full min-h-0 min-w-0">
           <div
-            class="video-wrapper relative min-h-0 w-full shrink-0 overflow-hidden rounded-xl bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
-          >
-          <ClientOnly>
-  <vturb-smartplayer
-    id="ab-6a39ac2e0c9bdb871a3aaf4a"
-    style="display: block; margin: 0 auto; width: 100%"
-  ></vturb-smartplayer>
-</ClientOnly>
-          </div>
+  class="video-wrapper relative min-h-0 w-full shrink-0 overflow-visible bg-dark-surface shadow-2xl shadow-black/50 ring-1 ring-white/10"
+>
+  <ClientOnly>
+    <div class="rounded-xl overflow-hidden">
+      <vturb-smartplayer
+        id="ab-6a39ac2e0c9bdb871a3aaf4a"
+        style="display: block; margin: 0 auto; width: 100%"
+      ></vturb-smartplayer>
+    </div>
+  </ClientOnly>
+</div>
         </div>
       </div>
     </div>
