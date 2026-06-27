@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "E se eu não gostar do curso?",
     answer:
-      "Você tem 7 dias de garantia incondicional. Se dentro desse período sentir que não é pra você, basta solicitar reembolso e devolvemos 100% do seu dinheiro. Sem perguntas.",
+      "Você tem 7 dias de garantia incondicional após a compra. Se dentro desse período sentir que não é pra você, basta solicitar reembolso e devolvemos 100% do seu dinheiro. Sem perguntas.",
   },
   {
     question: "As aulas são ao vivo ou gravadas?",
