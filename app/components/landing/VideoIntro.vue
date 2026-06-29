@@ -30,16 +30,30 @@ onMounted(() => {
       <!-- Copy + vídeo: agrupados para layout compacto em landscape / altura curta -->
       <div class="video-intro-main w-full">
         <!-- Header -->
+        <!--
+          IDEIA GUARDADA (copy alternativo testado):
+          Headline:  APRENDA A <span class="text-amber">CRIAR SOLOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
+          Subhead:   Assista o vídeo abaixo e descubra como <strong>criar solos</strong> mais bonitos
+                     sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong>
+                     e não dependa apenas de um dia de <strong>inspiração</strong>. Mesmo que hoje você
+                     se perca no braço, ache que não tem criatividade ou seus solos soem robóticos
+                     — usando a TRÍADE CRIATIVA.
+        -->
         <div class="video-intro-copy mb-3 text-center sm:mb-5 lg:mb-6">
+          <p class="text-xm font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm lg:text-[16px]">
+            Seus improvisos não soam bem?
+          </p>
           <h2
             class="mt-2 text-[26px] text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
-            APRENDA A <span class="text-amber">CRIAR SOLOS</span> MAIS BONITOS E DESCUBRA SUA IDENTIDADE NA GUITARRA
+           Talvez você ainda enxergue 
+            <p><span class="text-amber">ESCALAS</span> só como SHAPES</p>
           </h2>
           <h3
   class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
 >
-  Assista o vídeo abaixo e descubra como <strong>criar solos</strong> sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong> e não dependa apenas de um dia de <strong>inspiração</strong>. Mesmo que hoje você se perca no braço, ache que não tem criatividade ou seus solos soem robóticos
+  Criando apenas um solo de 45 segundos - sem precisar de escalas complexas - você domina os 3 elementos essenciais para construir solos mais criativos, que soam como uma história e não como um sobe e desce de notas.
+
 </h3>
         </div>
 
