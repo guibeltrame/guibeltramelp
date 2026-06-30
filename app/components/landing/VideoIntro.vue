@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const VTURB_PLAYER_SCRIPT =
-  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a39ac2e0c9bdb871a3aaf4a/player.js";
+  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a43327340698aa96bc8532f/player.js";
 
 onMounted(() => {
   if (document.querySelector(`script[src="${VTURB_PLAYER_SCRIPT}"]`)) return;
@@ -64,7 +64,7 @@ onMounted(() => {
   <ClientOnly>
     <div class="rounded-xl overflow-hidden">
       <vturb-smartplayer
-        id="ab-6a39ac2e0c9bdb871a3aaf4a"
+        id="ab-6a43327340698aa96bc8532f"
         style="display: block; margin: 0 auto; width: 100%"
       ></vturb-smartplayer>
     </div>

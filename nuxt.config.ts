@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "preload",
-          href: "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/players/6a39acd98136b4416dd4f9bb/v4/player.js",
+          href: "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a43327340698aa96bc8532f/player.js",
           as: "script",
         },
         {
@@ -39,11 +39,7 @@ export default defineNuxtConfig({
           href: "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js",
           as: "script",
         },
-        {
-          rel: "preload",
-          href: "https://cdn.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/6a39ac611fa755ae788e49cd/main.m3u8",
-          as: "fetch",
-        },
+        { rel: "dns-prefetch", href: "https://m3u8.vturb.net" },
         { rel: "dns-prefetch", href: "https://cdn.converteai.net" },
         { rel: "dns-prefetch", href: "https://scripts.converteai.net" },
         { rel: "dns-prefetch", href: "https://images.converteai.net" },
