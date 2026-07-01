@@ -38,7 +38,8 @@ useHead({
       <LandingTransformationSection />
       <LandingFAQSection />
       <LandingFinalCTASection />
-      <LandingFooterSection />
+     
     </main>
+     <LandingFooterSection />
   </div>
 </template>

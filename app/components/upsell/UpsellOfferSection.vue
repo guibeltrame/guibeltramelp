@@ -55,8 +55,8 @@ const included = [
           id="upsell-offer-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Garanta o SOLO RAIO-X
-          <span class="text-amber">agora, com condição especial</span>
+          Garanta o PLAY RAIO-X agora, com
+          <span class="text-amber">condição especial</span>
         </h2>
         <p class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
           Esta oferta aparece apenas uma vez, imediatamente após a compra do CD6C.
@@ -122,7 +122,7 @@ const included = [
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"
             >
-              R$ <span class="text-amber">127</span>
+              R$ <span class="text-amber">197</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
               ou <strong class="text-text-on-dark">12x de R$ 20,37</strong> no cartão

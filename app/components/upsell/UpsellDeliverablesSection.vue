@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /**
- * UpsellDeliverablesSection — O que você vai receber no SOLO RAIO-X?
+ * UpsellDeliverablesSection — O que você vai receber no PLAY RAIO-X?
  *
  * Layout inspirado no modelo de referência: cada entregável em um card
  * com texto à esquerda e área de imagem à direita (alternado no 2º card).
@@ -13,12 +13,13 @@ const deliverables = [
   {
     icon: 'lucide:clipboard-list',
     title: 'Análise Personalizada',
-    subtitle: 'Seu solo análisado de ponta a ponta',
+    subtitle: 'Seu PLAY análisado de ponta a ponta',
     intro:
-      'Após concluir o primeiro desafio do Ciência das 6 Cordas, você enviará um vídeo do seu solo e receberá uma análise individual em vídeo mostrando:',
+      'Após concluir o primeiro desafio do Ciência das 6 Cordas, você enviará um vídeo do seu solo e terá um encontro diretamente comigo onde vou analisar seu play em detalhes:',
     bullets: [
       'O que está funcionando no seu improviso.',
       'Os principais erros que estão limitando sua evolução.',
+      'Uma avaliação da sua técnica e timbre',
       'Como corrigir cada ponto de forma prática.',
       'O que estudar a seguir para evoluir mais rápido.',
     ],
