@@ -24,6 +24,23 @@ onMounted(() => {
       />
     </div>
 
+    <!-- Background professor image — lateral esquerda, decorativo -->
+    <div
+      class="pointer-events-none absolute inset-y-0 left-0 w-[45%] max-w-[420px] overflow-hidden"
+      aria-hidden="true"
+    >
+      <img
+        src="/images/prof.jpeg"
+        alt=""
+        class="prof-bg-img absolute bottom-0 left-0 h-[90%] w-auto max-w-none object-contain object-bottom opacity-[0.08] mix-blend-luminosity select-none"
+        draggable="false"
+        fetchpriority="low"
+        loading="lazy"
+      />
+      <!-- fade lateral da direita para não cortar bruscamente -->
+      <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-dark" />
+    </div>
+
     <div
       class="video-intro-inner relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center"
     >
@@ -52,7 +69,8 @@ onMounted(() => {
           <h3
   class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
 >
-Descubra como ir além de só copiar solos e ideias de outros guitarristas para criar solos e improvisos marcantes, mesmo que hoje você não se ache criativo. Assista o vídeo abaixo:
+  <span class="block mb-5">Você já sabe o que vai acontecer antes mesmo de começar — as mesmas frases, os mesmos licks, aquela sensação de estar perdido no braço sem conseguir construir um solo que faça sentido e o problema nunca foi falta de talento.</span>
+  <span class="block mt-5"> Assista ao vídeo e entenda: </span>
 </h3>
         </div>
 

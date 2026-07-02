@@ -30,17 +30,10 @@ const { containerRef } = useScrollReveal();
             id="time-value-heading"
             class="mt-4 text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl"
           >
-            DÊ VALOR AO SEU
-            <span class="text-amber">TEMPO</span>
+            QUANTO <span class="text-amber">TEMPO</span> VOCÊ JÁ TENTOU SOZINHO?
+            
           </h2>
-          <p
-            class="mt-6 text-lg font-medium leading-relaxed text-text-on-dark sm:text-xl"
-          >
-            Com sinceridade,
-            <span class="text-text-on-dark"
-              >quanto você já tentou sozinho?</span
-            >
-          </p>
+         
         </header>
 
         <!-- Imagem à direita no desktop; mesma ordem de leitura no mobile -->
@@ -97,14 +90,12 @@ const { containerRef } = useScrollReveal();
             class="rounded-2xl border border-dark-muted bg-dark-surface/80 p-5 sm:p-6"
           >
             <p class="text-text-on-dark">
-              <span
-                class="block text-sm font-semibold uppercase tracking-wide text-amber/90"
-              >
-                QUANTO VOCÊ DARIA PRA MUDAR ISSO HOJE?
-              </span>
-              <span class="mt-2 block">
-                Facilmente você pagaria mais de R$2000 por 1 ano de aulas
-                particulares, mas hoje você não vai pagar nem perto disso!
+              <span class="mt-2 block space-y-3 leading-loose">
+                <span class="block">Pensa no que custaria chegar no mesmo resultado por outro caminho.</span>
+                <span class="block">Aulas particulares? Facilmente R$100 por hora — mais de R$2.500 por ano, com horário fixo, sem poder rever a aula quando precisar.</span>
+                <span class="block">YouTube gratuito? Você já tentou. E está aqui, o que significa que não resolveu o problema central.</span>
+                <span class="block">E tem ainda o dinheiro que você já investiu em equipamento — guitarra, amplificador, pedais — que ainda não está soando do jeito que você quer. O Ciência das 6 Cordas é o que faz esse investimento valer.</span>
+                <span class="block">Método organizado, no seu ritmo, com suporte — por menos do que uma aula particular por mês.</span>
               </span>
             </p>
             <a

@@ -29,23 +29,24 @@ const pillars = [
     key: "visualizacao",
     title: "Visualização",
     description:
-      "Construir um mapa de visualização do braço para ter liberdade e fluência sem limitações. Padronizar visualização de escalas, acordes, arpejos.",
+      "Você para de se perder no braço e começa a enxergar caminhos que antes eram invisíveis. Não é decorar mais uma posição — é entender como escalas, arpejos e acordes se conectam ao longo do braço inteiro pra que você possa criar melodias de formas que intuitivamente nunca pensaria.",
     icon: "lucide:eye",
-  },
-  {
-    key: "criacao",
-    title: "Criação",
-    description:
-      "Construir linguagem e entender estruturas de solos de maneira consciente e criativa, sem só depender de frases prontas. Sair somente do clichês e padrões óbvios.",
-    icon: "lucide:sparkles",
   },
   {
     key: "analise",
     title: "Análise",
     description:
-      "Entender como explorar uma mesma ideia de diversas maneiras ritmicas, dinâmica e interpretação, além de enxergar a lógica por trás do fraseado de outros guitarristas.",
+      "Você aprende a enxergar o que os grandes guitarristas realmente fazem — não só quais escalas usam, mas por que cada escolha funciona. Dinâmica, respiração, variações rítmicas, como a harmonia influencia cada frase. Isso transforma suas referências em vocabulário próprio — você para de copiar e começa a absorver.",
     icon: "lucide:scan-search",
   },
+  {
+    key: "criacao",
+    title: "Criação",
+    description:
+      "Você aprende a estrutura de como construir solos do zero — desde solos simples até solos mais sofisticados. Como criar temas, desenvolver frases e conectar o solo do começo ao fim pra que ele soe como uma história, não como notas jogadas ao vento. Muitos alunos falam que essa é a primeira vez que assistem um vídeo próprio e sentem orgulho do que ouviram.",
+    icon: "lucide:sparkles",
+  },
+  
 ] as const;
 
 const { containerRef } = useScrollReveal();
