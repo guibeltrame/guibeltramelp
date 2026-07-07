@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const VTURB_PLAYER_SCRIPT =
-  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a43327340698aa96bc8532f/player.js";
+  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a4d8056723969daf0791228/player.js";
 
 onMounted(() => {
   if (document.querySelector(`script[src="${VTURB_PLAYER_SCRIPT}"]`)) return;
@@ -49,29 +49,26 @@ onMounted(() => {
         <!-- Header -->
         <!--
           IDEIA GUARDADA (copy alternativo testado):
-          Headline:  APRENDA A <span class="text-amber">CRIAR SOLOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
+          Headline:  APRENDA A <span class="text-amber">CRIAR SOLOS MAIS BONITOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
           Subhead:   Assista o vídeo abaixo e descubra como <strong>criar solos</strong> mais bonitos
-                     sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong>
-                     e não dependa apenas de um dia de <strong>inspiração</strong>. Mesmo que hoje você
+                     sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong>. Mesmo que hoje você
                      se perca no braço, ache que não tem criatividade ou seus solos soem robóticos
-                     — usando a TRÍADE CRIATIVA.
+                     Assista ao vídeo.
         -->
         <div class="video-intro-copy mb-3 text-center sm:mb-5 lg:mb-6">
-          <p class="text-xm font-semibold uppercase tracking-[0.2em] text-amber sm:text-sm lg:text-[16px]">
-            Você consegue tocar o solo de outros guitarristas
-          </p>
           <h2
-            class="mt-2 text-[26px] text-lg font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
+            class="mt-2 text-[26px] font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
           >
-           MAS <span class="text-amber">TRAVA</span> QUANDO PRECISA 
-          <span class="text-amber">CRIAR</span> O SEU
+            APRENDA A <span class="text-amber">CRIAR SOLOS MAIS BONITOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
           </h2>
           <h3
-  class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
->
-  <span class="block mb-5">Você já sabe o que vai acontecer antes mesmo de começar — as mesmas frases, os mesmos licks, aquela sensação de estar perdido no braço sem conseguir construir um solo que faça sentido e o problema nunca foi falta de talento.</span>
-  <span class="block mt-5"> Assista ao vídeo e entenda: </span>
-</h3>
+            class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
+          >
+            Descubra como <strong>criar solos</strong>
+            sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong>. Mesmo que hoje você
+            se perca no braço, ache que não tem criatividade ou seus solos soem robóticos.<br />
+            Assista ao vídeo
+          </h3>
         </div>
 
         <div class="video-intro-video-shell w-full min-h-0 min-w-0">
@@ -81,7 +78,7 @@ onMounted(() => {
   <ClientOnly>
     <div class="rounded-xl overflow-hidden">
       <vturb-smartplayer
-        id="ab-6a43327340698aa96bc8532f"
+        id="ab-6a4d8056723969daf0791228"
         style="display: block; margin: 0 auto; width: 100%"
       ></vturb-smartplayer>
     </div>
