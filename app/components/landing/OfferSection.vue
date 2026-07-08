@@ -29,7 +29,7 @@ const included = [
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Oferta especial com CUPOM de R$200 de DESCONTO
+          Oferta especial com CUPOM de R$100 de DESCONTO
         </p>
         <h2
           id="offer-heading"
@@ -78,10 +78,10 @@ const included = [
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"
             >
-              R$ <span class="text-amber">197</span>
+              R$ <span class="text-amber">297</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
-              ou <strong class="text-text-on-dark">12x de R$ 20,37</strong> no
+              ou <strong class="text-text-on-dark">12x de R$ 30,72</strong> no
               cartão
             </p>
           </div>
