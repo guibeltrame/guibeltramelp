@@ -4,31 +4,36 @@ const { containerRef } = useScrollReveal();
 const pillars = [
   {
     number: "01",
-    title: "Organização e mapa de melodias",
+    title: "Técnica é o mensageiro",
     description:
-      "Criar melodias e frases não pode depender só de um dia inspirado. Mapear e organizar a visualização de escalas facilita para criar novos caminhos e construir mais opções para seu vocabulário.",
-    icon: "lucide:layout-grid",
+      "Tocar muitas ou poucas notas, pouco importa. A técnica é responsável por como você passa a mensagem e trabalhar elementos de interpretação como dinâmica, rítmica, respiro e expressividade vai dar vida às notas das escalas.",
+    image: "/images/pillar-van-halen.jpg",
+    imageAlt: "Eddie Van Halen tocando guitarra no palco",
   },
   {
     number: "02",
-    title: "Sua técnica é o mensageiro",
+    title: "Repertório é a fonte da criatividade",
     description:
-      "Tocar muitas ou poucas notas, pouco importa. A técnica é responsável por como você passa a mensagem e trabalhar elementos de interpretação como dinâmica, rítmica, respiro e expressividade vai dar vida às notas das escalas.",
-    icon: "lucide:message-square",
+      "A falta de referências leva a bloqueios criativos. Nenhum assunto de escalas ou qualquer teoria vai fazer sentido se você não ver isso acontecendo de maneira prática para que você desenvolva seu vocabulário.",
+    image: "/images/pillar-syn.jpg",
+    imageAlt: "Synyster Gates tocando guitarra no palco",
   },
   {
     number: "03",
-    title: "Todo solo precisa soar como uma história",
+    title: "Consciência é a liberdade",
     description:
-      "Histórias precisam de estrutura, logo um solo sem estrutura soa somente como um monte de notas jogadas fora. Quem entende as estruturas, cria e conecta ideias com mais facilidade.",
-    icon: "lucide:fingerprint",
+      "Conhecer escalas, acordes, arpejos e suas formações de forma teórica é essencial, mas é fundamental visualizar isso no braço de maneira prática para desenvolver independência.",
+    image: "/images/pillar-srv.jpg",
+    imageAlt: "Stevie Ray Vaughan tocando guitarra no palco",
   },
   {
     number: "04",
-    title: "FEELING E CONSCIÊNCIA JUNTOS",
-    description:
-      "Criar bons solos está ligado a como você estrutura um solo, aumenta seu vocabulário, entende elementos de interpretação para dar vida a cada ideia nova e torna-la única.",
-    icon: "lucide:target",
+    title: "Música é comunicação e todo bom solo soa como uma história.",
+    bullets: [
+      "A técnica passa a emoção e mensagem",
+      "Repertório são suas referências para desenvolver vocabulário",
+      "Teoria musical te dá o controle total do que está fazendo e para onde vai",
+    ],
   },
 ];
 
@@ -52,16 +57,13 @@ const fourthPillar = pillars[3]!;
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          O que é o método?
-        </p>
         <h2
           id="method-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Por que sem a
-          <span class="text-amber">TRÍADE CRIATIVA</span> você
-          continua repetindo sempre as mesmas frases?
+          O que a
+          <span class="text-amber">TRÍADE CRIATIVA</span>
+          trabalha na sua musicalidade?
         </h2>
         <p
           class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
@@ -77,34 +79,31 @@ const fourthPillar = pillars[3]!;
         <article
           v-for="pillar in mainPillars"
           :key="pillar.number"
-          class="scroll-reveal group rounded-2xl border border-dark-muted bg-dark-surface p-6 transition-all duration-300 hover:border-amber/20 md:col-span-4 md:p-8"
+          class="scroll-reveal group relative overflow-hidden rounded-2xl border border-dark-muted bg-dark-surface p-6 transition-all duration-300 hover:border-amber/20 md:col-span-4 md:p-8"
         >
-          <div class="flex items-start gap-4">
-            <div
-              class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-amber/10"
+          <!-- Background image -->
+          <img
+            :src="pillar.image"
+            :alt="pillar.imageAlt"
+            class="pointer-events-none absolute inset-0 h-full w-full object-cover object-top opacity-10 transition-opacity duration-300 group-hover:opacity-15"
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <!-- Dark overlay to keep text legible -->
+          <div
+            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-dark-surface via-dark-surface/80 to-dark-surface/40"
+            aria-hidden="true"
+          />
+          <div class="relative z-10">
+            <h3 class="text-lg font-bold text-text-on-dark">
+              {{ pillar.title }}
+            </h3>
+            <p
+              class="mt-4 text-sm leading-relaxed text-text-on-dark-muted sm:text-base"
             >
-              <Icon
-                :name="pillar.icon"
-                class="size-6 text-amber"
-                aria-hidden="true"
-              />
-            </div>
-            <div>
-              <span
-                class="text-xs font-bold uppercase tracking-widest text-amber/60"
-              >
-                Pilar {{ pillar.number }}
-              </span>
-              <h3 class="mt-1 text-lg font-bold text-text-on-dark">
-                {{ pillar.title }}
-              </h3>
-            </div>
+              {{ pillar.description }}
+            </p>
           </div>
-          <p
-            class="mt-4 text-sm leading-relaxed text-text-on-dark-muted sm:text-base"
-          >
-            {{ pillar.description }}
-          </p>
         </article>
 
         <article
@@ -115,29 +114,28 @@ const fourthPillar = pillars[3]!;
             aria-hidden="true"
           />
           <div class="relative z-10">
-            <div class="flex items-center gap-4">
-              <div
-                class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-amber/10 ring-1 ring-amber/15"
+            <h3
+              class="text-lg font-bold tracking-tight text-text-on-dark sm:text-balance md:text-xl"
+            >
+              {{ fourthPillar.title }}
+            </h3>
+            <ul
+              class="mt-4 space-y-2"
+              aria-label="Três princípios do método"
+            >
+              <li
+                v-for="bullet in fourthPillar.bullets"
+                :key="bullet"
+                class="flex items-start gap-2 text-sm leading-relaxed text-text-on-dark-muted sm:text-base"
               >
                 <Icon
-                  :name="fourthPillar.icon"
-                  class="size-6 text-amber"
+                  name="lucide:check"
+                  class="mt-0.5 size-4 shrink-0 text-amber"
                   aria-hidden="true"
                 />
-              </div>
-              <div>
-                <h3
-                  class="text-lg font-bold tracking-tight text-text-on-dark sm:text-balance md:text-xl"
-                >
-                  {{ fourthPillar.title }}
-                </h3>
-              </div>
-            </div>
-            <p
-              class="mt-4 text-sm leading-relaxed text-text-on-dark-muted sm:text-base"
-            >
-              {{ fourthPillar.description }}
-            </p>
+                {{ bullet }}
+              </li>
+            </ul>
           </div>
         </article>
       </div>

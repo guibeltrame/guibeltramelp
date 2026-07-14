@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const VTURB_PLAYER_SCRIPT =
-  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a4d8056723969daf0791228/player.js";
+  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a56b48a1fca223d781d8aba/player.js";
 
 onMounted(() => {
   if (document.querySelector(`script[src="${VTURB_PLAYER_SCRIPT}"]`)) return;
@@ -32,7 +32,7 @@ onMounted(() => {
       <img
         src="/images/prof.jpeg"
         alt=""
-        class="prof-bg-img absolute bottom-0 left-0 h-[90%] w-auto max-w-none object-contain object-bottom opacity-[0.08] mix-blend-luminosity select-none"
+        class="prof-bg-img absolute bottom-0 left-0 h-[90%] w-auto max-w-none object-contain object-bottom opacity-30 mix-blend-luminosity select-none"
         draggable="false"
         fetchpriority="low"
         loading="lazy"
@@ -65,7 +65,7 @@ onMounted(() => {
             class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
           >
             Descubra como <strong>criar solos</strong>
-            sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong>. Mesmo que hoje você
+            sem precisar de <strong>escalas complexas </strong>ou <strong>teoria avançada</strong>. Mesmo que hoje você
             se perca no braço, ache que não tem criatividade ou seus solos soem robóticos.<br />
             Assista ao vídeo
           </h3>
@@ -78,7 +78,7 @@ onMounted(() => {
   <ClientOnly>
     <div class="rounded-xl overflow-hidden">
       <vturb-smartplayer
-        id="ab-6a4d8056723969daf0791228"
+        id="ab-6a56b48a1fca223d781d8aba"
         style="display: block; margin: 0 auto; width: 100%"
       ></vturb-smartplayer>
     </div>

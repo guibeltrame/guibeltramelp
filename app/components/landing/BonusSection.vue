@@ -15,7 +15,7 @@ const bonuses = [
     image: "/images/bonus2.jpg",
     title: "BÔNUS 2 | Laboratório de Frases ROCK/BLUES",
     description:
-      "Um guia com 10 frases de lendas da guitarra como David Gilmour, Slash, etc., explicadas e aplicadas no improviso para incrementar seu vocabulário.",
+      "Um guia com transcrições de frases de guitarristas como David Gilmour, Slash, etc., explicadas e aplicadas no improviso para incrementar seu vocabulário.",
     value: "R$ 97",
     imageAlt:
       "Capa do material bônus: laboratório de frases rock e blues para guitarra",

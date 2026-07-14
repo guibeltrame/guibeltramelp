@@ -49,9 +49,6 @@ const students = [
 
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <header class="scroll-reveal mx-auto max-w-3xl text-center">
-        <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Essa transformação, não aconteceu só comigo...
-        </p>
         <h2
           id="student-videos-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"

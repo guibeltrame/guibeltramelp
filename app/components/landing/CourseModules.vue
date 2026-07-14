@@ -4,26 +4,26 @@ const { containerRef } = useScrollReveal();
 const modules = [
   {
     number: "01",
-    title: "BASE SÓLIDA DA CRIATIVIDADE",
+    title: "GUITAR MAP",
     description:
-      "Construir um sistema de visualização e padronizacão das escalas, arpejos e acordes para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. Você ainda vê essa visualização sendo aplicada em solos como 'Wasting Love (Iron Maiden)'.",
-    objective: "Liberdade ao longo do braço para tocar em qualquer tom.",
+      "Construir um sistema de visualização e padronizacão das escalas, arpejos e acordes para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos.",
+    objective: "Liberdade e segurança ao longo do braço.",
     lessons: 10,
   },
   {
     number: "02",
     title: "CONSTRUÇÃO DE VOCABULÁRIO",
     description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de criação e improvisação. Tenha exemplos de fraseado de músicas como 'Belief (John Mayer), Tennesse Whiskey (Chris Stapleton), Seize The Day (Avenged Sevenfold).'.",
-    objective: "Reconhecer os principais detalhes para criar boas frases.",
+      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de composição e improvisação.",
+    objective: "Desenvolvimento do vocabulário e criar suas próprias frases.",
     lessons: 10,
   },
   {
     number: "03",
     title: "CRIANDO SOLOS DO ZERO",
     description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. Aprenda também através da estrutura de solos icônicos como 'Stairway to Heaven (Led Zeppelin), Time (Pink Floyd)'.",
-    objective: "Criar e entender estruturas para seu primeiro solo.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada.",
+    objective: "Criar seu primeiro solo do zero.",
     lessons: 10,
   },
   {
@@ -39,7 +39,7 @@ const modules = [
     number: "05",
     title: "Teoria Musical + Harmonia",
     description:
-      "Teoria musical do zero ao avançado com uma apostila e módulo completo com exemplos práticos para quem nunca estudou nada sobre teoria musical.",
+      "Todos assuntos essenciais de TEORIA MUSICAL com uma apostila e módulo completo com exemplos práticos. (INTERVALOS, FORMAÇÃO DE ACORDES E ESCALAS, CAMPO HARMÔNICO E ETC.)",
     lessons: 16,
   },
 ];

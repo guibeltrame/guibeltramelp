@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: "lucide:gauge",
     title: "Plano Guiado e Prático",
-    description: "Vídeo aulas de 5 à 12 minutos para aplicação prática e rápida. Mais materiais em PDF, Apostila e Backing Tracks.",
+    description: "Vídeo aulas de 5 à 20 minutos para aplicação prática e rápida. Mais materiais em PDF, Apostila e Backing Tracks.",
   },
   {
     icon: "lucide:headphones",

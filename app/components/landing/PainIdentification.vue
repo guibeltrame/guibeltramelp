@@ -2,6 +2,21 @@
 const { containerRef } = useScrollReveal();
 
 const pains = [
+    {
+    image: "/images/dor03.jpg",
+    title: "Muito conteúdo, pouco resultado",
+    description:
+      "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar pra criar e improvisar.",
+    imageAlt:
+      "Sugere a distância entre muito estudo e pouca aplicação na música na prática",
+  },
+    {
+    image: "/images/dor05.jpg",
+    title: "Toca sem entender o que faz",
+    description:
+      "Só consegue tocar o que decorou e não entende nada do que está tocando, só reproduzindo no automático.",
+    imageAlt: "Visualiza a falta de direção e de roteiro no estudo da guitarra",
+  },
   {
     image: "/images/dor01.jpg",
     title: "Seus solos sempre soam iguais",
@@ -19,27 +34,12 @@ const pains = [
       "Representa o bloqueio criativo na hora de improvisar na guitarra",
   },
   {
-    image: "/images/dor03.jpg",
-    title: "Muito conteúdo, pouco resultado",
-    description:
-      "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar pra criar e improvisar.",
-    imageAlt:
-      "Sugere a distância entre muito estudo e pouca aplicação na música na prática",
-  },
-  {
     image: "/images/dor04.jpg",
     title: "Você se compara e se frustra",
     description:
       'Fica frustrado porque vê outros guitarristas criando com as mesmas escalas que você conhece e se pergunta: "por que eu não consigo fazer isso?"',
     imageAlt:
       "Traduz a frustração ao comparar o próprio som com outros guitarristas",
-  },
-  {
-    image: "/images/dor05.jpg",
-    title: "Toca sem entender o que faz",
-    description:
-      "Só consegue tocar o que decorou e não entende nada do que está tocando, só reproduzindo no automático.",
-    imageAlt: "Visualiza a falta de direção e de roteiro no estudo da guitarra",
   },
   {
     image: "/images/dor06.jpg",

@@ -22,7 +22,7 @@ const { containerRef } = useScrollReveal();
           class="scroll-reveal text-2xl font-bold leading-tight tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
           O problema
-          <span class="text-amber">nunca foi falta de talento.</span>
+          <span class="text-amber">não é falta de talento.</span>
         </h2>
 
         <!-- Body -->
@@ -41,10 +41,10 @@ const { containerRef } = useScrollReveal();
           </p>
 
           <p class="scroll-reveal">
-            Isso não é verdade, todo guitarrista tem
+            Todo guitarrista tem
             <strong class="text-text-on-dark"
               >características únicas que podem ser desenvolvidas</strong
-            >, mas você não pode depender só de inspiração.
+            >, mas o estudo não se baseia em somente aprender um shape de escala, ficar só copiando licks e tirar músicas de forma aleatória.
           </p>
 
           <p id="reframe-manifest-kicker" class="scroll-reveal text-center">
@@ -71,7 +71,7 @@ const { containerRef } = useScrollReveal();
               <span
                 class="text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
               >
-                ESCALA OU TÉCNICA NENHUMA SALVA
+                ESCALA NENHUMA SALVA
                 <span class="text-amber">SOLO SEM ESTRUTURA</span>
               </span>
             </p>
@@ -79,7 +79,7 @@ const { containerRef } = useScrollReveal();
 
           <p class="scroll-reveal">
             Sem estrutura, seu improviso vira o famoso "sobe e desce" de escala.
-            E seu improviso não pode depender apenas e um bom dia de
+            E seu improviso não pode depender apenas de um bom dia de
             <strong class="text-text-on-dark">inspiração.</strong>
           </p>
         </div>
@@ -89,7 +89,7 @@ const { containerRef } = useScrollReveal();
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
             Mas e se eu te disser que tem uma forma de desenvolver sua própria
             linguagem e não depender só da inspiração pra criar seus próprios
-            solos com um TRÍADE CRIATIVA?
+            solos com o método que chamo de TRÍADE CRIATIVA?
           </p>
 
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">

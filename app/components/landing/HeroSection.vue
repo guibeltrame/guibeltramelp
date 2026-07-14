@@ -2,12 +2,12 @@
 const { containerRef } = useScrollReveal();
 
 const benefitItems = [
-  "Criar suas próprias frases",
-  "Improvisar sem ficar naquele sobe e desce de escala",
-  "Aprender TEORIA MUSICAL desde o ZERO ao AVANÇADO",
-  "Enxergar acordes e escalas em qualquer região do braço",
-  "Entender a linguagem de outros guitarristas",
-  "Criar seu melhor solo já nas primeiras semanas",
+  "Entender o que está tocando",
+  "Aprender todos assuntos essenciais de TEORIA MUSICAL",
+  "Enxergar acordes, arpejos e escalas sem ficar perdido",
+  "Aproveitar o repertório para desenvolver a própria linguagem",
+  "Não ficar mais perdido sem saber o que realmente estudar",
+  "Criar solos já nas primeiras semanas",
 ] as const;
 </script>
 
@@ -47,20 +47,17 @@ const benefitItems = [
         <!-- Headline -->
         <h1
           id="hero-heading"
-          class="scroll-reveal mx-auto max-w-3xl text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6xl"
+          class="scroll-reveal mx-auto max-w-3xl text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6l"
         >
-          Chegou a hora de você desenvolver sua
-          <span class="text-amber">identidade musical</span>
+          Chegou a hora de você
+          <span class="text-amber">CRIAR SOLOS E IMPROVISOS</span> que prendem a atenção
         </h1>
 
         <!-- Subheadline -->
         <p
           class="scroll-reveal mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted sm:text-xl"
         >
-          Um plano guiado para te ensinar a criar solos que soam como gente
-          grande, usando a técnica que você
-          <strong class="text-text-on-dark">já tem hoje</strong>. Sem depender
-          de inspiração ou frases prontas.
+          Um plano guiado para ir além de só copiar tablaturas e tocar de maneira mecânica. Desenvolver sua independência na guitarra dominando os assuntos essenciais.
         </p>
 
         <!-- Bloco de valor: selo, apoio e benefícios -->
