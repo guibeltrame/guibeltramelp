@@ -30,21 +30,20 @@ const { containerRef } = useScrollReveal();
           class="stagger-children mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
           <p class="scroll-reveal">
-            Entendo que a maior parte já passou horas e horas estudando, assim
-            como eu. É frustrante estudar mais conteúdos e sentir que não tem
+            Entendo que talvez você até já tenha aprendido uma escala aqui ou outro lick ali, mas os improvisos ainda soam repetitivos e sem sentido. É frustrante estudar muitos conteúdos e sentir que não tem
             <strong class="text-text-on-dark">nenhum progresso.</strong>
           </p>
           <p class="scroll-reveal">
-            Surge a sensação de que você é só um
-            <strong class="text-text-on-dark">guitarrista COMUM</strong> e não
-            tem nenhum diferencial.
+            Parece que tudo isso é só pra 
+            <strong class="text-text-on-dark">guitarristas avançados</strong>, para quem tem <strong class="text-text-on-dark">talento natural</strong> ou precisa de muita <strong class="text-text-on-dark">teoria.</strong>
           </p>
-
+          <p class="scroll-reveal">E você fica preso no mesmo ciclo de sempre.</p>
+          <p class="scroll-reveal">Reproduz solos que gosta, mas quando chega sua vez de improvisar e criar tem o mesmo resultado.</p>
           <p class="scroll-reveal">
             Todo guitarrista tem
             <strong class="text-text-on-dark"
               >características únicas que podem ser desenvolvidas</strong
-            >, mas o estudo não se baseia em somente aprender um shape de escala, ficar só copiando licks e tirar músicas de forma aleatória.
+            >, mas improvisar não se baseia em somente aprender um shape de escala, ficar só copiando licks e tirar músicas de forma aleatória.
           </p>
 
           <p id="reframe-manifest-kicker" class="scroll-reveal text-center">
@@ -52,8 +51,25 @@ const { containerRef } = useScrollReveal();
           </p>
 
           <!-- Manifesto: frase central da reinterpretação -->
-          <article
-            class="scroll-reveal relative mx-auto max-w-xl overflow-hidden rounded-2xl border border-amber/20 bg-dark-surface/90 p-6 text-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] sm:max-w-2xl sm:p-8 md:p-10"
+            <p
+              class="relative mx-auto max-w-[min(100%,19rem)] text-center font-bold leading-[1.15] tracking-tight text-text-on-dark sm:max-w-[22rem] md:max-w-[24rem] md:leading-tight"
+            >
+              <span
+                class="text-center text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
+              >
+                ESCALA NENHUMA SALVA
+                <span class="text-amber">SOLO SEM ESTRUTURA</span>
+              </span>
+            </p>
+
+          <p class="scroll-reveal">
+            Música é <strong class="text-text-on-dark">comunicação, comunicação precisa de estrutura</strong>. Não é ter uma técnica avançada ou conhecer escalas e teorias mais complexas.
+          </p>
+        </div>
+
+        <!-- Visual separator / quote -->
+<article
+            class="scroll-reveal relative mx-auto mt-10 max-w-xl overflow-hidden rounded-2xl border border-amber/20 bg-dark-surface/90 p-5 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] sm:mt-12 sm:max-w-2xl sm:p-6 md:p-8"
             aria-labelledby="reframe-manifest-kicker"
           >
             <div
@@ -68,34 +84,17 @@ const { containerRef } = useScrollReveal();
             <p
               class="relative mx-auto max-w-[min(100%,19rem)] font-bold leading-[1.15] tracking-tight text-text-on-dark sm:max-w-[22rem] md:max-w-[24rem] md:leading-tight"
             >
-              <span
-                class="text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
-              >
-                ESCALA NENHUMA SALVA
-                <span class="text-amber">SOLO SEM ESTRUTURA</span>
-              </span>
-            </p>
-          </article>
-
-          <p class="scroll-reveal">
-            Sem estrutura, seu improviso vira o famoso "sobe e desce" de escala.
-            E seu improviso não pode depender apenas de um bom dia de
-            <strong class="text-text-on-dark">inspiração.</strong>
-          </p>
-        </div>
-
-        <!-- Visual separator / quote -->
-        <blockquote class="scroll-reveal mt-10 border-l-4 border-amber pl-6">
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
-            Mas e se eu te disser que tem uma forma de desenvolver sua própria
-            linguagem e não depender só da inspiração pra criar seus próprios
-            solos com o método que chamo de TRÍADE CRIATIVA?
+            Se eu te disser que tem uma forma de desenvolver sua própria linguagem, 
+            sem ser um guitarrista avançado, e não depender só da inspiração pra 
+            criar seus próprios solos com o método que chamo de <strong>TRÍADE CRIATIVA</strong>?
           </p>
 
-          <p class="text-lg font-medium text-text-on-dark sm:text-xl">
+          <p class="mt-6 text-lg font-medium text-text-on-dark sm:text-xl">
             Mas antes deixa eu me apresentar...
           </p>
-        </blockquote>
+          </p>
+          </article>
       </div>
     </div>
   </section>

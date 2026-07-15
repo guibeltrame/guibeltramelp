@@ -29,21 +29,21 @@ const pillars = [
     key: "visualizacao",
     title: "Visualização",
     description:
-      "Você para de se perder no braço e começa a enxergar caminhos que antes eram invisíveis. Não é decorar mais uma posição — é entender como escalas, arpejos e acordes se conectam ao longo do braço inteiro pra que você possa criar melodias de formas que intuitivamente nunca pensaria.",
+      "Conhecer o braço de forma profunda, desde a visualização das notas no braço da guitarra, shapes de escala, arpejos e acordes, mas também padronizar essa visualização para automatizar seu raciocínio para tocar em qualquer região e construir caminhos melódicos novos e menos previsíveis.",
     icon: "lucide:eye",
   },
   {
     key: "analise",
     title: "Análise",
     description:
-      "Você aprende a enxergar o que os grandes guitarristas realmente fazem — não só quais escalas usam, mas por que cada escolha funciona. Dinâmica, respiração, variações rítmicas, como a harmonia influencia cada frase. Isso transforma suas referências em vocabulário próprio — você para de copiar e começa a absorver.",
+      "Enxergar e entender o que os grandes guitarristas realmente fazem, não só quais escalas usam, mas por que cada escolha funciona. Dinâmica, respiração, variações rítmicas, como a harmonia influencia cada frase. Isso transforma suas referências em vocabulário próprio — você para de copiar e começa a absorver.",
     icon: "lucide:scan-search",
   },
   {
     key: "criacao",
     title: "Criação",
     description:
-      "Você aprende a estrutura de como construir solos do zero — desde solos simples até solos mais sofisticados. Como criar temas, desenvolver frases e conectar o solo do começo ao fim pra que ele soe como uma história, não como notas jogadas ao vento. Muitos alunos falam que essa é a primeira vez que assistem um vídeo próprio e sentem orgulho do que ouviram.",
+      "Estruturar e construir solos do zero, desde solos simples até solos mais sofisticados. Como criar temas, desenvolver frases e conectar o solo do começo ao fim pra que ele soe como uma história, não como notas jogadas ao vento. Uma aplicação que você leva da composição para o improviso e estrutura a sua forma de raciocínar.",
     icon: "lucide:sparkles",
   },
   

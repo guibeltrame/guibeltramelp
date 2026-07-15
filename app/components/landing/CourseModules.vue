@@ -6,7 +6,7 @@ const modules = [
     number: "01",
     title: "GUITAR MAP",
     description:
-      "Construir um sistema de visualização e padronizacão das escalas, arpejos e acordes para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos.",
+      "Construir um sistema de visualização e padronizacão das escalas, arpejos e acordes para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. (NOTAS NO BRAÇO DA GUITARRA, CAGED, ESCALA PENTATONICA, ARPEJOS, ESCALA MAIOR E MENOR)",
     objective: "Liberdade e segurança ao longo do braço.",
     lessons: 10,
   },
@@ -14,7 +14,7 @@ const modules = [
     number: "02",
     title: "CONSTRUÇÃO DE VOCABULÁRIO",
     description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de composição e improvisação.",
+      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de composição e improvisação. Aplicação de criação de frases com PENTATONICA, ESCALA DIATÔNICA, ARPEJOS, SALTOS DE INTERVALOS, PADRÕES MELÓDICOS E ETC.",
     objective: "Desenvolvimento do vocabulário e criar suas próprias frases.",
     lessons: 10,
   },
@@ -22,7 +22,7 @@ const modules = [
     number: "03",
     title: "CRIANDO SOLOS DO ZERO",
     description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada.",
+      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. (TEMAS, CONEXÃO DE FRASES, NOTAS DE REPOUSO, MOTIVOS E ETC.)",
     objective: "Criar seu primeiro solo do zero.",
     lessons: 10,
   },
@@ -30,7 +30,7 @@ const modules = [
     number: "04",
     title: "SOLO SIGNATURE",
     description:
-      "Aprimorar todas as ferramentas de criação para desenvolver elementos que impulsionam ainda mais sua interpretação, que deixam seus solos mais sofisticados e você comece a desenvolver suas características únicas. Você conta com a análise de solos na linguagem Blues e Rock.",
+      "Aprimorar todas as ferramentas de criação para desenvolver elementos que impulsionam ainda mais sua interpretação, que deixam seus solos mais sofisticados e você comece a desenvolver suas características únicas. (INTERPRETAÇÃO, DINÂMICA, RITMICA, HARMONIA, MENOR HARMÔNICA)",
     objective:
       "Aperfeiçoar a habilidade de criação adicionando mais elementos mais profundos de análise e interpretação.",
     lessons: 14,
@@ -39,7 +39,7 @@ const modules = [
     number: "05",
     title: "Teoria Musical + Harmonia",
     description:
-      "Todos assuntos essenciais de TEORIA MUSICAL com uma apostila e módulo completo com exemplos práticos. (INTERVALOS, FORMAÇÃO DE ACORDES E ESCALAS, CAMPO HARMÔNICO E ETC.)",
+      "Todos assuntos essenciais de TEORIA MUSICAL com uma apostila e módulo completo com exemplos práticos. (TEORIA BÁSICA, INTERVALOS, FORMAÇÃO DE ACORDES E ESCALAS, CAMPO HARMÔNICO E HARMONIA.)",
     lessons: 16,
   },
 ];

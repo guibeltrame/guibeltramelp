@@ -57,7 +57,7 @@ const benefitItems = [
         <p
           class="scroll-reveal mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-on-dark-muted sm:text-xl"
         >
-          Um plano guiado para ir além de só copiar tablaturas e tocar de maneira mecânica. Desenvolver sua independência na guitarra dominando os assuntos essenciais.
+          Um plano guiado para ir além de só copiar tablaturas e tocar de maneira mecânica. Desenvolver sua independência na guitarra dominando todos assuntos essenciais.
         </p>
 
         <!-- Bloco de valor: selo, apoio e benefícios -->

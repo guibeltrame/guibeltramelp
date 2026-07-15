@@ -2,18 +2,18 @@
 const { containerRef } = useScrollReveal();
 
 const before = [
-  "Improvisa sempre com as mesmas frases",
-  "Congela na hora de solar",
-  "Estuda muito, mas não aplica nada",
-  "Não tem identidade no instrumento",
+  "Improviso soa como aquele sobe e desce",
+  "Fica perdido no braço da guitarra",
+  "Não sabe o que e como estudar",
+  "Só sabe tocar copiando os outros",
   "Pula de método em método sem resultado",
 ];
 
 const after = [
-  "Cria solos com uma linguagem única",
-  "Improvisa com confiança",
-  "Não se perde mais no braço da guitarra",
-  "Não é mais o cara que só sabe copiar",
+  "Domina o braço da guitarra",
+  "Improvisa e cria com confiança",
+  "Tem um processo de estudo mais organizado",
+  "Aproveita o repertório e constrói sua linguagem",
   "Desenvolve sua própria criatividade",
 ];
 </script>

@@ -103,7 +103,7 @@ const credentials = [
             </p>
             <p>
               <strong class="text-text-on-light">
-                Com uma boa visualização e entendendo essas estruturas você
+                Com uma boa visualização, referências e entendendo essas estruturas você
                 não depende de inspiração ou dom pra criar bons solos.
               </strong>
             </p>
