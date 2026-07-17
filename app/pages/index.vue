@@ -19,7 +19,9 @@ useHead({
 <template>
   <div>
     <LandingVideoIntro />
- <LandingPainIdentification />
+ 
+    <main id="esconder" style="display: none;">
+    <LandingPainIdentification />
       <LandingProblemReframe />
       <LandingAuthoritySection />
       <LandingMethodPillars />
@@ -36,8 +38,6 @@ useHead({
       <LandingTransformationSection />
       <LandingFAQSection />
       <LandingFinalCTASection /> 
-    <main id="esconder" style="display: none;">
-    
      
     </main>
     
