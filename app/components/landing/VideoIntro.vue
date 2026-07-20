@@ -55,19 +55,21 @@ onMounted(() => {
                      se perca no braço, ache que não tem criatividade ou seus solos soem robóticos
                      Assista ao vídeo.
         -->
-        <div class="video-intro-copy mb-3 text-center sm:mb-5 lg:mb-6">
+        <div class="video-intro-copy mb-5 text-center sm:mb-7 lg:mb-8">
+          <p class="text-base font-semibold uppercase tracking-widest text-amber sm:text-lg">
+            O braço da guitarra <span class="whitespace-nowrap">não precisa ser</span> um quebra cabeças
+          </p>
           <h2
-            class="mt-2 text-[26px] font-bold leading-tight text-text-on-dark sm:text-3xl md:text-4xl"
+            class="mt-4 text-[22px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-            APRENDA A <span class="text-amber">CRIAR SOLOS MAIS BONITOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
+            ENTENDA O QUE ESTÁ TOCANDO E APRENDA <span class="text-amber">IMPROVISAR E CRIAR SEUS PRÓPRIOS SOLOS</span><br />
           </h2>
           <h3
-            class="mt-3 text-[18px] leading-snug text-text-on-dark sm:mt-4 sm:text-base md:text-xl"
+            class="mt-5 text-[15px] leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Descubra como <strong>criar solos</strong>
-            sem precisar de <strong>escalas complexas </strong>ou <strong>teoria avançada</strong>. Mesmo que hoje você
-            se perca no braço, ache que não tem criatividade ou seus solos soem robóticos.<br />
-            Assista ao vídeo
+            Domine o <strong>braço da guitarra</strong> sem precisar de
+            <strong>escalas complexas ou teoria avançada</strong>. Conheça a <STRONG>TRÍADE CRIATIVA</STRONG> e desenvolva sua musicalidade.
+            Assista ao vídeo abaixo:
           </h3>
         </div>
 
