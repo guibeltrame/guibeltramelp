@@ -69,7 +69,7 @@ onMounted(() => {
           >
             Domine o <strong>braço da guitarra</strong> sem precisar de
             <strong>escalas complexas ou teoria avançada</strong>. Conheça a <STRONG>TRÍADE CRIATIVA</STRONG> e desenvolva sua musicalidade.
-            Assista ao vídeo abaixo:
+            <br />Assista ao vídeo abaixo:
           </h3>
         </div>
 
