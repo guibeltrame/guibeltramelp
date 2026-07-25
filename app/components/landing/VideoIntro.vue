@@ -50,10 +50,10 @@ onMounted(() => {
         <!--
           IDEIA GUARDADA (copy alternativo testado):
           Headline:  APRENDA A <span class="text-amber">CRIAR SOLOS MAIS BONITOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
-          Subhead:   Assista o vídeo abaixo e descubra como <strong>criar solos</strong> mais bonitos
-                     sem precisar de <strong>escalas complexas</strong>, <strong>teoria avançada</strong>. Mesmo que hoje você
-                     se perca no braço, ache que não tem criatividade ou seus solos soem robóticos
-                     Assista ao vídeo.
+          Subhead:   Domine o braço da guitarra e descubra como <strong>criar solos</strong>
+                     sem precisar de <strong>escalas complexas</strong> ou <strong>teoria avançada</strong>. Mesmo que hoje você
+                     não entende o que toca ou ache que não tem criatividade.
+                     Assista ao vídeo:
         -->
         <div class="video-intro-copy mb-5 text-center sm:mb-7 lg:mb-8">
           <p class="text-base font-semibold uppercase tracking-widest text-amber sm:text-lg">
@@ -62,14 +62,15 @@ onMounted(() => {
           <h2
             class="mt-4 text-[22px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-            ENTENDA O QUE ESTÁ TOCANDO E APRENDA <span class="text-amber">IMPROVISAR E CRIAR SEUS PRÓPRIOS SOLOS</span><br />
+            APRENDA A <span class="text-amber">CRIAR SOLOS MAIS BONITOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
           </h2>
           <h3
             class="mt-5 text-[15px] leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Domine o <strong>braço da guitarra</strong> sem precisar de
-            <strong>escalas complexas ou teoria avançada</strong>. Conheça a <STRONG>TRÍADE CRIATIVA</STRONG> e desenvolva sua musicalidade.
-            <br />Assista ao vídeo abaixo:
+            Domine o <strong>braço da guitarra</strong> e descubra como <strong>criar solos</strong>
+            sem precisar de <strong>escalas complexas</strong> ou <strong>teoria avançada</strong>. Mesmo que hoje você
+            não entende o que toca ou ache que não tem criatividade.
+            <br />Assista ao vídeo:
           </h3>
         </div>
 
