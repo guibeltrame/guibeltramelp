@@ -169,6 +169,10 @@ const { containerRef } = useScrollReveal();
             </li>
             <li class="flex items-center gap-2">
               <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Nothing Else Matters — Metallica
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
               Belief — John Mayer
             </li>
             <li class="flex items-center gap-2">
