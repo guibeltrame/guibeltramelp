@@ -57,12 +57,12 @@ onMounted(() => {
         -->
         <div class="video-intro-copy mb-5 text-center sm:mb-7 lg:mb-8">
           <h2
-            class="mt-4 text-[22px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
+            class="mt-4 text-[24px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
             SUA <span class="text-amber">INDEPENDÊNCIA E CRIATIVIDADE</span> NA GUITARRA<br />COMEÇA ANTES DA TEORIA
           </h2>
           <h3
-            class="mt-5 text-[15px] font-normal leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
+            class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
             Dominar o <strong>braço da guitarra</strong> e <strong>criar solos</strong>
             não depende de aprender <strong>assuntos avançados</strong> ou perder horas com exercícios mecânicos de escala ou técnica. Mesmo que hoje você
