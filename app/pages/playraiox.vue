@@ -27,7 +27,7 @@
 const CHECKOUT_HREF = 'https://pay.hotmart.com/SUBSTITUIR_LINK_SOLO_MESTRE';
 
 useSeoMeta({
-  title: 'Solo Mestre 90 Dias — Programa de Acompanhamento | Gui Beltrame',
+  title: 'Play RAIO-X',
   description:
     'Você acabou de adquirir o CD6C. Agora conheça o programa de acompanhamento que transforma o método em resultado: o Solo Mestre 90 Dias.',
   robots: 'noindex, nofollow', // Página de upsell — não indexar

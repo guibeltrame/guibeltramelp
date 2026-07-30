@@ -13,34 +13,39 @@ const { containerRef } = useScrollReveal();
 
 const faqs = [
   {
-    question: 'O que exatamente recebo no Solo Raio-X?',
+    question: 'O que exatamente recebo no PLAY RAIO-X?',
     answer:
-      'Você recebe uma análise individual em vídeo do seu solo: o que está funcionando, os principais erros que limitam sua evolução, como corrigir cada ponto na prática e o que estudar a seguir. Depois de aplicar as correções, você pode enviar um novo vídeo em até 30 dias e receber uma segunda análise.',
+      'Você recebe uma análise, plano de estudo e dois encontros ao vivo de 45 minutos diretamente comigo.',
   },
   {
     question: 'Como funciona o processo depois que eu compro?',
     answer:
-      'Após a confirmação da compra, você conclui o primeiro desafio do CD6C, grava um vídeo tocando seu solo e nos envia. O Gui assiste, faz a análise completa e devolve em vídeo com todos os pontos identificados.',
+      'Após a confirmação da compra você receberá um formulário que poderá ser enviado em até 45 dias para pré-avaliação. A pré-avaliação é feita para termos maior efetividade nos nossos encontros.',
   },
   {
-    question: 'Preciso ter comprado o CD6C para adquirir o Solo Raio-X?',
+    question: 'Preciso ter comprado o Ciência das 6 Cordas para adquirir o Play Raio-X?',
     answer:
-      'Sim. O Solo Raio-X é um complemento direto ao CD6C — a análise é feita com base no método que você acabou de adquirir. Sem o método base, a análise perde o contexto e o direcionamento.',
+      'Sim. Está oferta não é vendida com essas condições após fechar essa página.',
   },
   {
-    question: 'Em quanto tempo recebo minha análise?',
+    question: 'Em quanto tempo posso agendar meu primeiro encontro?',
     answer:
-      'O prazo de entrega da análise em vídeo é informado no momento da compra. O importante é que você terá um retorno detalhado assim que o Gui assistir ao seu envio.',
+      'O prazo de entrega do formulário pode ser entregue em até 45 dias para agendarmos nossa primeira sessão. Eu entrarei em contato para verificar a disponibilidade de agenda.',
   },
   {
-    question: 'O que é a segunda análise?',
+    question: 'Posso tirar dúvidas durante o programa?',
     answer:
-      'Após receber a primeira análise e aplicar as correções indicadas, você tem até 30 dias para enviar um novo vídeo. O Gui analisa novamente para confirmar sua evolução e apontar os próximos passos.',
+      'Sim, você tem acesso ao meu contato pessoal para que até o fim do programa você possa enviar vídeos, dúvidas e você tenha o maior aproveitamento possível.',
+  },
+    {
+    question: 'Consigo reassistir a aula?',
+    answer:
+      'Sim, a sua aula individual é gravada e enviada diretamente no seu e-mail ou whatsapp para que você possa reassistir os conceitos trabalhados.',
   },
   {
-    question: 'Esse serviço é para iniciantes?',
+    question: 'Funciona para iniciantes?',
     answer:
-      'É para quem está em processo de aplicação do CD6C. Você não precisa ser avançado — precisa ter o método em mãos e disposição para praticar e corrigir o que for identificado.',
+      'Sim, esse encontro é personalizado de acordo com o momento em que você se encontra, independente do seu nível. O plano de estudo será sugerido e baseado nisso.',
   },
   {
     question: 'E se eu não gostar ou não conseguir usar?',

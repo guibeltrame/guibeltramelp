@@ -30,7 +30,7 @@ const { containerRef } = useScrollReveal();
             id="what-is-heading"
             class="text-center text-4xl font-black uppercase leading-tight tracking-tight text-amber sm:text-5xl md:text-6xl lg:text-left"
           >
-            SOLO
+            PLAY
             <span class="text-text-on-dark">RAIO-X</span>
           </h2>
         </div>
@@ -38,17 +38,15 @@ const { containerRef } = useScrollReveal();
         <!-- Lado direito: pergunta + descrição -->
         <div class="scroll-reveal">
           <h3 class="text-xl font-bold uppercase tracking-tight text-text-on-dark sm:text-2xl">
-            O QUE É O SOLO RAIO-X?
+            O QUE É O PLAY RAIO-X?
           </h3>
           <div class="mt-4 space-y-3 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
             <p>
-              É uma <strong class="text-text-on-dark">personalizada do seu primeiro solo</strong>.
+              Dois encontros diretamente comigo e uma <strong class="text-text-on-dark">análise personalizada</strong>  do seu play.
             </p>
             <p>
-              Para facilitar e otimizar a sua evolução você vai receber um
-              <strong class="text-text-on-dark">plano de estudo</strong> após uma
-              análise de play para detectar os principais furos dentro dos seus solos,
-              junto com <strong class="text-text-on-dark">implementações a serem corrigidas</strong>.
+              Para facilitar, otimizar e detectar exatamente os principais pontos
+              a serem corrigidos dentro do seu plano de estudo e play.
             </p>
           </div>
         </div>

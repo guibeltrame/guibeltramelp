@@ -95,7 +95,7 @@ onMounted(() => {
           id="upsell-hero-heading"
           class="scroll-reveal mt-3 max-w-2xl text-center text-base leading-snug text-text-on-dark-muted sm:text-lg"
         >
-          Destrave um <strong class="text-amber">BÔNUS EXTRA</strong> na sua área de membros
+          Destrave um <strong class="text-amber">BÔNUS EXTRA</strong>
           ao dar Play no vídeo abaixo <span class="italic">(não é clickbait)</span>
         </h1>
 
@@ -133,20 +133,7 @@ onMounted(() => {
           </div>
         </div>
 
-        <!-- CTA pós-vídeo -->
-        <div class="scroll-reveal mt-8 flex w-full flex-col items-center gap-3 sm:mt-10">
-          <UiCtaButton
-            label="QUERO O RAIO-X DO MEU SOLO"
-            :href="props.ctaHref"
-            variant="primary"
-            size="lg"
-            :full-width="false"
-          />
-          <p class="text-xs text-text-on-dark-muted/70">
-            <Icon name="lucide:lock" class="mr-1 inline size-3.5" aria-hidden="true" />
-            Oferta exclusiva para novos alunos do CD6C · Compra 100% segura
-          </p>
-        </div>
+
       </div>
     </section>
   </div>

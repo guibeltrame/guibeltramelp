@@ -22,9 +22,9 @@ const props = withDefaults(defineProps<Props>(), {
 const { containerRef } = useScrollReveal();
 
 const included = [
-  'Análise Individual e completa do seu primeiro solo',
-  'Plano de estudo com o que deve ser melhorado',
-  'Feedback de retorno após correção',
+  'Análise Individual e completa do seu play',
+  'Plano de estudo + aplicação personalizada',
+  '2 Sessões Individuais diretamente comigo',
 ];
 </script>
 
@@ -48,9 +48,6 @@ const included = [
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="scroll-reveal mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold uppercase tracking-widest text-amber">
-          Oferta exclusiva, somente para novos alunos do CD6C
-        </p>
         <h2
           id="upsell-offer-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
@@ -59,8 +56,7 @@ const included = [
           <span class="text-amber">condição especial</span>
         </h2>
         <p class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
-          Esta oferta aparece apenas uma vez, imediatamente após a compra do CD6C.
-          Depois disso, o valor volta ao normal.
+          Esta oferta aparece apenas uma vez, somente após a compra do Ciência das 6 Cordas.
         </p>
       </div>
 
@@ -114,18 +110,18 @@ const included = [
           <div class="text-center">
             <p class="text-sm text-text-on-dark-muted">
               Preço normal:
-              <span class="text-lg line-through">R$ 297</span>
+              <span class="text-lg line-through">R$ 597</span>
             </p>
             <p class="mt-1 text-sm font-semibold text-amber">
-              Só para quem acabou de comprar o CD6C:
+              Só para quem acabou de entrar no Ciência das 6 Cordas:
             </p>
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"
             >
-              R$ <span class="text-amber">197</span>
+              R$ <span class="text-amber">397</span>
             </p>
             <p class="mt-2 text-base text-text-on-dark-muted">
-              ou <strong class="text-text-on-dark">12x de R$ 20,37</strong> no cartão
+              ou <strong class="text-text-on-dark">12x de R$ 41,06</strong> no cartão
             </p>
           </div>
 

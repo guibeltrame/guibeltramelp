@@ -43,14 +43,14 @@ const { containerRef } = useScrollReveal();
         </h2>
 
         <p class="mt-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
-          Você acabou de investir no CD6C. O SOLO RAIO-X garante que
-          esse investimento se converta em resultado — com plano, acompanhamento
+          Você acabou de investir no Ciência das 6 Cordas. O Play RAIO-X garante que
+          esse investimento se converta em resultado — com plano, acompanhamento, tempo para estudar
           e um guitarrista ao seu lado durante todo o processo.
         </p>
 
         <div class="mt-10 flex flex-col items-center gap-3">
           <UiCtaButton
-            label="QUERO O RAIO-X DO MEU SOLO"
+            label="QUERO O PLAY RAIO-X"
             :href="props.ctaHref"
             variant="primary"
             size="lg"

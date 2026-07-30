@@ -12,23 +12,33 @@ const { containerRef } = useScrollReveal();
 const deliverables = [
   {
     icon: 'lucide:clipboard-list',
-    title: 'Análise Personalizada',
-    subtitle: 'Seu PLAY análisado de ponta a ponta',
+    title: 'ACOMPANHAMENTO INDIVIDUAL PERSONALIZADO',
     intro:
-      'Após concluir o primeiro desafio do Ciência das 6 Cordas, você enviará um vídeo do seu solo e terá um encontro diretamente comigo onde vou analisar seu play em detalhes:',
+      'Você receberá um formulário para uma pré-avaliação de assuntos práticos e teóricos. Isso é tudo o que será avaliado:',
     bullets: [
-      'O que está funcionando no seu improviso.',
-      'Os principais erros que estão limitando sua evolução.',
-      'Uma avaliação da sua técnica e timbre',
-      'Como corrigir cada ponto de forma prática.',
-      'O que estudar a seguir para evoluir mais rápido.',
+      'Técnica e Precisão',
+      'Timbre',
+      'Visualização do Braço',
+      'Parte criativa',
     ],
     outro:
-      'Após aplicar as correções, você poderá enviar um novo vídeo em até 30 dias e receber uma segunda análise para acompanhar sua evolução e descobrir seus próximos passos.',
+      'Você tem até 45 dias para enviar formulário e agendarmos nossa primeira sessão.',
     imageAlt: 'Diagnóstico inicial de 30 minutos',
     imageRight: true,
   },
+  {
+    icon: 'lucide:clipboard-list',
+    title: 'ENCONTROS + PLANO DE ESTUDO',
+    intro:
+      'Duas sessões individuais com duração de 45 minutos que são feitas num intervalo de 20 dias mais um plano de estudo personalizado com quais assuntos devem ser o foco dos próximos meses de estudo.',
+    bullets: [
+      'Os 2 encontros são gravados para que você possa reassistir.',
+    ],
+    imageAlt: 'Diagnóstico inicial de 30 minutos',
+    imageRight: false,
+  },
 ];
+
 </script>
 
 <template>
@@ -45,7 +55,7 @@ const deliverables = [
           class="text-2xl font-bold uppercase tracking-tight text-text-on-light sm:text-3xl md:text-4xl"
         >
           O que você vai receber no
-          <span class="text-amber-dark">SOLO RAIO-X?</span>
+          <span class="text-amber-dark">PLAY RAIO-X?</span>
         </h2>
       </div>
 

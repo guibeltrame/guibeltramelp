@@ -56,19 +56,16 @@ onMounted(() => {
                      Assista ao vídeo:
         -->
         <div class="video-intro-copy mb-5 text-center sm:mb-7 lg:mb-8">
-          <p class="text-base font-semibold uppercase tracking-widest text-amber sm:text-lg">
-            O braço da guitarra <span class="whitespace-nowrap">não precisa ser</span> um quebra cabeças
-          </p>
           <h2
             class="mt-4 text-[22px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-            APRENDA A <span class="text-amber">CRIAR SOLOS MAIS BONITOS</span> E DESCUBRA SUA IDENTIDADE NA GUITARRA
+            SUA <span class="text-amber">INDEPENDÊNCIA E CRIATIVIDADE</span> NA GUITARRA<br />COMEÇA ANTES DA TEORIA
           </h2>
           <h3
-            class="mt-5 text-[15px] leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
+            class="mt-5 text-[15px] font-normal leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Domine o <strong>braço da guitarra</strong> e descubra como <strong>criar solos</strong>
-            sem precisar de <strong>escalas complexas</strong> ou <strong>teoria avançada</strong>. Mesmo que hoje você
+            Dominar o <strong>braço da guitarra</strong> e <strong>criar solos</strong>
+            não depende de aprender <strong>assuntos avançados</strong> ou perder horas com exercícios mecânicos de escala ou técnica. Mesmo que hoje você
             não entende o que toca ou ache que não tem criatividade.
             <br />Assista ao vídeo:
           </h3>
