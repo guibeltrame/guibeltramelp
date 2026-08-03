@@ -73,7 +73,7 @@ const included = [
           <!-- Price -->
           <div class="text-center">
             <p class="text-sm text-text-on-dark-muted">
-              De <span class="text-lg line-through">R$297</span>
+              De <span class="text-lg line-through">R$397</span>
             </p>
             <p
               class="mt-2 text-4xl font-extrabold tracking-tight text-text-on-dark sm:text-5xl"

@@ -1,6 +1,41 @@
 <script setup lang="ts">
 const VTURB_PLAYER_SCRIPT =
-  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a5a263aa41e6f4344c60ffb/player.js";
+  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/players/6a70d78cdd1d1ca7bf80dfde/v4/player.js";
+
+// Otimização de carregamento: marca o instante de início o mais cedo possível
+if (import.meta.client) {
+  // @ts-ignore
+  window._plt =
+    // @ts-ignore
+    window._plt ||
+    (performance?.timeOrigin
+      ? performance.timeOrigin + performance.now()
+      : Date.now());
+}
+
+useHead({
+  link: [
+    {
+      rel: "preload",
+      href: "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/players/6a70d78cdd1d1ca7bf80dfde/v4/player.js",
+      as: "script",
+    },
+    {
+      rel: "preload",
+      href: "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js",
+      as: "script",
+    },
+    {
+      rel: "preload",
+      href: "https://cdn.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/6a70d6527cca3860e81a6ce1/main.m3u8",
+      as: "fetch",
+    },
+    { rel: "dns-prefetch", href: "https://cdn.converteai.net" },
+    { rel: "dns-prefetch", href: "https://scripts.converteai.net" },
+    { rel: "dns-prefetch", href: "https://images.converteai.net" },
+    { rel: "dns-prefetch", href: "https://license.vturb.com" },
+  ],
+});
 
 onMounted(() => {
   if (document.querySelector(`script[src="${VTURB_PLAYER_SCRIPT}"]`)) return;
@@ -78,9 +113,14 @@ onMounted(() => {
   <ClientOnly>
     <div class="rounded-xl overflow-hidden">
       <vturb-smartplayer
-        id="ab-6a5a263aa41e6f4344c60ffb"
+        id="vid-6a70d78cdd1d1ca7bf80dfde"
         style="display: block; margin: 0 auto; width: 100%"
-      ></vturb-smartplayer>
+      >
+        <div
+          class="vturb-player-placeholder"
+          style="position: relative; width: 100%; padding: 56.25% 0 0; z-index: 0; background-color: black"
+        ></div>
+      </vturb-smartplayer>
     </div>
   </ClientOnly>
 </div>
