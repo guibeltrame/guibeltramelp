@@ -94,15 +94,12 @@ onMounted(() => {
           <h2
             class="mt-4 text-[24px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-            SUA <span class="text-amber">INDEPENDÊNCIA E CRIATIVIDADE</span> NA GUITARRA<br />COMEÇA ANTES DA TEORIA
+            <span class="text-amber">DOMINAR O BRAÇO DA GUITARRA</span> DEPENDE APENAS DE UM ÚNICO AJUSTE NA SUA ROTINA DE ESTUDO
           </h2>
           <h3
             class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Dominar o <strong>braço da guitarra</strong> e <strong>criar solos</strong>
-            não depende de aprender <strong>assuntos avançados</strong> ou perder horas com exercícios mecânicos de escala ou técnica. Mesmo que hoje você
-            não entende o que toca ou ache que não tem criatividade.
-            <br />Assista ao vídeo:
+            Você não precisa perder horas com exercícios mecânicos de escala, técnica ou assuntos avançados para ter sua independência e também começar a criar. Assista ao vídeo:
           </h3>
         </div>
 
