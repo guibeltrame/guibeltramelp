@@ -94,7 +94,7 @@ onMounted(() => {
           <h2
             class="mt-4 text-[24px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-            <span class="text-amber">INDEPENDÊNCIA E MUSICALIDADE</span> NA GUITARRA NÃO DEPENDEM APENAS DA TEORIA MUSICAL
+            <span class="text-amber">INDEPENDÊNCIA E MUSICALIDADE</span> NA GUITARRA NÃO DEPENDE APENAS DE TEORIA MUSICAL
           </h2>
           <h3
             class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
