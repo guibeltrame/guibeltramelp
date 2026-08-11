@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const VTURB_PLAYER_SCRIPT =
-  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/players/6a57f9dfa22f6f4daf33fac5/v4/player.js";
+  "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a5a263aa41e6f4344c60ffb/player.js";
 
 // Otimização de carregamento: marca o instante de início o mais cedo possível
 if (import.meta.client) {
@@ -17,7 +17,7 @@ useHead({
   link: [
     {
       rel: "preload",
-      href: "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/players/6a57f9dfa22f6f4daf33fac5/v4/player.js",
+      href: "https://scripts.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/ab-test/6a5a263aa41e6f4344c60ffb/player.js",
       as: "script",
     },
     {
@@ -25,14 +25,10 @@ useHead({
       href: "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js",
       as: "script",
     },
-    {
-      rel: "preload",
-      href: "https://cdn.converteai.net/317ca4a5-62ee-4eb2-8032-cd11077af201/6a57f89daa981e9bb8a8c7f2/main.m3u8",
-      as: "fetch",
-    },
     { rel: "dns-prefetch", href: "https://cdn.converteai.net" },
     { rel: "dns-prefetch", href: "https://scripts.converteai.net" },
     { rel: "dns-prefetch", href: "https://images.converteai.net" },
+    { rel: "dns-prefetch", href: "https://m3u8.vturb.net" },
     { rel: "dns-prefetch", href: "https://license.vturb.com" },
   ],
 });
@@ -110,7 +106,7 @@ onMounted(() => {
   <ClientOnly>
     <div class="rounded-xl overflow-hidden">
       <vturb-smartplayer
-        id="vid-6a57f9dfa22f6f4daf33fac5"
+        id="ab-6a5a263aa41e6f4344c60ffb"
         style="display: block; margin: 0 auto; width: 100%"
       >
         <div
