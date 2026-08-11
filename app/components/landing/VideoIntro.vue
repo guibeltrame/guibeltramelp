@@ -99,7 +99,7 @@ onMounted(() => {
           <h3
             class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Você não precisa perder horas com exercícios mecânicos de escala, técnica ou assuntos avançados para ter fluência e também começar a criar seus próprios solos. Assista ao vídeo:
+            O tempo passa e você sente que está estagnado e perdido em tanto conteúdo. Entenda as 3 etapas para ter fluência no braço mesmo que você não seja um guitarrista avançado ou super técnico e aprenda a criar e improvisar seus próprios solos. Assista ao vídeo:
           </h3>
         </div>
 
