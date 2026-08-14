@@ -95,7 +95,10 @@ onMounted(() => {
           <h3
             class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            O tempo passa e você sente que está estagnado e perdido em tanto conteúdo. Entenda as 3 etapas para ter fluência no braço mesmo que você não seja um guitarrista avançado ou super técnico e aprenda a criar e improvisar seus próprios solos. Assista ao vídeo:
+            Dominar o <strong>braço da guitarra</strong> e <strong>criar solos</strong>
+            não depende de aprender <strong>assuntos avançados</strong> ou perder horas com exercícios mecânicos de escala ou técnica. Mesmo que hoje você
+            não entende o que toca ou ache que não tem criatividade.
+            <br />Assista ao vídeo:
           </h3>
         </div>
 
