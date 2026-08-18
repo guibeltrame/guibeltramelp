@@ -2,10 +2,20 @@
 const { containerRef } = useScrollReveal();
 
 const faqs = [
-  {
-    question: "Preciso ter experiência prévia com guitarra?",
+    {
+    question: "O curso serve para quem toca violão?",
+    answer:
+      "Sim, o Ciência das 6 Cordas é direcionado principalmente para quem toca instrumento de cordas, principalmente guitarristas e violonistas.",
+  },
+    {
+    question: "Preciso ter experiência prévia com guitarra/violão?",
     answer:
       "Sim, o curso é voltado para guitarristas que já tocam o mínimo pelo menos. Você não precisa ser avançado, mas precisa saber o básico do instrumento — como posicionar os dedos, fazer acordes e tirar músicas.",
+  },
+    {
+    question: "Ainda não sei tocar de ouvido, é para mim?",
+    answer:
+      "Sim, umas das principais maneiras de desenvolver o seu ouvido é conscientizar o que você está tocando para seu ouvido se desenvolver. Logo é um dos temas que abordamos ao longo do curso.",
   },
   {
     question: "Quanto tempo leva para ver resultados?",
@@ -31,12 +41,6 @@ const faqs = [
     question: "As aulas são ao vivo ou gravadas?",
     answer:
       "As aulas são gravadas em alta qualidade e ficam disponíveis 24/7 na plataforma. Você estuda no seu ritmo, revisa quantas vezes quiser e avança conforme sua rotina permite.",
-  },
-  {
-    question:
-      "Quero aprender técnicas como palhetada alternada e afins, é para mim?",
-    answer:
-      "Não, o curso é focado para quem quer começar no mundo da improvisação ou sente que está estagnado e quer desenvolver seu vocabulário. Não ensinamos fundamentos de técnica.",
   },
   {
     question: "Como funciona o suporte?",

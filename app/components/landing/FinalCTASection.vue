@@ -27,7 +27,7 @@ const { containerRef } = useScrollReveal();
         <p
           class="mt-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
-          Pare de improvisar no piloto automático. Comece a criar música com
+          Pare de tocar no piloto automático. Comece a criar música com
           identidade, liberdade e personalidade — usando a técnica que você já
           tem hoje.
         </p>

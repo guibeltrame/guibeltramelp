@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Gui Beltrame - Crie solos do zero",
+  title: "Gui Beltrame - Desenvolva sua musicalidade por completo",
   description:
     "Aprenda a criar solos com personalidade usando a técnica que você já tem. Método estruturado para guitarristas que querem sair do piloto automático e improvisar com liberdade.",
-  ogTitle: "Gui Beltrame - Crie solos do zero",
+  ogTitle: "Gui Beltrame - Desenvolva sua musicalidade por completo",
   ogDescription:
     "Método estruturado para guitarristas que querem sair do piloto automático e improvisar com liberdade criativa.",
   ogType: "website",
