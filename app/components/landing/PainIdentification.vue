@@ -6,7 +6,7 @@ const pains = [
     image: "/images/dor03.jpg",
     title: "Muito conteúdo, pouco resultado",
     description:
-      "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar pra criar e improvisar.",
+      "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar.",
     imageAlt:
       "Sugere a distância entre muito estudo e pouca aplicação na música na prática",
   },
@@ -19,7 +19,7 @@ const pains = [
   },
   {
     image: "/images/dor01.jpg",
-    title: "Seus solos sempre soam iguais",
+    title: "Seus improvisos sempre soam iguais",
     description:
       "Fica sobe e desce de escala, repete os mesmos clichês e sente que todo solo soa igual.",
     imageAlt:
@@ -27,9 +27,9 @@ const pains = [
   },
   {
     image: "/images/dor02.jpg",
-    title: "Insegurança pra improvisar",
+    title: "Não sabe tocar de ouvido",
     description:
-      "No palco ou no quarto fica inseguro para improvisar porque não domina o braço da guitarra.",
+      "Ainda depende o tempo inteiro de cifras e tablatura para conseguir reproduzir uma música e não sabe como desenvolve-lo.",
     imageAlt:
       "Representa o bloqueio criativo na hora de improvisar na guitarra",
   },
@@ -37,7 +37,7 @@ const pains = [
     image: "/images/dor04.jpg",
     title: "Você se compara e se frustra",
     description:
-      'Fica frustrado porque vê outros guitarristas criando com as mesmas escalas que você conhece e se pergunta: "por que eu não consigo fazer isso?"',
+      'Acha que desenvolver a musicalidade para ter mais independencia desde técnica até consciência do que toca é só para quem tem talento.',
     imageAlt:
       "Traduz a frustração ao comparar o próprio som com outros guitarristas",
   },
@@ -45,7 +45,7 @@ const pains = [
     image: "/images/dor06.jpg",
     title: "Sente que não evolui",
     description:
-      "Estuda há um tempo, mas sente que estagnou e fica desanimado por não ver evolução e seus solos soando iguais toda vez.",
+      "Já toca há um bom tempo, mas se sente estagnado e tocando sempre as mesmas músicas, licks e exercícios.",
     imageAlt:
       "Remete à busca por um som próprio e identidade musical na guitarra",
   },

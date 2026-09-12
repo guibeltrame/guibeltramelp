@@ -30,24 +30,20 @@ const { containerRef } = useScrollReveal();
           class="stagger-children mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
           <p class="scroll-reveal">
-            Entendo que talvez você até já tenha aprendido uma escala aqui ou outro lick ali, mas os improvisos ainda soam repetitivos e sem sentido. É frustrante estudar muitos conteúdos e sentir que não tem
-            <strong class="text-text-on-dark">nenhum progresso.</strong>
+            Você já toca há alguns anos, acumulou vários conteúdos, se sente <strong class="text-text-on-dark">estagnado e preso</strong> por não entender o que toca — e quando tenta improvisar fica naquele sobe e desce robótico.
           </p>
           <p class="scroll-reveal">
-            Parece que tudo isso é só pra 
-            <strong class="text-text-on-dark">guitarristas avançados</strong>, para quem tem <strong class="text-text-on-dark">talento natural</strong> ou precisa de muita <strong class="text-text-on-dark">teoria.</strong>
+            Você quer dominar o braço da guitarra, começar a criar seus improvisos e, principalmente, ter <strong class="text-text-on-dark">organização do que realmente estudar</strong> para ter uma evolução constante.
           </p>
-          <p class="scroll-reveal">E você fica preso no mesmo ciclo de sempre.</p>
-          <p class="scroll-reveal">Reproduz solos que gosta, mas quando chega sua vez de improvisar e criar tem o mesmo resultado.</p>
           <p class="scroll-reveal">
-            Todo guitarrista tem
-            <strong class="text-text-on-dark"
-              >características únicas que podem ser desenvolvidas</strong
-            >, mas improvisar não se baseia em somente aprender um shape de escala, ficar só copiando licks e tirar músicas de forma aleatória.
+            Você não precisa ser um músico avançado, ter um <strong class="text-text-on-dark">talento natural</strong> ou toda a teoria musical.
+          </p>
+          <p class="scroll-reveal">
+            A sua rotina de estudo não precisa ser chata — em que você se prende a aprender os fundamentos, mas não desenvolve a sua musicalidade de fato colocando em prática. O famoso músico que <strong class="text-text-on-dark">só sabe teoria, mas não aplica nada.</strong>
           </p>
 
           <p id="reframe-manifest-kicker" class="scroll-reveal text-center">
-            A grande verdade é:
+            Você precisa entender isso:
           </p>
 
           <!-- Manifesto: frase central da reinterpretação -->
@@ -57,14 +53,10 @@ const { containerRef } = useScrollReveal();
               <span
                 class="text-center text-xl leading-tight sm:text-2xl md:text-3xl md:leading-tight"
               >
-                ESCALA NENHUMA SALVA
-                <span class="text-amber">SOLO SEM ESTRUTURA</span>
+                MÚSICA É
+                <span class="text-amber">COMUNICAÇÃO</span>
               </span>
             </p>
-
-          <p class="scroll-reveal">
-            Música é <strong class="text-text-on-dark">comunicação, comunicação precisa de estrutura</strong>. Não é ter uma técnica avançada ou conhecer escalas e teorias mais complexas.
-          </p>
         </div>
 
         <!-- Visual separator / quote -->
@@ -81,18 +73,12 @@ const { containerRef } = useScrollReveal();
               aria-hidden="true"
             />
 
-            <p
-              class="relative mx-auto max-w-[min(100%,19rem)] font-bold leading-[1.15] tracking-tight text-text-on-dark sm:max-w-[22rem] md:max-w-[24rem] md:leading-tight"
-            >
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
-            Se eu te disser que tem uma forma de desenvolver sua própria linguagem, 
-            sem ser um guitarrista avançado, e não depender só da inspiração pra 
-            criar seus próprios solos com o método que chamo de <strong>TRÍADE CRIATIVA</strong>?
+            E pra todo músico que realmente quer aprender a se comunicar na guitarra/violão precisa passar pelos três pilares que eu batizei de <strong>TRÍADE CRIATIVA</strong>.
           </p>
 
           <p class="mt-6 text-lg font-medium text-text-on-dark sm:text-xl">
             Mas antes deixa eu me apresentar...
-          </p>
           </p>
           </article>
       </div>

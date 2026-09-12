@@ -4,43 +4,55 @@ const { containerRef } = useScrollReveal();
 const modules = [
   {
     number: "01",
-    title: "GUITAR MAP",
-    description:
-      "Construir um sistema de visualização e padronizacão das escalas, arpejos e acordes para que você além de não se perder no braço da guitarra, consiga enxergar caminhos e possibilidades melódicas novas para você começar seu processo criativo de frases e solos. (NOTAS NO BRAÇO DA GUITARRA, CAGED, ESCALA PENTATONICA, ARPEJOS, ESCALA MAIOR E MENOR)",
-    objective: "Liberdade e segurança ao longo do braço.",
+    label: "NÍVEL I",
+    summary: "Domine o braço da guitarra num sistema visual claro para você enxergar acordes e escalas sem se perder e ideias iniciais para seus improvisos.",
+    bullets: [
+      "Teoria básica",
+      "Notas no braço da guitarra",
+      "Sistema CAGED",
+      "Intervalos",
+      "Formação de acordes",
+      "Fundamentos da Técnica",
+    ],
     lessons: 10,
   },
   {
     number: "02",
-    title: "CONSTRUÇÃO DE VOCABULÁRIO",
-    description:
-      "Aplicação prática de ideias para você construir suas próprias frases e extrair frases que já existem para aplicar elas em contexto de composição e improvisação. Aplicação de criação de frases com PENTATONICA, ESCALA DIATÔNICA, ARPEJOS, SALTOS DE INTERVALOS, PADRÕES MELÓDICOS E ETC.",
-    objective: "Desenvolvimento do vocabulário e criar suas próprias frases.",
+    label: "NÍVEL II",
+    summary: "Novos elementos",
+    bullets: [
+      "Escala Pentatonica Maior e Menor",
+      "Escala Maior e Menor",
+      "Ciclo de Quartas e Quintas",
+      "Campo Harmônico Maior/Menor",
+      "Improviso e Criatividade I",
+    ],
     lessons: 10,
   },
   {
     number: "03",
-    title: "CRIANDO SOLOS DO ZERO",
-    description:
-      "Desenvolver a habilidade por trás da construção de solos, entendendo a ideia e estrutura desde os temas mais simples até mais complexos de uma maneira descomplicada. (TEMAS, CONEXÃO DE FRASES, NOTAS DE REPOUSO, MOTIVOS E ETC.)",
-    objective: "Criar seu primeiro solo do zero.",
+    label: "NÍVEL III",
+    summary: "Aprenda a estruturar um solo do zero de forma prática e descomplicada.",
+    bullets: [
+      "Arpejos",
+      "Temas e estrutura de solo",
+      "Conexão de frases",
+      "Notas de repouso",
+      "Motivos melódicos x Motivos Ritmicos",
+      "Dinâmica e Interpretação",
+    ],
     lessons: 10,
   },
   {
     number: "04",
-    title: "SOLO SIGNATURE",
-    description:
-      "Aprimorar todas as ferramentas de criação para desenvolver elementos que impulsionam ainda mais sua interpretação, que deixam seus solos mais sofisticados e você comece a desenvolver suas características únicas. (INTERPRETAÇÃO, DINÂMICA, RITMICA, HARMONIA, MENOR HARMÔNICA)",
-    objective:
-      "Aperfeiçoar a habilidade de criação adicionando mais elementos mais profundos de análise e interpretação.",
+    label: "NÍVEL IV",
+    summary: "Adicione profundidade e personalidade aos seus solos com elementos avançados de interpretação e harmonia que fazem a diferença entre tocar e se expressar.",
+    bullets: [
+      "Harmonia avançada",
+      "Menor harmônica",
+      "Modos Gregos",
+    ],
     lessons: 14,
-  },
-  {
-    number: "05",
-    title: "Teoria Musical + Harmonia",
-    description:
-      "Todos assuntos essenciais de TEORIA MUSICAL com uma apostila e módulo completo com exemplos práticos. (TEORIA BÁSICA, INTERVALOS, FORMAÇÃO DE ACORDES E ESCALAS, CAMPO HARMÔNICO E HARMONIA.)",
-    lessons: 16,
   },
 ];
 </script>
@@ -89,32 +101,45 @@ const modules = [
             :key="mod.number"
             class="scroll-reveal group border-b border-dark-muted/90 motion-safe:transition-colors motion-safe:duration-300 last:border-b-0 motion-reduce:transition-none hover:border-amber/25"
           >
-            <article class="py-10 sm:py-12">
+            <article class="py-12 sm:py-14">
+              <!-- Badge maior -->
               <div
                 class="inline-flex motion-safe:transition-transform motion-safe:duration-300 motion-reduce:transition-none sm:group-hover:-translate-y-px"
               >
                 <span
-                  class="inline-flex items-center rounded-full border border-amber/25 bg-dark-surface/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.22em] text-amber shadow-sm ring-1 ring-white/5 sm:px-3.5 sm:py-2 sm:text-xs"
+                  class="inline-flex items-center rounded-full border border-amber/30 bg-dark-surface/90 px-5 py-2 text-sm font-bold uppercase tracking-[0.22em] text-amber shadow-sm ring-1 ring-white/5 sm:px-6 sm:py-2.5 sm:text-base"
                 >
-                  {{ index + 1 == 5 ? "EXTRA" : `Etapa ${index + 1}` }}
+                  {{ mod.label }}
                 </span>
               </div>
 
-              <h3
-                class="mt-4 text-xl font-bold leading-snug tracking-tight text-text-on-dark sm:mt-5 sm:text-2xl md:text-[1.65rem]"
-              >
-                {{ mod.title }}
-              </h3>
-
+              <!-- Descrição curta -->
               <p
-                class="mt-3 max-w-prose text-base leading-relaxed text-text-on-dark-muted sm:mt-4 sm:text-lg"
+                class="mt-5 max-w-prose text-base leading-relaxed text-text-on-dark-muted sm:mt-6 sm:text-lg"
               >
-                {{ mod.description }}
+                {{ mod.summary }}
               </p>
 
+              <!-- Bullets de conteúdo -->
+              <ul class="mt-5 space-y-2 sm:mt-6" aria-label="Conteúdos do módulo">
+                <li
+                  v-for="bullet in mod.bullets"
+                  :key="bullet"
+                  class="flex items-center gap-2.5 text-sm text-text-on-dark-muted sm:text-base"
+                >
+                  <Icon
+                    name="lucide:check"
+                    class="size-4 shrink-0 text-amber"
+                    aria-hidden="true"
+                  />
+                  {{ bullet }}
+                </li>
+              </ul>
+
+              <!-- Objetivo -->
               <p
                 v-if="mod.objective"
-                class="mt-4 flex max-w-prose items-start gap-2.5 rounded-lg border border-amber/20 bg-amber/5 px-3.5 py-3 text-base leading-relaxed sm:mt-5 sm:text-lg"
+                class="mt-6 flex max-w-prose items-start gap-2.5 rounded-lg border border-amber/20 bg-amber/5 px-3.5 py-3 text-base leading-relaxed sm:mt-7 sm:text-lg"
               >
                 <Icon
                   name="lucide:target"

@@ -86,26 +86,27 @@ const credentials = [
           >
             <p>
               Sou professor e criador da TRÍADE CRIATIVA. Durante anos,
-              enfrentei exatamente os mesmos problemas que você. E tinha uma
-              sensação que sempre voltava: insegurança e que não tinha talento.
+              enfrentei exatamente os mesmos problemas que você.
             </p>
             <p>
-              Eu ficava perdido no braço e meus improvisos sempre soavam como
-              exercício, não como música.
+              Ficava perdido no braço, meus improvisos sempre soavam como
+              exercício e até sabia teoria, mas não como aplicar isso no meu
+              estudo e desenvolver minha independência e linguagem.
             </p>
             <p>
-              Percebi que o problema não era técnica e muito menos conhecer
-              alguma escala a mais, e sim entender como exercitar a
-              criatividade pra expandir meu vocabulário e entender que todo
-              solo precisa de estrutura. Não importa se você toca 5 ou 50
-              notas, e sim como você organiza todas elas pra que seu solo
-              realmente soe como uma história.
+              Percebi que não precisa de uma técnica avançada, muito menos
+              conhecer escalas ou teoria avançada, mas para desenvolver sua
+              musicalidade aprender a explorar e interligar os três pilares
+              da TRÍADE CRIATIVA.
             </p>
             <p>
               <strong class="text-text-on-light">
-                Com uma boa visualização, referências e entendendo essas estruturas você
-                não depende de inspiração ou dom pra criar bons solos.
+                TÉCNICA · REPERTÓRIO · TEORIA MUSICAL
               </strong>
+            </p>
+            <p>
+              Tratar esses assuntos como coisas distintas vai te travar por
+              anos, assim como aconteceu comigo.
             </p>
           </div>
 

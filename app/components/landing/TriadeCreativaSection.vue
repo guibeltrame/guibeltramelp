@@ -165,6 +165,14 @@ const { containerRef } = useScrollReveal();
           <ul class="mt-2 space-y-1 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
             <li class="flex items-center gap-2">
               <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Hey Joe! - Jimi Hendrix
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Red Hot Chilli Peppers - Under The Bridge
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
               Wasting Love — Iron Maiden
             </li>
             <li class="flex items-center gap-2">

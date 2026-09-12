@@ -20,7 +20,7 @@ const pillars = [
   },
   {
     number: "03",
-    title: "Consciência é a liberdade",
+    title: "Teoria Musical é a liberdade",
     description:
       "Conhecer escalas, acordes, arpejos e suas formações de forma teórica é essencial, mas é fundamental visualizar isso no braço de maneira prática para desenvolver independência.",
     image: "/images/pillar-srv.jpg",
