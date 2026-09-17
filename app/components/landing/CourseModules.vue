@@ -13,6 +13,7 @@ const modules = [
       "Intervalos",
       "Formação de acordes",
       "Fundamentos da Técnica",
+      "Repertório I",
     ],
     lessons: 10,
   },
@@ -26,6 +27,7 @@ const modules = [
       "Ciclo de Quartas e Quintas",
       "Campo Harmônico Maior/Menor",
       "Improviso e Criatividade I",
+      "Repertório II",
     ],
     lessons: 10,
   },
@@ -41,6 +43,7 @@ const modules = [
       "Motivos melódicos",
       "Motivos Ritmicos",
       "Dinâmica e Interpretação",
+      "Repertório III",
     ],
     lessons: 10,
   },
@@ -52,6 +55,7 @@ const modules = [
       "Harmonia avançada",
       "Menor harmônica",
       "Modos Gregos",
+      "Repertório IV",
     ],
     lessons: 14,
   },
@@ -122,20 +126,27 @@ const modules = [
               </p>
 
               <!-- Bullets de conteúdo -->
-              <ul class="mt-5 space-y-2 sm:mt-6" aria-label="Conteúdos do módulo">
-                <li
-                  v-for="bullet in mod.bullets"
-                  :key="bullet"
-                  class="flex items-center gap-2.5 text-sm text-text-on-dark-muted sm:text-base"
+              <div
+                class="mt-5 rounded-xl border border-dark-muted bg-dark-surface/60 px-4 py-4 sm:mt-6 sm:px-5 sm:py-5"
+              >
+                <ul
+                  class="grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-3"
+                  aria-label="Conteúdos do módulo"
                 >
-                  <Icon
-                    name="lucide:check"
-                    class="size-4 shrink-0 text-amber"
-                    aria-hidden="true"
-                  />
-                  {{ bullet }}
-                </li>
-              </ul>
+                  <li
+                    v-for="bullet in mod.bullets"
+                    :key="bullet"
+                    class="flex items-center gap-2 text-sm text-text-on-dark-muted"
+                  >
+                    <Icon
+                      name="lucide:check"
+                      class="size-3.5 shrink-0 text-amber"
+                      aria-hidden="true"
+                    />
+                    {{ bullet }}
+                  </li>
+                </ul>
+              </div>
 
               <!-- Objetivo -->
               <p
@@ -163,6 +174,70 @@ const modules = [
           </li>
         </ol>
       </div>
+      <!-- Repertório de referência -->
+      <div class="scroll-reveal mx-auto mt-12 max-w-3xl sm:mt-14 lg:mt-16">
+        <div class="rounded-lg border border-amber/20 bg-amber/5 px-3.5 py-3">
+          <p class="text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
+            O Ciência das 6 Cordas trabalha com transcrição e análise de músicas como:
+          </p>
+          <ul class="mt-2 space-y-1 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Wasting Love — Iron Maiden
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Nothing Else Matters — Metallica
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Belief — John Mayer
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Tennessee Whiskey — Chris Stapleton
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Seize The Day — Avenged Sevenfold
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Stairway to Heaven — Led Zeppelin
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Time — Pink Floyd
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Man! I Feel Like a Woman — Dan Huff
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              Rock Bottom - Steven Wilson
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
+              + Solos Autorais
+            </li>
+          </ul>
+          <p class="mt-3 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
+            Para que você trabalhe todos os elementos do método de maneira musical e prática.
+          </p>
+        </div>
+      </div>
+
+      <footer
+        class="scroll-reveal mx-auto mt-12 max-w-4xl text-center sm:mt-14 lg:mt-16"
+      >
+        <p
+          class="text-balance text-sm font-bold uppercase leading-relaxed tracking-[0.06em] text-text-on-dark sm:text-base md:text-lg"
+        >
+          Uma sequência lógica de aprendizagem muito rápida e efetiva para
+          desenvolver sua consciência, independência e criatividade.
+        </p>
+      </footer>
     </div>
   </section>
 </template>

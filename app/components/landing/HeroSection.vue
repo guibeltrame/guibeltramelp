@@ -2,12 +2,12 @@
 const { containerRef } = useScrollReveal();
 
 const benefitItems = [
-  "Entender o que está tocando",
-  "Aprender todos assuntos essenciais de TEORIA MUSICAL",
-  "Enxergar acordes, arpejos e escalas sem ficar perdido",
-  "Aproveitar o repertório para desenvolver a própria linguagem",
-  "Não ficar mais perdido sem saber o que realmente estudar",
-  "Criar solos já nas primeiras semanas",
+  "Melhorar sonoridade e técnica",
+  "Aprender TEORIA MUSICAL",
+  "Organizar os conteúdos e rotina de estudo",
+  "Improvisar e desenvolver sua linguagem",
+  "Aprender a desenvolver seus próprios arranjos",
+  "Tocar de ouvido",
 ] as const;
 </script>
 
@@ -49,8 +49,8 @@ const benefitItems = [
           id="hero-heading"
           class="scroll-reveal mx-auto max-w-3xl text-3xl font-extrabold leading-[1.1] tracking-tight text-text-on-dark sm:text-4xl md:text-5xl lg:text-6l"
         >
-          Chegou a hora de você
-          <span class="text-amber">CRIAR SOLOS E IMPROVISOS</span> que prendem a atenção
+          Torne-se um músico mais
+          <span class="text-amber">COMPLETO</span>
         </h1>
 
         <!-- Subheadline -->

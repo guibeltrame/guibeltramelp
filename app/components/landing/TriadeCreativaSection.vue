@@ -29,21 +29,21 @@ const pillars = [
     key: "visualizacao",
     title: "Visualização",
     description:
-      "Conhecer o braço de forma profunda, desde a visualização das notas no braço da guitarra, shapes de escala, arpejos e acordes, mas também padronizar essa visualização para automatizar seu raciocínio para tocar em qualquer região e construir caminhos melódicos novos e menos previsíveis.",
+      "Entender como padronizar a visualização do braço da guitarra desde as notas no braço até shapes de escala, arpejos e acordes para automatizar seu raciocínio e tocar em qualquer região.",
     icon: "lucide:eye",
   },
   {
     key: "analise",
     title: "Análise",
     description:
-      "Enxergar e entender o que os grandes guitarristas realmente fazem, não só quais escalas usam, mas por que cada escolha funciona. Dinâmica, respiração, variações rítmicas, como a harmonia influencia cada frase. Isso transforma suas referências em vocabulário próprio — você para de copiar e começa a absorver.",
+      "Entender o que os grandes guitarristas realmente fazem. Quais escalas, harmonia, técnicas, dinâmica, respiração, variações rítmicas, como a harmonia influencia cada frase. Transformar suas referências em vocabulário próprio.",
     icon: "lucide:scan-search",
   },
   {
     key: "criacao",
     title: "Criação",
     description:
-      "Estruturar e construir solos do zero, desde solos simples até solos mais sofisticados. Como criar temas, desenvolver frases e conectar o solo do começo ao fim pra que ele soe como uma história, não como notas jogadas ao vento. Uma aplicação que você leva da composição para o improviso e estrutura a sua forma de raciocínar.",
+      "Ir além de só copiar e aprender a como criar seus próprios arranjos e improvisos. Estruturar solos e improvisos do zero, criando temas, suas próprias frases e desenvolver sua identidade na guitarra.",
     icon: "lucide:sparkles",
   },
   
@@ -114,9 +114,9 @@ const { containerRef } = useScrollReveal();
         class="scroll-reveal mx-auto mt-12 max-w-2xl text-center sm:mt-14 lg:mt-16"
       >
         <p
-          class="text-base font-bold uppercase tracking-wide text-text-on-dark sm:text-lg md:text-xl"
+          class="whitespace-nowrap text-base font-bold uppercase tracking-wide text-text-on-dark sm:text-lg md:text-xl"
         >
-          Para criar solos do zero como esses:
+          Trabalhar sua criatividade para desenvolver sua musicalidade
         </p>
       </div>
 
@@ -156,78 +156,7 @@ const { containerRef } = useScrollReveal();
         </figure>
       </div>
 
-      <!-- Repertório de referência -->
-      <div class="scroll-reveal mx-auto mt-12 max-w-3xl sm:mt-14 lg:mt-16">
-        <div class="rounded-lg border border-amber/20 bg-amber/5 px-3.5 py-3">
-          <p class="text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
-            O Ciência das 6 Cordas trabalha com transcrição e análise de músicas como:
-          </p>
-          <ul class="mt-2 space-y-1 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Hey Joe! - Jimi Hendrix
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Red Hot Chilli Peppers - Under The Bridge
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Wasting Love — Iron Maiden
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Nothing Else Matters — Metallica
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Belief — John Mayer
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Tennessee Whiskey — Chris Stapleton
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Seize The Day — Avenged Sevenfold
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Stairway to Heaven — Led Zeppelin
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Time — Pink Floyd
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Man! I Feel Like a Woman — Dan Huff
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              Rock Bottom - Steven Wilson
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="size-1.5 shrink-0 rounded-full bg-amber/70" aria-hidden="true" />
-              + Solos Autorais
-            </li>
-          </ul>
-          <p class="mt-3 text-base leading-relaxed text-text-on-dark-muted sm:text-lg">
-            Para que você trabalhe todos os elementos do método de maneira musical e prática.
-          </p>
-        </div>
-      </div>
 
-      <footer
-        class="scroll-reveal mx-auto mt-12 max-w-4xl text-center sm:mt-14 lg:mt-16"
-      >
-        <p
-          class="text-balance text-sm font-bold uppercase leading-relaxed tracking-[0.06em] text-text-on-dark sm:text-base md:text-lg"
-        >
-          Uma sequência lógica de aprendizagem muito mais rápida e efetiva para
-          construir solos tão bons e autênticos como dos seus ídolos.
-        </p>
-      </footer>
     </div>
   </section>
 </template>

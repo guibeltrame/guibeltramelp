@@ -14,7 +14,7 @@ const after = [
   "Improvisa e cria com confiança",
   "Tem um processo de estudo mais organizado",
   "Aproveita o repertório e constrói sua linguagem",
-  "Desenvolve sua própria criatividade",
+  "Desenvolve o ouvido",
 ];
 </script>
 

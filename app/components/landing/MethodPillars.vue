@@ -6,7 +6,7 @@ const pillars = [
     number: "01",
     title: "Técnica é o mensageiro",
     description:
-      "Tocar muitas ou poucas notas, pouco importa. A técnica é responsável por como você passa a mensagem e trabalhar elementos de interpretação como dinâmica, rítmica, respiro e expressividade vai dar vida às notas das escalas.",
+      "A técnica é responsável por como você passa a mensagem e trabalhar elementos de interpretação como dinâmica, rítmica, respiro e expressividade, não apenas velocidade.",
     image: "/images/pillar-van-halen.jpg",
     imageAlt: "Eddie Van Halen tocando guitarra no palco",
   },
@@ -14,7 +14,7 @@ const pillars = [
     number: "02",
     title: "Repertório é a fonte da criatividade",
     description:
-      "A falta de referências leva a bloqueios criativos. Nenhum assunto de escalas ou qualquer teoria vai fazer sentido se você não ver isso acontecendo de maneira prática para que você desenvolva seu vocabulário.",
+      "Nenhum assunto de escalas ou qualquer teoria fará sentido se não ver isso acontecendo na prática para que você desenvolva seu vocabulário musical.",
     image: "/images/pillar-syn.jpg",
     imageAlt: "Synyster Gates tocando guitarra no palco",
   },
@@ -22,17 +22,17 @@ const pillars = [
     number: "03",
     title: "Teoria Musical é a liberdade",
     description:
-      "Conhecer escalas, acordes, arpejos e suas formações de forma teórica é essencial, mas é fundamental visualizar isso no braço de maneira prática para desenvolver independência.",
+      "Conhecer os fundamentos de escalas, acordes e harmonia para trazer consciência do que você toca, começar a identificar padrões nas músicas para desenvolver seu ouvido.",
     image: "/images/pillar-srv.jpg",
     imageAlt: "Stevie Ray Vaughan tocando guitarra no palco",
   },
   {
     number: "04",
-    title: "Música é comunicação e todo bom solo soa como uma história.",
+    title: "A comunicação da música se baseia nesses três pilares",
     bullets: [
       "A técnica passa a emoção e mensagem",
       "Repertório são suas referências para desenvolver vocabulário",
-      "Teoria musical te dá o controle total do que está fazendo e para onde vai",
+      "Teoria musical te dá o controle do que está fazendo e para onde vai",
     ],
   },
 ];

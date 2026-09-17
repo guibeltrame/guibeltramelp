@@ -90,15 +90,12 @@ onMounted(() => {
           <h2
             class="mt-4 text-[24px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-                        SUA <span class="text-amber">INDEPENDÊNCIA E CRIATIVIDADE</span> NA GUITARRA<br />COMEÇA ANTES DA TEORIA
+                        FLUÊNCIA NA GUITARRA <br />NÃO DEPENDE <span class="text-amber">APENAS DA TEORIA</span>
           </h2>
           <h3
             class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Dominar o <strong>braço da guitarra</strong> e <strong>criar solos</strong>
-            não depende de aprender <strong>assuntos avançados</strong> ou perder horas com exercícios mecânicos de escala ou técnica. Mesmo que hoje você
-            não entende o que toca ou ache que não tem criatividade.
-            <br />Assista ao vídeo:
+            Você não precisa perder anos estudando assuntos complexos e de forma desconexa. Entenda como organizar teoria, repertório e criatividade para desenvolver sua musicalidade por completo. Assista ao vídeo:
           </h3>
         </div>
 
