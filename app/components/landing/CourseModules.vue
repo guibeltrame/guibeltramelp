@@ -5,7 +5,7 @@ const modules = [
   {
     number: "01",
     label: "NÍVEL I",
-    summary: "Domine o braço da guitarra num sistema visual claro para você enxergar acordes e escalas sem se perder e ideias iniciais para seus improvisos.",
+    summary: "Domine o braço da guitarra num sistema de padronização visual para enxergar acordes e fundamentos importantes de técnica.",
     bullets: [
       "Teoria básica",
       "Notas no braço da guitarra",
@@ -20,7 +20,7 @@ const modules = [
   {
     number: "02",
     label: "NÍVEL II",
-    summary: "Novos elementos",
+    summary: "O começo do desenvolvimento da sua criatividade conhecendo as escalas mais importantes.",
     bullets: [
       "Escala Pentatonica Maior e Menor",
       "Escala Maior e Menor",
@@ -34,7 +34,7 @@ const modules = [
   {
     number: "03",
     label: "NÍVEL III",
-    summary: "Aprenda a estruturar um solo do zero de forma prática e descomplicada.",
+    summary: "Aprender a estruturar um solo do zero de forma prática e descomplicada.",
     bullets: [
       "Arpejos",
       "Temas e estrutura de solo",
