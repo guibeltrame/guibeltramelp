@@ -114,7 +114,7 @@ const { containerRef } = useScrollReveal();
         class="scroll-reveal mx-auto mt-12 max-w-2xl text-center sm:mt-14 lg:mt-16"
       >
         <p
-          class="whitespace-nowrap text-base font-bold uppercase tracking-wide text-text-on-dark sm:text-lg md:text-xl"
+          class="text-balance text-base font-bold uppercase tracking-wide text-text-on-dark sm:text-lg md:text-xl"
         >
           Trabalhar sua criatividade para desenvolver sua musicalidade
         </p>

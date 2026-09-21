@@ -90,12 +90,12 @@ onMounted(() => {
           <h2
             class="mt-4 text-[24px] font-bold leading-tight text-text-on-dark sm:mt-5 sm:text-[28px] md:text-[32px] lg:text-[34px]"
           >
-                        FLUÊNCIA NA GUITARRA <br />NÃO DEPENDE <span class="text-amber">APENAS DA TEORIA</span>
+                        VOCÊ NÃO PRECISA ESTUDAR ANOS SEM DIREÇÃO PARA <span class="text-amber">CONQUISTAR SUA FLUÊNCIA NA GUITARRA</span>
           </h2>
           <h3
             class="mt-5 text-[17px] font-light leading-relaxed text-text-on-dark sm:mt-6 sm:text-[16px] md:text-[18px] lg:text-[19px]"
           >
-            Você não precisa perder anos estudando assuntos complexos e de forma desconexa. Entenda como organizar teoria, repertório e criatividade para desenvolver sua musicalidade por completo. Assista ao vídeo:
+            Entenda como organizar teoria, repertório e criatividade para desenvolver sua musicalidade. Assista ao vídeo:
           </h3>
         </div>
 
