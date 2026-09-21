@@ -4,7 +4,7 @@ const { containerRef } = useScrollReveal();
 const pillars = [
   {
     number: "01",
-    title: "Técnica é o mensageiro",
+    title: "Técnica",
     description:
       "A técnica é responsável por como você passa a mensagem e trabalhar elementos de interpretação como dinâmica, rítmica, respiro e expressividade, não apenas velocidade.",
     image: "/images/pillar-van-halen.jpg",
@@ -12,7 +12,7 @@ const pillars = [
   },
   {
     number: "02",
-    title: "Repertório é a fonte da criatividade",
+    title: "Repertório",
     description:
       "Nenhum assunto de escalas ou qualquer teoria fará sentido se não ver isso acontecendo na prática para que você desenvolva seu vocabulário musical.",
     image: "/images/pillar-syn.jpg",
@@ -20,7 +20,7 @@ const pillars = [
   },
   {
     number: "03",
-    title: "Teoria Musical é a liberdade",
+    title: "Teoria Musical",
     description:
       "Conhecer os fundamentos de escalas, acordes e harmonia para trazer consciência do que você toca, começar a identificar padrões nas músicas para desenvolver seu ouvido.",
     image: "/images/pillar-srv.jpg",

@@ -19,7 +19,7 @@ const { containerRef } = useScrollReveal();
 
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div
-        class="grid min-h-0 grid-cols-1 gap-x-4 gap-y-6 sm:gap-y-8 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-4 lg:items-start"
+        class="grid min-h-0 grid-cols-1 gap-x-4 gap-y-8 sm:gap-y-10 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_420px] lg:gap-x-10 lg:gap-y-4 lg:items-start"
       >
         <!-- Cabeçalho + gancho -->
         <header class="scroll-reveal max-w-xl lg:pr-4">
@@ -38,10 +38,10 @@ const { containerRef } = useScrollReveal();
 
         <!-- Imagem à direita no desktop; mesma ordem de leitura no mobile -->
         <figure
-          class="scroll-reveal group relative mx-auto w-full min-h-0 max-w-[260px] sm:max-w-xs md:max-w-sm max-lg:order-last lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:mx-0 lg:h-full lg:min-h-0 lg:max-w-sm lg:justify-self-end lg:self-stretch xl:max-w-md"
+          class="scroll-reveal group relative mx-auto w-full min-h-0 max-w-[280px] sm:max-w-[320px] max-lg:order-last lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:mx-0 lg:w-full lg:justify-self-end lg:self-start"
         >
           <div
-            class="relative h-full min-h-0 overflow-hidden rounded-2xl border border-dark-muted bg-dark-surface shadow-2xl shadow-black/40 ring-1 ring-white/5 transition duration-500 ease-out will-change-transform group-hover:ring-amber/20 motion-safe:group-hover:scale-[1.01] motion-reduce:transition-none"
+            class="relative overflow-hidden rounded-2xl border border-dark-muted bg-dark-surface shadow-2xl shadow-black/40 ring-1 ring-white/5 transition duration-500 ease-out will-change-transform group-hover:ring-amber/20 motion-safe:group-hover:scale-[1.01] motion-reduce:transition-none"
           >
             <div
               class="pointer-events-none absolute inset-0 bg-gradient-to-t from-dark/50 via-transparent to-transparent opacity-80"
@@ -54,7 +54,7 @@ const { containerRef } = useScrollReveal();
               height="800"
               loading="lazy"
               decoding="async"
-              class="aspect-[3/4] h-full w-full object-cover object-center lg:aspect-auto lg:min-h-0 lg:max-h-full"
+              class="aspect-[3/4] w-full object-cover object-center"
             />
           </div>
         </figure>
@@ -67,43 +67,16 @@ const { containerRef } = useScrollReveal();
             class="space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
           >
             <p>
-              Quer ser o músico que
-              <strong class="font-semibold text-text-on-dark"
-                >não posta um vídeo</strong
-              >
-              porque não tira um bom som, ou
-              <strong class="font-semibold text-amber"
-                >o que se orgulha do que ouve?</strong
-              >
+              Imagina hoje conseguir organizar os seus estudos para ter uma evolução constante, desenvolver o ouvido e entender o que está tocando.
             </p>
             <p>
-              Você prefere ser o cara que fica que fica inseguro tocando na
-              GIG's ou o que sabe o que está fazendo?
+              Conseguir fazer improvisos e até mesmo gravar vídeos tocando, com segurança do que está fazendo.
             </p>
 
             <p class="text-lg font-medium text-text-on-dark sm:text-xl">
               Seja no quarto ou no palco:
-              <span class="text-amber">qual deles você prefere ser?</span>
+              <span class="text-amber">Você quer ser esse músico?</span>
             </p>
-          </div>
-          <div
-            class="rounded-2xl border border-dark-muted bg-dark-surface/80 p-5 sm:p-6"
-          >
-            <p class="text-text-on-dark">
-              <span class="mt-2 block space-y-3 leading-loose">
-                <span class="block">Pensa no que custaria chegar no mesmo resultado por outro caminho.</span>
-                <span class="block">Aulas particulares? Facilmente R$100 por hora — mais de R$2.500 por ano, com horário fixo, sem poder rever a aula quando precisar.</span>
-                <span class="block">YouTube gratuito? Você já tentou. E está aqui, o que significa que não resolveu o problema central.</span>
-                <span class="block">E tem ainda o dinheiro que você já investiu em equipamento — guitarra, amplificador, pedais — que ainda não está soando do jeito que você quer. O Ciência das 6 Cordas é o que faz esse investimento valer.</span>
-                <span class="block">Método organizado, no seu ritmo, com suporte — por menos do que uma aula particular por mês.</span>
-              </span>
-            </p>
-            <a
-              href="#oferta"
-              class="text-sm font-medium text-amber underline decoration-amber/40 underline-offset-4 transition hover:text-amber-light hover:decoration-amber"
-            >
-              Ver a oferta abaixo
-            </a>
           </div>
           <div
             class="border-l-4 border-amber pl-5 sm:pl-6"

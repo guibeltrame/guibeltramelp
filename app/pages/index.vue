@@ -21,7 +21,7 @@ useHead({
     <LandingVideoIntro />
    <LandingPainIdentification />
       <LandingProblemReframe />
-      <LandingAuthoritySection />
+
       <LandingMethodPillars />
       <LandingHeroSection />
       <LandingTriadeCreativaSection />
@@ -33,7 +33,7 @@ useHead({
       <LandingTimeValueSection />
       <LandingOfferSection />
       <LandingGuaranteeSection />
-      <LandingTransformationSection />
+      <LandingAuthoritySection />
       <LandingFAQSection />
       <LandingFinalCTASection /> 
     <main id="esconder" style="display: none;">

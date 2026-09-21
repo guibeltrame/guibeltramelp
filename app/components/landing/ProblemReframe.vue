@@ -30,16 +30,16 @@ const { containerRef } = useScrollReveal();
           class="stagger-children mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
           <p class="scroll-reveal">
-            Você já toca há alguns anos, acumulou vários conteúdos, se sente <strong class="text-text-on-dark">estagnado e preso</strong> por não entender o que toca — e quando tenta improvisar fica naquele sobe e desce robótico.
+            Você já toca há alguns anos, acumulou vários conteúdos, se sente <strong class="text-text-on-dark">estagnado e preso</strong> por não entender o que toca.
           </p>
           <p class="scroll-reveal">
-            Você quer dominar o braço da guitarra, começar a criar seus improvisos e, principalmente, ter <strong class="text-text-on-dark">organização do que realmente estudar</strong> para ter uma evolução constante.
+            Você quer dominar o braço da guitarra, aprender ou aperfeiçoar seus improvisos e, principalmente, ter <strong class="text-text-on-dark">organização do que realmente estudar</strong> para ter uma evolução constante.
           </p>
           <p class="scroll-reveal">
-            Você não precisa ser um músico avançado, ter um <strong class="text-text-on-dark">talento natural</strong> ou toda a teoria musical.
+            Você não precisa ser um músico avançado ou ter um <strong class="text-text-on-dark">talento natural</strong> para tocar bem.
           </p>
           <p class="scroll-reveal">
-            A sua rotina de estudo não precisa ser chata — em que você se prende a aprender os fundamentos, mas não desenvolve a sua musicalidade de fato colocando em prática. O famoso músico que <strong class="text-text-on-dark">só sabe teoria, mas não aplica nada.</strong>
+            A sua rotina de estudo não precisa ser chata em que você se prende a aprender os fundamentos, mas não desenvolve a sua musicalidade colocando em prática.
           </p>
 
           <p id="reframe-manifest-kicker" class="scroll-reveal text-center">
@@ -75,10 +75,6 @@ const { containerRef } = useScrollReveal();
 
           <p class="text-lg font-medium text-text-on-dark sm:text-xl">
             E pra todo músico que realmente quer aprender a se comunicar na guitarra/violão precisa passar pelos três pilares que eu batizei de <strong>TRÍADE CRIATIVA</strong>.
-          </p>
-
-          <p class="mt-6 text-lg font-medium text-text-on-dark sm:text-xl">
-            Mas antes deixa eu me apresentar...
           </p>
           </article>
       </div>

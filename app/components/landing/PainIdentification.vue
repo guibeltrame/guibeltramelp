@@ -2,28 +2,20 @@
 const { containerRef } = useScrollReveal();
 
 const pains = [
+     {
+    image: "/images/dor06.jpg",
+    title: "Sente que não evolui",
+    description:
+      "Já toca há um bom tempo, mas se sente estagnado e tocando sempre as mesmas músicas, os improvisos sempre no sobe e desce e travado na parte técnica.",
+    imageAlt:
+      "Remete à busca por um som próprio e identidade musical na guitarra",
+  },
     {
     image: "/images/dor03.jpg",
-    title: "Muito conteúdo, pouco resultado",
+    title: "Não entende o que toca",
     description:
-      "Fica perdido com tanto conteúdo na internet e não sabe nem por onde começar.",
-    imageAlt:
-      "Sugere a distância entre muito estudo e pouca aplicação na música na prática",
-  },
-    {
-    image: "/images/dor05.jpg",
-    title: "Toca sem entender o que faz",
-    description:
-      "Só consegue tocar o que decorou e não entende nada do que está tocando, só reproduzindo no automático.",
+      "Nunca estudou teoria musical ou até já pegou alguns conteúdos, mas não sabe como trazer para prática.",
     imageAlt: "Visualiza a falta de direção e de roteiro no estudo da guitarra",
-  },
-  {
-    image: "/images/dor01.jpg",
-    title: "Seus improvisos sempre soam iguais",
-    description:
-      "Fica sobe e desce de escala, repete os mesmos clichês e sente que todo solo soa igual.",
-    imageAlt:
-      "Ilustra a sensação de ficar preso aos mesmos licks e frases na guitarra",
   },
   {
     image: "/images/dor02.jpg",
@@ -33,22 +25,7 @@ const pains = [
     imageAlt:
       "Representa o bloqueio criativo na hora de improvisar na guitarra",
   },
-  {
-    image: "/images/dor04.jpg",
-    title: "Você se compara e se frustra",
-    description:
-      'Acha que desenvolver a musicalidade para ter mais independencia desde técnica até consciência do que toca é só para quem tem talento.',
-    imageAlt:
-      "Traduz a frustração ao comparar o próprio som com outros guitarristas",
-  },
-  {
-    image: "/images/dor06.jpg",
-    title: "Sente que não evolui",
-    description:
-      "Já toca há um bom tempo, mas se sente estagnado e tocando sempre as mesmas músicas, licks e exercícios.",
-    imageAlt:
-      "Remete à busca por um som próprio e identidade musical na guitarra",
-  },
+
 ];
 </script>
 
@@ -73,15 +50,9 @@ const pains = [
           id="pain-heading"
           class="mt-3 text-2xl font-bold tracking-tight text-text-on-dark sm:text-3xl md:text-4xl"
         >
-          Você já se encontrou em
+          Você se encontra em
           <span class="text-amber">alguma dessas situações?</span>
         </h2>
-        <p
-          class="mt-4 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
-        >
-          Se pelo menos uma dessas frases faz sentido pra você, saiba que existe
-          um caminho pra mudar isso.
-        </p>
       </div>
 
       <div
