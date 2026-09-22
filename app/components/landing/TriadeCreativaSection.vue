@@ -57,7 +57,7 @@ const { containerRef } = useScrollReveal();
     id="triade-creativa"
     ref="containerRef"
     aria-labelledby="triade-heading"
-    class="relative overflow-hidden border-t border-dark-muted/60 bg-dark py-16 sm:py-20 md:py-24 lg:py-32"
+    class="relative overflow-hidden border-t border-dark-muted/60 bg-dark-surface py-16 sm:py-20 md:py-24 lg:py-32"
   >
     <div
       class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_0%,rgba(245,158,11,0.09),transparent)]"

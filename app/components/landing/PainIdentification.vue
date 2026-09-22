@@ -33,7 +33,7 @@ const pains = [
   <section
     ref="containerRef"
     aria-labelledby="pain-heading"
-    class="relative overflow-hidden bg-dark py-16 sm:py-20 md:py-24 lg:py-32"
+    class="relative overflow-hidden bg-dark-surface py-16 sm:py-20 md:py-24 lg:py-32"
   >
     <div
       class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_65%_45%_at_50%_0%,rgba(245,158,11,0.07),transparent)]"

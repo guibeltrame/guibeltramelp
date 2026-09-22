@@ -46,7 +46,7 @@ const fourthPillar = pillars[3]!;
     id="metodo"
     ref="containerRef"
     aria-labelledby="method-heading"
-    class="relative overflow-hidden bg-dark py-16 sm:py-20 md:py-24 lg:py-32"
+    class="relative overflow-hidden bg-dark-surface py-16 sm:py-20 md:py-24 lg:py-32"
   >
     <!-- Background accent -->
     <div
