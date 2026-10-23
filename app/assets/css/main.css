@@ -63,9 +63,13 @@
   --color-dark-surface: #141416;
   --color-dark-muted: #1e1e22;
 
-  --color-light: #fafaf9;
-  --color-light-surface: #ffffff;
-  --color-light-muted: #e7e5e4;
+  --color-light: #f5f0eb;
+  --color-light-surface: #fdf8f3;
+  --color-light-muted: #e0d5c8;
+
+  --color-burgundy: #7b1c35;
+  --color-burgundy-light: #9b2445;
+  --color-burgundy-muted: #7b1c3520;
 
   --color-amber: #f59e0b;
   --color-amber-light: #fbbf24;

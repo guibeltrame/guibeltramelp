@@ -30,7 +30,7 @@ const { containerRef } = useScrollReveal();
           class="stagger-children mt-8 space-y-6 text-base leading-relaxed text-text-on-dark-muted sm:text-lg"
         >
           <p class="scroll-reveal">
-            Você já toca há alguns anos, acumulou vários conteúdos, se sente <strong class="text-text-on-dark">estagnado e preso</strong> por não entender o que toca.
+            Você já toca há alguns anos e acumulou vários conteúdos, mais ainda se sente <strong class="text-text-on-dark">estagnado e preso</strong>.
           </p>
           <p class="scroll-reveal">
             Você quer dominar o braço da guitarra, aprender ou aperfeiçoar seus improvisos e, principalmente, ter <strong class="text-text-on-dark">organização do que realmente estudar</strong> para ter uma evolução constante.
