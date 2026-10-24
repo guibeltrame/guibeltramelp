@@ -15,6 +15,14 @@ export default defineNuxtConfig({
           tagPriority: "critical",
         },
         {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-6XEWM64ZHS",
+          async: true,
+        },
+        {
+          innerHTML:
+            "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6XEWM64ZHS');",
+        },
+        {
           innerHTML:
             "!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);",
         },
